@@ -26,12 +26,12 @@
 
     <div class="container">
 
-        <div class="card o-hidden border-0 shadow-lg my-5">
+        <div class="card2 o-hidden border-0 shadow-lg my-5">
             <div class="card-body p-0">
                 <!-- Nested Row within Card Body -->
                 <div class="row">
                     <div class="col-lg-7 d-none d-lg-block">
-                        <img src="https://i.ibb.co/J2qbNYT/gambar.jpg" alt="gambar" border="0" />
+                        <img src="https://i.postimg.cc/52hjBFz4/blogger.png" alt="gambar" border="0" />
                     </div>
                     <div class="col-lg-5">
                         <div class="p-5">

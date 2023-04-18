@@ -65,8 +65,12 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #858796;
-  text-align: left;
+  text-align: center;
   background-color: #fff;
+}
+
+#remember {
+  text-align: left;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -159,7 +163,7 @@ sup {
 }
 
 a {
-  color: #4e73df;
+  color: #83D350;
   text-decoration: none;
   background-color: transparent;
 }
@@ -2010,7 +2014,7 @@ textarea.form-control {
 .form-check-input {
   position: absolute;
   margin-top: 0.3rem;
-  margin-left: -1.25rem;
+  margin-left: -17.90rem;
 }
 
 .form-check-input[disabled] ~ .form-check-label,
@@ -2020,6 +2024,7 @@ textarea.form-control {
 
 .form-check-label {
   margin-bottom: 0;
+  margin-left: -16.50rem;
 }
 
 .form-check-inline {
@@ -9900,8 +9905,8 @@ a:focus {
 }
 
 .bg-gradient-primary {
-  background-color: #4e73df;
-  background-image: linear-gradient(180deg, #4e73df 10%, #224abe 100%);
+  background-color: #83D350;
+  background-image: linear-gradient(180deg, #83D350 10%, #224abe 100%);
   background-size: cover;
 }
 
