@@ -27,7 +27,7 @@
     <!-- Page Wrapper -->
     <div id="wrapper">
 
-        @include('backend.admin.body.sidebar')
+        @include('backend.superadmin.body.sidebar')
 
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
@@ -35,9 +35,9 @@
             <!-- Main Content -->
             <div id="content">
 
-                @include('backend.admin.body.header')
+                @include('backend.superadmin.body.header')
 
-                @yield('backend.admin')
+                @yield('backend.superadmin')
 
             </div>
             <!-- End of Content Wrapper -->

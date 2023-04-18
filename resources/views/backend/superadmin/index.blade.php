@@ -1,5 +1,5 @@
-  @extends('backend.admin.admin_master')
-  @section('backend.admin')
+  @extends('backend.superadmin.superadmin_master')
+  @section('backend.superadmin')
   <!-- Begin Page Content -->
   <div class="container-fluid">
 
