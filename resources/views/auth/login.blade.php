@@ -61,12 +61,12 @@
                                 <button type="submit" class="btn btn-primary btn-user btn-block">Masuk</button>
                             </form>
                             <hr>
-                            <!-- <div class="text-center">
+                            <div class="text-center">
                                 <a class="small" href="{{ route('password.request') }}">Forgot Password?</a>
                             </div>
                             <div class="text-center">
                                 <a class="small" href="{{route('register')}}">Belum Punya Akun? Daftar</a>
-                            </div> -->
+                            </div>
                         </div>
                     </div>
                 </div>

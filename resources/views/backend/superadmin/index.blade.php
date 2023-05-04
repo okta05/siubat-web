@@ -24,7 +24,7 @@
                           </div>
                       </div>
                       <div class="card-footer">
-                          <a href="#" class="card-link">Lihat Detail<i
+                          <a href="{{route('view_user')}}" class="card-link">Lihat Detail<i
                                   class="fas fa-arrow-circle-right"></i></a>
                       </div>
                   </div>
@@ -43,7 +43,7 @@
                           </div>
                       </div>
                       <div class="card-footer">
-                          <a href="pembayaran.html" class="card-link">Lihat Detail<i
+                          <a href="{{route('view_event')}}" class="card-link">Lihat Detail<i
                                   class="fas fa-arrow-circle-right"></i></a>
                       </div>
                   </div>

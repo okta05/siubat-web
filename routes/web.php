@@ -2,8 +2,10 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Backend\superadmin\UserController;
+use App\Http\Controllers\Backend\SuperAdmin\EventController;
+use App\Http\Controllers\Backend\SuperAdmin\BerandaController;
 use App\Http\Controllers\AdminController;
-use App\Http\Controllers\Backend\UserController;
 use Illuminate\Support\Facades\Auth;
 
 
@@ -36,3 +38,16 @@ Route::middleware('auth')->group(function () {
 require __DIR__.'/auth.php';
 
 Route::get('/admin/logout', [AdminController::class, 'logout'])->name('admin.logout');
+
+Route::middleware('auth')->group(function () {
+Route::get('/viewUser', [UserController::class, 'viewUser'])->name('view_user');
+});
+
+Route::middleware('auth')->group(function () {
+Route::get('/viewEvent', [EventController::class, 'viewEvent'])->name('view_event');
+});
+
+Route::middleware('auth')->group(function () {
+    Route::get('/halaman-user', [BerandaController::class, 'user'])->name('halaman-user');
+    Route::get('/halaman-event', [BerandaController::class, 'event'])->name('halaman-event');    
+});
