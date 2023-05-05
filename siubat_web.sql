@@ -56,7 +56,7 @@ CREATE TABLE `migrations` (
   `migration` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `batch` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=49 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -65,7 +65,7 @@ CREATE TABLE `migrations` (
 
 LOCK TABLES `migrations` WRITE;
 /*!40000 ALTER TABLE `migrations` DISABLE KEYS */;
-INSERT INTO `migrations` VALUES (1,'2014_10_12_000000_create_users_table',1),(2,'2014_10_12_100000_create_password_reset_tokens_table',1),(3,'2014_10_12_200000_add_two_factor_columns_to_users_table',1),(4,'2019_08_19_000000_create_failed_jobs_table',1),(5,'2019_12_14_000001_create_personal_access_tokens_table',1),(6,'2023_04_11_031336_create_sessions_table',1);
+INSERT INTO `migrations` VALUES (43,'2014_10_12_000000_create_users_table',1),(44,'2014_10_12_100000_create_password_reset_tokens_table',1),(45,'2014_10_12_200000_add_two_factor_columns_to_users_table',1),(46,'2019_08_19_000000_create_failed_jobs_table',1),(47,'2019_12_14_000001_create_personal_access_tokens_table',1),(48,'2023_04_11_031336_create_sessions_table',1);
 /*!40000 ALTER TABLE `migrations` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -152,7 +152,7 @@ CREATE TABLE `sessions` (
 
 LOCK TABLES `sessions` WRITE;
 /*!40000 ALTER TABLE `sessions` DISABLE KEYS */;
-INSERT INTO `sessions` VALUES ('eEA4Z9ZwQ1XhnQbf0a2OK0H6TEX7fsqBvidsCrP0',NULL,'127.0.0.1','Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0','YTozOntzOjY6Il90b2tlbiI7czo0MDoia1JDZlI5eEN6clNINzdYeENjZTV6RGx4RWh0WlhsTkptb1Byd1pIdCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=',1681282030),('psLftOSlIkv4JqmhR7BrumZmt1KBPeuDxLRmiQtX',NULL,'127.0.0.1','Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/111.0','YTozOntzOjY6Il90b2tlbiI7czo0MDoidWoybzFUdEY2aFFQMGN5dmVNeVFDR3N4b09QUWJwQlhJTUYzNE1iMCI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fX0=',1681268563),('xdmyowVjrSsenF11BeJATZjrNWuqpmUM5IqDcibX',1,'127.0.0.1','Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0','YTo0OntzOjY6Il90b2tlbiI7czo0MDoiQ1hiUURyWU9IWXZvRjAya3pHeHFuUFg5WlFtRDI2QlBybU03Y0VVYyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9kYXNoYm9hcmQiO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX1zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToxO30=',1681303858);
+INSERT INTO `sessions` VALUES ('BYRaae8S9G0gxWWerSgDz9cCstaydDDNrzMBKoaq',NULL,'127.0.0.1','Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0','YTo0OntzOjY6Il90b2tlbiI7czo0MDoiMzVFRFVtUUI0OWk5Q0xhZ05RV0thdVVvd1ZsQ29Id1FYQW1pS1VkdSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjc6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9sb2dpbiI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6MzoidXJsIjthOjA6e319',1683259343),('LNMQg6CKF4Sy8opSj7EADz2bwfMZbS2HyIaarmes',NULL,'127.0.0.1','Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0','YTozOntzOjY6Il90b2tlbiI7czo0MDoicGs1MW9BRmZZRlJlQ3NjZkpUV2xVb0h1a05kczdhV0lsUDg4eWd0WCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjc6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9sb2dpbiI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=',1683252195);
 /*!40000 ALTER TABLE `sessions` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -166,8 +166,11 @@ DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `alamat` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `email_verified_at` timestamp NULL DEFAULT NULL,
+  `no_wa` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `usertype` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `two_factor_secret` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `two_factor_recovery_codes` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -179,7 +182,7 @@ CREATE TABLE `users` (
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `users_email_unique` (`email`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -188,7 +191,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'kabat1','kabat1@example.com',NULL,'$2y$10$fVeXmvcO1y/S.VvX1suuLu5PbwMKZLv0.7RUGTT.JdoXovWZwS5ue',NULL,NULL,NULL,NULL,NULL,NULL,'2023-04-11 20:02:32','2023-04-11 20:02:32');
+INSERT INTO `users` VALUES (1,'superadmin1','superadmin1','superadmin1@gmail.com',NULL,'089888333444','superadmin','$2y$10$XVDs1UuJpUtb/PShS9Q0ruu6uTeW5gB7EHM84tmVMFuNmcUOHlMpm',NULL,NULL,NULL,'35F5B2zKcV4YFXTJ4FSHAOwYu5O88BIEJWOphE1nOGgaxLMNBqmLRo905fNb',NULL,NULL,'2023-05-03 20:30:04','2023-05-03 20:30:04'),(3,'anjay1','kabat','ans@gmail.com',NULL,'089123456','superadmin','$2y$10$m4SlyL.uJzVl4Jitzei2zexStPUGqoGkPIhFhm/oczWPxiL511H8u',NULL,NULL,NULL,NULL,NULL,NULL,'2023-05-04 08:43:38','2023-05-04 08:43:38'),(4,'admin1','kabat','admin1@gmail.com',NULL,'08912345678','admin','$2y$10$iA1uE.rE6FkV1KcqHrjX4eSj66EqaZDbLtvRbrvdDHx4dTZvNZaBa',NULL,NULL,NULL,NULL,NULL,NULL,'2023-05-04 08:45:19','2023-05-04 08:45:19');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -201,4 +204,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-04-13  9:08:52
+-- Dump completed on 2023-05-05 14:40:44
