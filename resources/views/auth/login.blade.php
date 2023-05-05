@@ -36,37 +36,37 @@
                     <div class="col-lg-5">
                         <div class="p-5">
                             <div class="text-center">
-                                <h1 class="h4 text-gray-900 mb-4">Masuk Sebagai Admin</h1>
+                                <h1 class="h4 text-gray-900 mb-4">LOGIN</h1>
                             </div>
                             <form action="{{route('login')}}" method="post">
                                 @csrf
                                 <hr>
                                 <div class="form-group">
                                     <input type="email" class="form-control form-control-user" id="email" name="email"
-                                        placeholder="Email">
+                                        placeholder="Email" autofocus required>
                                 </div>
                                 <div class="form-group">
                                     <input type="password" class="form-control form-control-user"
                                         id="password" name="password" placeholder="Password">
                                 </div>
-                                <div class="form-group">
+                                <!-- <div class="form-group">
                                     <div class="custom-control custom-checkbox small">
                                         <input type="checkbox" class="form-check-input" id="remember_me" name="remember">
                                         <label class="form-check-label" for="remember">Ingat saya</label>
                                     </div>
-                                </div>
+                                </div> -->
                                 <!-- <a href="index.html" class="btn btn-primary btn-user btn-block">
                                     Masuk
                                 </a> -->
                                 <button type="submit" class="btn btn-primary btn-user btn-block">Masuk</button>
                             </form>
-                            <hr>
+                            <!-- <hr>
                             <div class="text-center">
                                 <a class="small" href="{{ route('password.request') }}">Forgot Password?</a>
                             </div>
                             <div class="text-center">
                                 <a class="small" href="{{route('register')}}">Belum Punya Akun? Daftar</a>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -83,7 +83,7 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="{{asset('backendjs/sb-admin-2.min.js')}}"></script>
+    <script src="{{asset('backend/js/sb-admin-2.min.js')}}"></script>
 
 </body>
 

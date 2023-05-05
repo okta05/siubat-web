@@ -37,7 +37,7 @@
 
                     </tbody>
                 </table>
-                <a href="#" class="btn btn-success">Tambah Admin dan Super Admin</a>
+                <a href="{{route('user.add')}}" class="btn btn-success">Tambah Admin dan Super Admin</a>
             </div>
         </div>
     </div>

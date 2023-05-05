@@ -14,6 +14,6 @@ class BerandaController extends Controller
     }
 
     public function event(){
-        return view('backend.superadmin.event.view_user');
+        return view('backend.superadmin.event.view_event');
     }
 }
