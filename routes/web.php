@@ -45,7 +45,7 @@ Route::get('/addUser', [UserController::class, 'addUser'])->name('user.add');
 Route::post('/userStore', [UserController::class, 'storeUser'])->name('users.store');
 });
 
-Route::middleware('auth', 'ceklevel:superadmin, admin')->group(function () {
+Route::middleware('auth', 'ceklevel:superadmin,admin')->group(function () {
 Route::get('/viewEvent', [EventController::class, 'viewEvent'])->name('view_event');
 });
 
