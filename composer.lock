@@ -1482,6 +1482,7 @@
         },
         {
             "name": "laravel/jetstream",
+<<<<<<< HEAD
             "version": "v3.1.2",
             "source": {
                 "type": "git",
@@ -1492,6 +1493,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/laravel/jetstream/zipball/dfac46f3ff3ba9a3866ac343d6aee1cc398ff0b4",
                 "reference": "dfac46f3ff3ba9a3866ac343d6aee1cc398ff0b4",
+=======
+            "version": "v3.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/jetstream.git",
+                "reference": "4bedb125c742c3f8d43226d1ab0a9a27b8383cde"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/jetstream/zipball/4bedb125c742c3f8d43226d1ab0a9a27b8383cde",
+                "reference": "4bedb125c742c3f8d43226d1ab0a9a27b8383cde",
+>>>>>>> origin/oktaviano
                 "shasum": ""
             },
             "require": {
@@ -1547,7 +1560,11 @@
                 "issues": "https://github.com/laravel/jetstream/issues",
                 "source": "https://github.com/laravel/jetstream"
             },
+<<<<<<< HEAD
             "time": "2023-04-21T15:56:37+00:00"
+=======
+            "time": "2023-04-10T14:04:50+00:00"
+>>>>>>> origin/oktaviano
         },
         {
             "name": "laravel/sanctum",
@@ -7578,6 +7595,7 @@
         },
         {
             "name": "phpunit/php-code-coverage",
+<<<<<<< HEAD
             "version": "10.1.1",
             "source": {
                 "type": "git",
@@ -7588,6 +7606,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/884a0da7f9f46f28b2cb69134217fd810b793974",
                 "reference": "884a0da7f9f46f28b2cb69134217fd810b793974",
+=======
+            "version": "10.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
+                "reference": "fc4f5ee614fa82d50ecf9014b51af0a9561f3df8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/fc4f5ee614fa82d50ecf9014b51af0a9561f3df8",
+                "reference": "fc4f5ee614fa82d50ecf9014b51af0a9561f3df8",
+>>>>>>> origin/oktaviano
                 "shasum": ""
             },
             "require": {
@@ -7644,7 +7674,11 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/php-code-coverage/issues",
                 "security": "https://github.com/sebastianbergmann/php-code-coverage/security/policy",
+<<<<<<< HEAD
                 "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/10.1.1"
+=======
+                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/10.1.0"
+>>>>>>> origin/oktaviano
             },
             "funding": [
                 {
@@ -7652,7 +7686,11 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
             "time": "2023-04-17T12:15:40+00:00"
+=======
+            "time": "2023-04-13T07:08:27+00:00"
+>>>>>>> origin/oktaviano
         },
         {
             "name": "phpunit/php-file-iterator",
