@@ -41,10 +41,43 @@ class UserController extends Controller
         return redirect()->route('view_user');
     }
 
-    public function editUser($id){
-        // $data['allDataUser']=User::all();
+    public function UserEdit($id){
+        // dd('berhasil masuk controller user edit');
         $editData= User::find($id);
         return view('backend.superadmin.user.edit_user', compact('editData'));
     }
 
+    public function UserUpdate(Request $request, $id){
+
+        // dd($request);
+        $validateData=$request->validate([
+            'email' => 'required|unique:users',
+            'textNama' => 'required',
+        ]);
+
+        // dd($request);
+        $data=User::find($id);
+        $data->name=$request->textNama;
+        $data->alamat=$request->textAlamat;
+        $data->email=$request->email;
+        $data->no_wa=$request->textNo_Wa;
+        $data->usertype=$request->selectUser;
+        // if($request->password!=""){
+        //     $data->password=bcrypt($request->password);
+        // }
+        $data->password=bcrypt($request->password);
+        $data->save();
+
+        return redirect()->route('view_user');
+    }
+
+    public function UserDelete($id){
+        // dd('berhasil masuk controller user edit');
+        $deleteData= User::find($id);
+        $deleteData->delete();
+
+        
+        return redirect()->route('view_user');
+    }
 }
+
