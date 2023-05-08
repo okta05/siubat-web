@@ -1,6 +1,5 @@
 @extends('backend.superadmin.superadmin_master')
 @section('backend.superadmin')
-
 <!-- Begin Page Content -->
 <div class="container-fluid">
 
@@ -18,14 +17,21 @@
             <div class="card shadow mb-4">
                 <!-- Card Header - Edit -->
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                    <h6 class="m-0 font-weight-bold text-dark">Tambah Tempat</h6>
+                    <h6 class="m-0 font-weight-bold text-dark">Edit User</h6>
                 </div>
 
                 <!-- Card Content - Edit -->
                 <div class="card-body">
                     <form class="user" method="POST" action="{{route('users.update', $editData->id)}}">
                         @csrf
-
+                        @if($editData->id == 1)
+                        <div class="form-group">
+                            Hayoo, mau ngapain?
+                            <p>
+                                <a href="{{route('view_user')}}" class="btn btn-success">Kembali</a>
+                            </p>
+                        </div>
+                        @elseif($editData->id > 1)
                         <div class="form-group">
                             <label for="textNama">Nama</label>
                             <input type="text" name="textNama" value="{{$editData->name}}" class="form-control form-control-user" id="textNama" >
@@ -56,6 +62,7 @@
                         </div>
 
                         <button type="submit" class="btn btn-danger">Simpan Perubahan</button>
+                        @endif
                     </form>
                 </div>
             </div>
