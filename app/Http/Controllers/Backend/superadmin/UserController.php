@@ -41,4 +41,10 @@ class UserController extends Controller
         return redirect()->route('view_user');
     }
 
+    public function editUser($id){
+        // $data['allDataUser']=User::all();
+        $editData= User::find($id);
+        return view('backend.superadmin.user.edit_user', compact('editData'));
+    }
+
 }

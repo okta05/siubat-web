@@ -30,7 +30,7 @@
                         <td>{{$user->email}}</td>
                         <td>{{$user->no_wa}}</td>
                         <td>{{$user->usertype}}</td>
-                        <td><a href="#" class="btn btn-warning">edit</a> <a href="#" class="btn btn-danger">delete</a>
+                        <td><a href="{{route('user.edit', $user->id)}}" class="btn btn-warning">edit</a> <a href="#" class="btn btn-danger">delete</a>
                         </td>
                     </tr>
                     @endforeach

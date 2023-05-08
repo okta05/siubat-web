@@ -43,6 +43,7 @@ Route::middleware('auth', 'ceklevel:superadmin')->group(function () {
 Route::get('/viewUser', [UserController::class, 'viewUser'])->name('view_user');
 Route::get('/addUser', [UserController::class, 'addUser'])->name('user.add');
 Route::post('/userStore', [UserController::class, 'storeUser'])->name('users.store');
+Route::get('/editUser/{id}', [UserController::class, 'editUser'])->name('user.edit');
 });
 
 Route::middleware('auth', 'ceklevel:superadmin,admin')->group(function () {
