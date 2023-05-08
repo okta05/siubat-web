@@ -65,5 +65,6 @@ class Kernel extends HttpKernel
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
         'ceklevel' => \App\Http\Middleware\CekLevel::class,
         'disable_back' => \App\Http\Middleware\DisableBackBtn::class,
+        'disable_delete' => \App\Http\Middleware\DeleteID::class,
     ];
 }

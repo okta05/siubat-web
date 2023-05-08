@@ -4,7 +4,7 @@
 <div class="container-fluid">
 
     <!-- Page Heading -->
-    <h1 class="h3 mb-2 text-gray-800">Dashboard | Pengajuan</h1>
+    <h1 class="h3 mb-2 text-gray-800">Dashboard | User</h1>
 
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
@@ -30,12 +30,8 @@
                         <td>{{$user->email}}</td>
                         <td>{{$user->no_wa}}</td>
                         <td>{{$user->usertype}}</td>
-<<<<<<< HEAD
-                        <td><a href="{{route('user.edit', $user->id)}}" class="btn btn-warning">edit</a> <a href="#" class="btn btn-danger">delete</a>
-=======
-                        <td><a href="{{route('users.edit', $user->id)}}" class="btn btn-warning">edit</a> 
-                        <a href="{{route('users.delete', $user->id)}}" class="btn btn-danger">delete</a>
->>>>>>> origin/kezia-megawati
+                        <td><a href="{{route('usersmysql.edit', $user->id)}}" class="btn btn-warning">edit</a>
+                            <a href="{{route('users.delete', $user->id)}}" class="btn btn-danger">delete</a>
                         </td>
                     </tr>
                     @endforeach
