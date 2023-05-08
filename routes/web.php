@@ -52,6 +52,10 @@ Route::middleware('auth', 'ceklevel:superadmin,admin')->group(function () {
 Route::get('/viewEvent', [EventController::class, 'viewEvent'])->name('view_event');
 });
 
+// Route::middleware('auth', 'ceklevel:superadmin,admin')->group(function () {
+//     Route::get('/viewUMKM', [UMKMController::class, 'viewUMKM'])->name('view_umkm');
+//     });
+
 // Route::middleware('auth','ceklevel:superadmin')->group(function () {
 //     Route::get('/halaman-user', [BerandaController::class, 'user'])->name('halaman-user');
 //     Route::get('/halaman-event', [BerandaController::class, 'event'])->name('halaman-event');    
