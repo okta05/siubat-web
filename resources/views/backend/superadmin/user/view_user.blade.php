@@ -30,16 +30,10 @@
                         <td>{{$user->email}}</td>
                         <td>{{$user->no_wa}}</td>
                         <td>{{$user->usertype}}</td>
-<<<<<<< HEAD
 
                         <td>
                         <a href="{{route('users.edit', $user->id)}}" class="btn btn-warning">edit</a> 
                         <a href="{{route('users.delete', $user->id)}}" class="btn btn-danger">delete</a>
-=======
-                        @if($user->id != 1 && $user->id != 2)
-                        <td><a href="{{route('users.edit', $user->id)}}" class="btn btn-warning">Edit</a> 
-                        <a href="{{route('users.delete', $user->id)}}" class="btn btn-danger">Delete</a>
->>>>>>> origin/anugrah-wiby
                         </td>
                         @elseif($user->id == 1)
                         <td>
