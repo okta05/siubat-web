@@ -28,40 +28,42 @@
                         <div class="form-group">
                             Hayoo, mau ngapain?
                             <p>
+                                <br>
                                 <a href="{{route('view_user')}}" class="btn btn-success">Kembali</a>
                             </p>
                         </div>
                         @elseif($editData->id > 1)
                         <div class="form-group">
                             <label for="textNama">Nama</label>
-                            <input type="text" name="textNama" value="{{$editData->name}}" class="form-control form-control-user" id="textNama" >
+                            <input type="text" name="textNama" value="{{$editData->name}}" class="form-control" id="textNama" placeholder="Nama lengkap">
                         </div>
                         <div class="form-group">
                             <label for="textAlamat">Alamat</label>
-                            <input type="text" name="textAlamat" value="{{$editData->alamat}}" class="form-control form-control-user" id="textAlamat">
+                            <input type="text" name="textAlamat" value="{{$editData->alamat}}" class="form-control" id="textAlamat" placeholder="Alamat lengkap">
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" name="email" value="{{$editData->email}}" class="form-control form-control-user" id="email">
+                            <input type="email" name="email" value="{{$editData->email}}" class="form-control" id="email" placeholder="Email">
                         </div>
                         <div class="form-group">
                             <label for="textNo_Wa">No WA</label>
-                            <input type="text" name="textNo_Wa" value="{{$editData->no_wa}}" class="form-control form-control-user" id="textNo_Wa">
+                            <input type="text" name="textNo_Wa" value="{{$editData->no_wa}}" class="form-control" id="textNo_Wa" placeholder="Nomor Telepon/WhatsApp">
                         </div>
                         <div class="form-group">
                             <label for="selectUser">Role <span class="text-danger">*</span></label>
                             <select name="selectUser" id="selectUser" required class="form-control">
-                                <option value="">Pilih Grub User</option>
+                                <option value="">--- Pilih Role User ---</option>
                                 <option value="superadmin" {{($editData->usertype=="superadmin"? "selected":"")}}>SuperAdmin</option>
                                 <option value="admin" {{($editData->usertype=="admin"? "selected":"")}}>Admin</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="password">Password</label>
-                            <input type="password" name="password" class="form-control form-control-user" id="password">
+                            <label for="password">Password <span class="text-danger" style="font-weight: bolder;">*Tidak dapat mengubah ini</span></label>
+                            <input type="password" name="password" disabled class="form-control" id="password" placeholder="Password">
                         </div>
 
-                        <button type="submit" class="btn btn-danger">Simpan Perubahan</button>
+                        <button type="submit" class="btn btn-success">Simpan Perubahan</button>
+                        <a href="{{route('view_user')}}" class="btn btn-danger">Batalkan</a>
                         @endif
                     </form>
                 </div>
