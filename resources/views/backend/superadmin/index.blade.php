@@ -26,7 +26,7 @@
                         </div>
                       </div>
                       <hr />
-                        <a href="{{route('view_user')}}" class="btn btn-success mt-3 float-right">
+                        <a href="{{route('view_user')}}" class="btn mt-3 float-right" style="background-color:#83D350; color:#513C2F; border-top: 1px solid #513C2F;">
                             Lihat Detail
                             <i class="fas fa-arrow-circle-right"></i>
                         </a>
@@ -47,7 +47,7 @@
                           </div>
                       </div>
                       <hr />
-                        <a href="{{route('view_event')}}" class="btn btn-success mt-3 float-right">
+                        <a href="{{route('view_event')}}" class="btn mt-3 float-right" style="background-color:#83D350; color:#513C2F; border-top: 1px solid #513C2F;">
                             Lihat Detail
                             <i class="fas fa-arrow-circle-right"></i>
                         </a>
@@ -67,7 +67,7 @@
                           </div>
                       </div>
                       <hr />
-                        <a href="#" class="btn btn-success mt-3 float-right">
+                        <a href="#" class="btn mt-3 float-right" style="background-color:#83D350; color:#513C2F; border-top: 1px solid #513C2F;">
                             Lihat Detail
                             <i class="fas fa-arrow-circle-right"></i>
                         </a>
