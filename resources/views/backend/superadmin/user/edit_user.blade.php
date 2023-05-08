@@ -1,13 +1,6 @@
 @extends('backend.superadmin.superadmin_master')
 @section('backend.superadmin')
 
-<<<<<<< HEAD
-halo
-
-
-@endsection
-
-=======
 <!-- Begin Page Content -->
 <div class="container-fluid">
 
@@ -74,4 +67,3 @@ halo
 <!-- End Page Content -->
 
 @endsection
->>>>>>> origin/kezia-megawati
