@@ -51,7 +51,10 @@ class UserController extends Controller
 
         // dd($request);
         $validateData=$request->validate([
+<<<<<<< HEAD
             'email' => 'required',
+=======
+>>>>>>> origin/anugrah-wiby
             'textNama' => 'required',
         ]);
 
@@ -71,9 +74,13 @@ class UserController extends Controller
     public function UserDelete($id){
         // dd('berhasil masuk controller user edit');
         $deleteData= User::find($id);
+        if (User::find($id == 1)) {
+            return redirect()->route('view_user');
+        }elseif (User::find($id == 2)) {
+            return redirect()->route('view_user');
+        }
         $deleteData->delete();
 
-        
         return redirect()->route('view_user');
     }
 }
