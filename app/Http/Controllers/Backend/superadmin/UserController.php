@@ -51,10 +51,7 @@ class UserController extends Controller
 
         // dd($request);
         $validateData=$request->validate([
-<<<<<<< HEAD
             'email' => 'required',
-=======
->>>>>>> origin/anugrah-wiby
             'textNama' => 'required',
         ]);
 
