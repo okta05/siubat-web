@@ -18,19 +18,18 @@
               <div class="card1 border-left-primary shadow h-100 py-2">
                   <div class="card-body">
                       <div class="row no-gutters align-items-center">
-                        <div class="col mr-2">
+                        <div class="col md-2">
                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                   User
                             </div>
-                                <div class="h5 mb-0 font-weight-bold text-gray-800">{{auth()->user()->count()}}</div>
+                            <div class="h2 mb-0 font-weight-bold text-gray-800">{{auth()->user()->count()}}</div>
                         </div>
                       </div>
-                      <div class="card-footer">
-                        <a href="{{route('view_user')}}" class="card-link">
+                      <hr />
+                        <a href="{{route('view_user')}}" class="btn mt-3 float-right" style="background-color:#83D350; color:#513C2F; border-top: 1px solid #513C2F;">
                             Lihat Detail
                             <i class="fas fa-arrow-circle-right"></i>
                         </a>
-                      </div>
                   </div>
               </div>
           </div>
@@ -44,13 +43,14 @@
                           <div class="col mr-2">
                               <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
                                   Event</div>
-                              <div class="h5 mb-0 font-weight-bold text-gray-800">7</div>
+                              <div class="h2 mb-0 font-weight-bold text-gray-800">NaN</div>
                           </div>
                       </div>
-                      <div class="card-footer">
-                          <a href="{{route('view_event')}}" class="card-link">Lihat Detail<i
-                                  class="fas fa-arrow-circle-right"></i></a>
-                      </div>
+                      <hr />
+                        <a href="{{route('view_event')}}" class="btn mt-3 float-right" style="background-color:#83D350; color:#513C2F; border-top: 1px solid #513C2F;">
+                            Lihat Detail
+                            <i class="fas fa-arrow-circle-right"></i>
+                        </a>
                   </div>
               </div>
           </div>
@@ -63,13 +63,14 @@
                           <div class="col mr-2">
                               <div class="text-xs font-weight-bold text-info text-uppercase mb-1">UMKM
                               </div>
-                              <div class="h5 mb-0 font-weight-bold text-gray-800">8</div>
+                              <div class="h2 mb-0 font-weight-bold text-gray-800">NaN</div>
                           </div>
                       </div>
-                      <div class="card-footer">
-                          <a href="edit-user.html" class="card-link">Lihat Detail<i
-                                  class="fas fa-arrow-circle-right"></i></a>
-                      </div>
+                      <hr />
+                        <a href="#" class="btn mt-3 float-right" style="background-color:#83D350; color:#513C2F; border-top: 1px solid #513C2F;">
+                            Lihat Detail
+                            <i class="fas fa-arrow-circle-right"></i>
+                        </a>
                   </div>
               </div>
 

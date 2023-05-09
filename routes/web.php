@@ -43,11 +43,18 @@ Route::middleware('auth', 'ceklevel:superadmin')->group(function () {
 Route::get('/viewUser', [UserController::class, 'viewUser'])->name('view_user');
 Route::get('/addUser', [UserController::class, 'addUser'])->name('user.add');
 Route::post('/userStore', [UserController::class, 'storeUser'])->name('users.store');
+Route::get('/edit/{id}', [UserController::class, 'UserEdit'])->name('users.edit');
+Route::post('/update/{id}', [UserController::class, 'UserUpdate'])->name('users.update');
+Route::get('/delete/{id}', [UserController::class, 'UserDelete'])->name('users.delete');
 });
 
 Route::middleware('auth', 'ceklevel:superadmin,admin')->group(function () {
 Route::get('/viewEvent', [EventController::class, 'viewEvent'])->name('view_event');
 });
+
+// Route::middleware('auth', 'ceklevel:superadmin,admin')->group(function () {
+//     Route::get('/viewUMKM', [UMKMController::class, 'viewUMKM'])->name('view_umkm');
+//     });
 
 // Route::middleware('auth','ceklevel:superadmin')->group(function () {
 //     Route::get('/halaman-user', [BerandaController::class, 'user'])->name('halaman-user');
