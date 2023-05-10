@@ -15,7 +15,7 @@ class UMKMController extends Controller
     }
 
     public function addUMKM(){
-        dd('berhasil masuk add umkm');
-        // return view('backend.superadmin.umkm.add_umkm');
+        // dd('berhasil masuk add umkm');
+        return view('backend.superadmin.umkm.add_umkm');
     }
 }
