@@ -12,51 +12,10 @@
         <!-- Earnings (Monthly) Card Example -->
         <div class="col-xl-3 col-md-6 mb-4">
             <div class="card h-100 py-2">
-                <img src="img/gesibu.svg" class="card-img-top" alt="..." />
+                <img src="{{asset('backend/img/gesibu.svg')}}" class="card-img-top" alt="..." />
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <h5 class="card-title">GESIBU BLAMBANGAN</h5>
-                        <p class="card-text">Kapasitas max 600 orang</p>
-                        <a href="edit-produk.html" class="btn btn-dark">Edit</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Earnings (Monthly) Card Example -->
-        <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card h-100 py-2">
-                <img src="img/dormitory-sritanjung.svg" class="card-img-top" alt="..." />
-                <div class="card-body">
-                    <div class="row no-gutters align-items-center">
-                        <h5 class="card-title">DORMITORY SRITANJUNG</h5>
-                        <p class="card-text">Kapasitas max 600 orang</p>
-                        <a href="edit-produk.html" class="btn btn-dark">Edit</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Earnings (Monthly) Card Example -->
-        <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card h-100 py-2">
-                <img src="img/pelinggihan.svg" class="card-img-top" alt="..." />
-                <div class="card-body">
-                    <div class="row no-gutters align-items-center">
-                        <h5 class="card-title">AULA PELINGGIHAN</h5>
-                        <p class="card-text">Kapasitas max 600 orang</p>
-                        <a href="edit-produk.html" class="btn btn-dark">Edit</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card h-100 py-2">
-                <img src="img/bwi-creativ.svg" class="card-img-top" alt="..." />
-                <div class="card-body">
-                    <div class="row no-gutters align-items-center">
-                        <h5 class="card-title">BANYUWANGI CREATIV SPACE</h5>
                         <p class="card-text">Kapasitas max 600 orang</p>
                         <a href="edit-produk.html" class="btn btn-dark">Edit</a>
                     </div>
