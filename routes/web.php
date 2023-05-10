@@ -22,10 +22,9 @@ use Illuminate\Support\Facades\Auth;
 */
 
 Route::get('/', function () {
-<<<<<<< HEAD
-=======
+
     // return view('welcome');
->>>>>>> origin/anugrah-wiby
+
     return view('auth.login');
 });
 
