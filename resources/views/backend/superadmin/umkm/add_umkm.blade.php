@@ -22,7 +22,7 @@
 
                 <!-- Card Content - Edit -->
                 <div class="card-body">
-                    <form class="user" method="POST" action="{{route('users.store')}}">
+                    <form class="user" method="POST" action="{{route('users.store')}}" enctype="multipart/form-data>
                         @csrf
 
                         <div class="form-group">
@@ -45,10 +45,13 @@
                             <label for="deskripsi">Alamat</label>
                             <input type="text" name="alamat" class="form-control" id="alamat" required placeholder="Alamat">
                         </div>
-                       
+                        <div class="form-group">
+                            <label for="gambar">Gambar</label>
+                            <input type="file" name="gambar" class="form-control" id="gambar" required placeholder="Gambar">
+                        </div>
 
-                        <button type="submit" class="btn btn-success">Tambah User</button>
-                        <a href="{{route('view_user')}}" class="btn btn-danger">Batalkan</a>
+                        <button type="submit" class="btn btn-success">Tambah Data</button>
+                        <a href="{{route('view_umkm')}}" class="btn btn-danger">Batalkan</a>
                     </form>
                 </div>
             </div>
