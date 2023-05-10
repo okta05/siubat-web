@@ -43,7 +43,7 @@
                           <div class="col mr-2">
                               <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
                                   Event</div>
-                              <div class="h2 mb-0 font-weight-bold text-gray-800">2</div>
+                              <div class="h2 mb-0 font-weight-bold text-gray-800">NaN</div>
                           </div>
                       </div>
                       <hr />
