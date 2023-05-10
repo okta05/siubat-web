@@ -51,6 +51,7 @@ class UserController extends Controller
 
         // dd($request);
         $validateData=$request->validate([
+            'email' => 'required',
             'textNama' => 'required',
         ]);
 
@@ -61,9 +62,6 @@ class UserController extends Controller
         $data->email=$request->email;
         $data->no_wa=$request->textNo_Wa;
         $data->usertype=$request->selectUser;
-        // if($request->password!=""){
-        //     $data->password=bcrypt($request->password);
-        // }
         $data->password=bcrypt($request->password);
         $data->save();
 
