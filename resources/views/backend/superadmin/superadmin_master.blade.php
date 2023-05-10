@@ -12,8 +12,18 @@
     <title>Dashboard - Admin</title>
 
     <!-- Custom fonts for this template-->
+<<<<<<< HEAD
     <link href="{{asset('vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+=======
+
+    <link href="{{asset('backend/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+>>>>>>> origin/oktaviano
 
     <!-- Custom styles for this template-->
     <link href="{{asset('backend/css/sb-admin-2.min.css')}}" rel="stylesheet">
@@ -69,17 +79,17 @@
         </div>
 
         <!-- Bootstrap core JavaScript-->
-        <script src="{{asset('vendor/jquery/jquery.min.js')}}"></script>
-        <script src="{{asset('vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+        <script src="{{asset('backend/vendor/jquery/jquery.min.js')}}"></script>
+        <script src="{{asset('backend/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 
         <!-- Core plugin JavaScript-->
-        <script src="{{asset('vendor/jquery-easing/jquery.easing.min.js')}}"></script>
+        <script src="{{asset('backend/vendor/jquery-easing/jquery.easing.min.js')}}"></script>
 
         <!-- Custom scripts for all pages-->
         <script src="{{asset('backend/js/sb-admin-2.min.js')}}"></script>
 
         <!-- Page level plugins -->
-        <script src="{{asset('vendor/chart.js/Chart.min.js')}}"></script>
+        <script src="{{asset('backend/vendor/chart.js/Chart.min.js')}}"></script>
 
         <!-- Page level custom scripts -->
         <script src="{{asset('backend/js/demo/chart-area-demo.js')}}"></script>
@@ -88,18 +98,48 @@
 </body>
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script type="text/javascript">
-  $(function(){
-    $(document).on('click', '#delete', function(e){
-      e.preventDefault();
-      var link = $(this).attr("href");
+$(function() {
+    $(document).on('click', '#delete', function(e) {
+        e.preventDefault();
+        var link = $(this).attr("href");
 
-      const swalWithBootstrapButtons = Swal.mixin({
-        customClass: {
-        confirmButton: 'btn btn-success',
-        cancelButton: 'btn btn-danger'
-      },
-      buttonsStyling: false
+        const swalWithBootstrapButtons = Swal.mixin({
+            customClass: {
+                confirmButton: 'btn btn-success',
+                cancelButton: 'btn btn-danger'
+            },
+            buttonsStyling: false
+        })
+
+        swalWithBootstrapButtons.fire({
+            title: 'Konfirmasi untuk menghapus?',
+            text: "Data tidak akan dikembalikan setelah dihapus!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonText: 'Ya, hapus data!',
+            cancelButtonText: 'Tidak, batalkan!',
+            reverseButtons: false
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = link
+                swalWithBootstrapButtons.fire(
+                    'Terhapus!',
+                    'Data berhasil dihapus.',
+                    'success'
+                )
+            } else if (
+                /* Read more about handling dismissals below */
+                result.dismiss === Swal.DismissReason.cancel
+            ) {
+                swalWithBootstrapButtons.fire(
+                    'Dibatalkan',
+                    'Data kembali disimpan',
+                    'error'
+                )
+            }
+        })
     })
+<<<<<<< HEAD
 
   swalWithBootstrapButtons.fire({
     title: 'Konfirmasi untuk menghapus?',
@@ -129,6 +169,8 @@
     }
   })
 })
+=======
+>>>>>>> origin/oktaviano
 })
 </script>
 <script>
