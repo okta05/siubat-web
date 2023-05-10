@@ -22,7 +22,8 @@ use Illuminate\Support\Facades\Auth;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    // return view('welcome');
+    return view('auth.login');
 });
 
 Route::get('/dashboard', function () {
@@ -49,10 +50,10 @@ Route::post('/update/{id}', [UserController::class, 'UserUpdate'])->name('users.
 Route::get('/delete/{id}', [UserController::class, 'UserDelete'])->name('users.delete');
 });
 
-Route::middleware('auth', 'ceklevel:superadmin,admin')->group(function () {
-Route::get('/viewEvent', [EventController::class, 'viewEvent'])->name('view_event');
+// Route::middleware('auth', 'ceklevel:superadmin,admin')->group(function () {
+// Route::get('/viewEvent', [EventController::class, 'viewEvent'])->name('view_event');
 
-});
+// });
 
 Route::middleware('auth', 'ceklevel:superadmin,admin')->group(function () {
     Route::get('/viewUMKM', [UMKMController::class, 'viewUMKM'])->name('view_umkm');
