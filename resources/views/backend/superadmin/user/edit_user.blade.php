@@ -59,8 +59,9 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="password">Password <span class="text-danger" style="font-weight: bolder;">*Tidak dapat mengubah ini</span></label>
-                            <input type="password" name="password" disabled class="form-control" id="password" placeholder="Password">
+                            <label for="password">Password <span class="text-danger" style="font-weight: bolder;">*Wajib diisi</span></label>
+                            <input type="password" name="password" required class="form-control" id="password" placeholder="Password" style="display: inline; width: 99.74%;">
+                            <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
                         </div>
 
                         <button type="submit" class="btn btn-success">Simpan Perubahan</button>
