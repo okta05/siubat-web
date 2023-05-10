@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Backend\superadmin\UserController;
 use App\Http\Controllers\Backend\SuperAdmin\EventController;
+use App\Http\Controllers\Backend\SuperAdmin\UMKMController;
 use App\Http\Controllers\Backend\SuperAdmin\BerandaController;
 use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Auth;
@@ -50,11 +51,13 @@ Route::get('/delete/{id}', [UserController::class, 'UserDelete'])->name('users.d
 
 Route::middleware('auth', 'ceklevel:superadmin,admin')->group(function () {
 Route::get('/viewEvent', [EventController::class, 'viewEvent'])->name('view_event');
+
 });
 
-// Route::middleware('auth', 'ceklevel:superadmin,admin')->group(function () {
-//     Route::get('/viewUMKM', [UMKMController::class, 'viewUMKM'])->name('view_umkm');
-//     });
+Route::middleware('auth', 'ceklevel:superadmin,admin')->group(function () {
+    Route::get('/viewUMKM', [UMKMController::class, 'viewUMKM'])->name('view_umkm');
+    Route::get('/addUMKM', [UMKMController::class, 'addUMKM'])->name('umkm.add');
+    });
 
 // Route::middleware('auth','ceklevel:superadmin')->group(function () {
 //     Route::get('/halaman-user', [BerandaController::class, 'user'])->name('halaman-user');

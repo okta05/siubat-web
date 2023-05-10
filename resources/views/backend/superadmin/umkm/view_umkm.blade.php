@@ -66,7 +66,7 @@
     </div>
     <!-- /.container-fluid -->
 
-    <a href="tambah.html" class="btn btn-danger">Tambah Tempat</a>
+    <a href="{{route('umkm.add')}}" class="btn btn-danger">Tambah UMKM</a>
 </div>
 <!-- End of Main Content -->
 @endsection
