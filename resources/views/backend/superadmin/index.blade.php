@@ -33,7 +33,7 @@
                   </div>
               </div>
           </div>
-            @endif
+          @endif
 
           <!-- Card Pembayaran -->
           <div class="col-xl-3 col-md-6 mb-4">
