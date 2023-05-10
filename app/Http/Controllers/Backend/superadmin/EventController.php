@@ -11,7 +11,7 @@ class EventController extends Controller
 {
     //
     public function viewEvent(){
-        $data_event['allDataEvent']=Event::all();
-        return view('backend.superadmin.event.view_event', $data_event);
+        $data['allDataEvent'] = Event::all();
+        return view('backend.superadmin.event.view_event', $data);
     }
 }

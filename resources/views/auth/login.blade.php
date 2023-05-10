@@ -42,12 +42,11 @@
                                 @csrf
                                 <hr>
                                 <div class="form-group">
-                                    <input type="email" class="form-control form-control-user" id="email" name="email"
-                                        placeholder="Email" autofocus required>
+                                    <input type="email" class="form-control" style="width: 98.8%; id="email" name="email" placeholder="Email" autofocus required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="password" class="form-control form-control-user"
-                                        id="password" name="password" placeholder="Password">
+                                    <input type="password" class="form-control" style="width: 98.8%; display: inline;" id="password" name="password" placeholder="Password" autocomplete="current-password" required="">
+                                    <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
                                 </div>
                                 <!-- <div class="form-group">
                                     <div class="custom-control custom-checkbox small">
@@ -58,7 +57,7 @@
                                 <!-- <a href="index.html" class="btn btn-primary btn-user btn-block">
                                     Masuk
                                 </a> -->
-                                <button type="submit" class="btn btn-primary btn-user btn-block">Masuk</button>
+                                <button type="submit" class="btn btn-primary btn-user btn-block" style="width: 98.8%;">Masuk</button>
                             </form>
                             <!-- <hr>
                             <div class="text-center">
@@ -85,6 +84,19 @@
     <!-- Custom scripts for all pages-->
     <script src="{{asset('backend/js/sb-admin-2.min.js')}}"></script>
 
-</body>
+    <script>
+        const togglePassword = document.querySelector('#togglePassword');
+        const password = document.querySelector('#password');
+
+        togglePassword.addEventListener('click', function (e) {
+            // toggle the type attribute
+            const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+            password.setAttribute('type', type);
+            // toggle the eye slash icon
+            this.classList.toggle('fa-eye-slash');
+        });
+    </script>
+
+    </body>
 
 </html>
