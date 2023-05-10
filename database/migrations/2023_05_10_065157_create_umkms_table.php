@@ -13,6 +13,12 @@ return new class extends Migration
     {
         Schema::create('umkms', function (Blueprint $table) {
             $table->id();
+            $table->string('nm_pemilik')->nullabble();
+            $table->string('nm_produk')->nullabble();
+            $table->string('harga')->nullabble();
+            $table->string('deskripsi')->nullabble();
+            $table->string('alamat')->nullabble();
+            $table->string('foto')->nullabble();
             $table->timestamps();
         });
     }
