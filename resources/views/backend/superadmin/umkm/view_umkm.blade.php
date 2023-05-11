@@ -1,5 +1,6 @@
 @extends('backend.superadmin.superadmin_master')
 @section('backend.superadmin')
+
 <!-- Begin Page Content -->
 <div class="container-fluid">
     <!-- Page Heading -->
@@ -10,39 +11,29 @@
     <!-- Content Row -->
     <div class="row">
         <!-- Earnings (Monthly) Card Example -->
-
+        @foreach($allDataUMKM as $key => $umkm)
         <div class="col-xl-3 col-md-6 mb-4">
             <div class="card h-100 py-2">
-                @foreach($allDataUMKM as $key => $umkm)
                 <img src="{{asset('backend/img/gesibu.svg')}}" class="card-img-top" alt="..." />
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
-                        <ul class="list-group">
-                            <li class="list-unstyled">
-                                <h2 class="card-title">{{$umkm->nm_produk}}</h5>
-                            </li>
-                            <li class="list-unstyled">
-                                <p class="">Pemilik: {{$umkm->nm_pemilik}}</p>
-                            </li>
-                            <li class="list-unstyled">
-                                <p class="">Harga: Rp.{{$umkm->harga}}</p>
-                            </li>
-                            <li class="list-unstyled">
-                                <p class="">Alamat: {{$umkm->alamat}}</p>
-                            </li>
-                        </ul>
+                        <h5 class="card-title">Nama Produk : {{$umkm->nm_produk}}</h5>
+                        <p class="card-title">Nama Pemilik : {{$umkm->nm_pemilik}}</p>
+                        <p class="card-text">Harga : {{$umkm->harga}}</p>
+                        <p class="card-text">Deskripsi : {{$umkm->deskripsi}}</p>
+                        <p class="card-text">Alamat : {{$umkm->alamat}}</p>
                     </div>
-                    <a href="{{route('umkms.edit', $umkm->id)}}" class="btn btn-warning" title="Ubah"><i class="fas fa-fw fa-edit"></i></a>
-                    <a href="{{route('umkms.delete', $umkm->id)}}" class="btn btn-danger" title="Hapus"><i class="fas fa-fw fa-trash"></i></a>
+                    <div>
+                    <a href="edit-produk.html" class="btn btn-dark">Edit</a>
+                    </div>
                 </div>
-                @endforeach
             </div>
         </div>
-
+        @endforeach
     </div>
     <!-- /.container-fluid -->
 
-    <a href="{{route('umkm.add')}}" class="btn btn-success">Tambah UMKM</a>
+    <a href="tambah.html" class="btn btn-danger">Tambah Tempat</a>
 </div>
 <!-- End of Main Content -->
 @endsection
