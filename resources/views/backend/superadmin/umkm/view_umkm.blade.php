@@ -11,6 +11,7 @@
     <!-- Content Row -->
     <div class="row">
         <!-- Earnings (Monthly) Card Example -->
+
         @foreach($allDataUMKM as $key => $umkm)
         <div class="col-xl-3 col-md-6 mb-4">
             <div class="card h-100 py-2">
@@ -30,6 +31,7 @@
             </div>
         </div>
         @endforeach
+        
     </div>
     <!-- /.container-fluid -->
 
