@@ -24,7 +24,7 @@
                         <p class="card-text">Alamat : {{$umkm->alamat}}</p>
                     </div>
                     <div>
-                    <a href="edit-produk.html" class="btn btn-dark">Edit</a>
+                        <a href="edit-produk.html" class="btn btn-dark">Edit</a>
                     </div>
                 </div>
             </div>
