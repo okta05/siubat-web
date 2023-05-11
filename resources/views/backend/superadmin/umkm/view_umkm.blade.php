@@ -10,10 +10,9 @@
     <!-- Content Row -->
     <div class="row">
         <!-- Earnings (Monthly) Card Example -->
-
+        @foreach($allDataUMKM as $key => $umkm)
         <div class="col-xl-3 col-md-6 mb-4">
-            @foreach($allDataUMKM as $key => $umkm)
-            <div class="card h-100 py-2">
+            <div class="card h-auto py-2">
                 <img src="{{asset('backend/img/gesibu.svg')}}" class="card-img-top" alt="..." />
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
@@ -25,7 +24,7 @@
                                 <p class="">Pemilik: {{$umkm->nm_pemilik}}</p>
                             </li>
                             <li class="list-unstyled">
-                                <p class="">Harga: Rp.{{$umkm->harga}}</p>
+                                <p class="">Harga: Rp. {{$umkm->harga}}</p>
                             </li>
                             <li class="list-unstyled">
                                 <p class="">Alamat: {{$umkm->alamat}}</p>
@@ -36,9 +35,8 @@
                     <a href="{{route('umkms.delete', $umkm->id)}}" class="btn btn-danger" title="Hapus"><i class="fas fa-fw fa-trash"></i></a>
                 </div>
             </div>
-            @endforeach
         </div>
-
+        @endforeach
     </div>
     <!-- /.container-fluid -->
 

@@ -47,7 +47,7 @@
                         </div>
                         <div class="form-group">
                             <label for="gambar">Gambar</label>
-                            <input type="file" name="gambar" class="form-control" id="gambar" required placeholder="Gambar">
+                            <input type="file" name="gambar" class="form-control" id="gambar" placeholder="Gambar">
                         </div>
 
                         <button type="submit" class="btn btn-success">Tambah Data</button>
