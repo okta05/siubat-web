@@ -12,8 +12,8 @@
         <!-- Earnings (Monthly) Card Example -->
 
         <div class="col-xl-3 col-md-6 mb-4">
-            @foreach($allDataUMKM as $key => $umkm)
             <div class="card h-100 py-2">
+                @foreach($allDataUMKM as $key => $umkm)
                 <img src="{{asset('backend/img/gesibu.svg')}}" class="card-img-top" alt="..." />
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
@@ -22,14 +22,16 @@
                         <p class="card-text">Harga : {{$umkm->harga}}</p>
                         <p class="card-text">Deskripsi : {{$umkm->deskripsi}}</p>
                         <p class="card-text">Alamat : {{$umkm->alamat}}</p>
-                       <vr>
-                            <a href="edit-produk.html" class="btn btn-warning" title="Ubah"><i class="fas fa-fw fa-edit"></i></a>
+                        <vr>
+                            <a href="edit-produk.html" class="btn btn-warning" title="Ubah"><i
+                                    class="fas fa-fw fa-edit"></i></a>
                             |
-                            <a href="edit-produk.html" class="btn btn-danger" title="Hapus"><i class="fas fa-fw fa-trash"></i></a>
+                            <a href="edit-produk.html" class="btn btn-danger" title="Hapus"><i
+                                    class="fas fa-fw fa-trash"></i></a>
                     </div>
                 </div>
+                @endforeach
             </div>
-            @endforeach
         </div>
 
     </div>
