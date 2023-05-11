@@ -46,9 +46,9 @@ Route::middleware('auth', 'ceklevel:superadmin')->group(function () {
 Route::get('/viewUser', [UserController::class, 'viewUser'])->name('view_user');
 Route::get('/addUser', [UserController::class, 'addUser'])->name('user.add');
 Route::post('/userStore', [UserController::class, 'storeUser'])->name('users.store');
-Route::get('/edit/user/{id}', [UserController::class, 'UserEdit'])->name('users.edit');
-Route::post('/update/user/{id}', [UserController::class, 'UserUpdate'])->name('users.update');
-Route::get('/delete/user/{id}', [UserController::class, 'UserDelete'])->name('users.delete');
+Route::get('/edit/{id}', [UserController::class, 'UserEdit'])->name('users.edit');
+Route::post('/update/{id}', [UserController::class, 'UserUpdate'])->name('users.update');
+Route::get('/delete/{id}', [UserController::class, 'UserDelete'])->name('users.delete');
 });
 
 // Route::middleware('auth', 'ceklevel:superadmin,admin')->group(function () {

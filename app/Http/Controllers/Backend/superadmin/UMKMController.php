@@ -23,10 +23,10 @@ class UMKMController extends Controller
     public function storeUMKM(Request $request){
 
         // dd($request);
-        $validateData=$request->validate([
+        $request->validate([
             'textNama' => 'required',
         ]);
-
+    
         // dd($request);
         $data=new Umkm();
         $data->nm_pemilik=$request->textNama;
@@ -40,12 +40,12 @@ class UMKMController extends Controller
         return redirect()->route('view_umkm');
     }
 
-    public function UMKMUpdate($id){
+    public function UMKMEdit($id){
         $editData = Umkm::find($id);
         return view('backend.superadmin.umkm.edit_umkm', compact('editData'));
     }
 
-    public function UMKMEdit(Request $request, $id){
+    public function UMKMUpdate(Request $request, $id){
 
         // dd($request);
         $validateData=$request->validate([

@@ -13,7 +13,7 @@
         @foreach($allDataUMKM as $key => $umkm)
         <div class="col-xl-3 col-md-6 mb-4">
             <div class="card h-auto py-2">
-                <img src="{{asset('backend/img/gesibu.svg')}}" class="card-img-top" alt="..." />
+                <img src="images/{{($umkm->foto)}}" class="card-img-top" alt="{{$umkm->foto}}" name="gambar"/>
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <ul class="list-group">

@@ -22,7 +22,7 @@
 
                 <!-- Card Content - Edit -->
                 <div class="card-body">
-                    <form class="user" method="POST" action="{{route('umkms.update')}}">
+                    <form class="user" method="POST" action="{{route('umkms.update', $editData->id)}}">
                         @csrf
                         <div class="form-group">
                             <label for="textNama">Nama Pemilik UMKM</label>
@@ -46,7 +46,8 @@
                         </div>
                         <div class="form-group">
                             <label for="gambar">Gambar</label>
-                            <input type="file" name="gambar" class="form-control" id="gambar" placeholder="Gambar">
+                            <input type="file" name="gambar" class="form-control" id="gambar" placeholder="Gambar" style="display: inline;">
+                            <button class="btn" type="reset" style="margin-left:2px; cursor:pointer; margin-top:5px;">Reset</button>
                         </div>
 
                         <button type="submit" class="btn btn-success">Simpan Data</button>
