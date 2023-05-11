@@ -22,7 +22,6 @@ use Illuminate\Support\Facades\Auth;
 */
 
 Route::get('/', function () {
-
     // return view('welcome');
 
     return view('auth.login');
@@ -47,9 +46,9 @@ Route::middleware('auth', 'ceklevel:superadmin')->group(function () {
 Route::get('/viewUser', [UserController::class, 'viewUser'])->name('view_user');
 Route::get('/addUser', [UserController::class, 'addUser'])->name('user.add');
 Route::post('/userStore', [UserController::class, 'storeUser'])->name('users.store');
-Route::get('/edit/{id}', [UserController::class, 'UserEdit'])->name('users.edit');
-Route::post('/update/{id}', [UserController::class, 'UserUpdate'])->name('users.update');
-Route::get('/delete/{id}', [UserController::class, 'UserDelete'])->name('users.delete');
+Route::get('/edit/user/{id}', [UserController::class, 'UserEdit'])->name('users.edit');
+Route::post('/update/user/{id}', [UserController::class, 'UserUpdate'])->name('users.update');
+Route::get('/delete/user/{id}', [UserController::class, 'UserDelete'])->name('users.delete');
 });
 
 // Route::middleware('auth', 'ceklevel:superadmin,admin')->group(function () {
@@ -60,6 +59,10 @@ Route::get('/delete/{id}', [UserController::class, 'UserDelete'])->name('users.d
 Route::middleware('auth', 'ceklevel:superadmin,admin')->group(function () {
     Route::get('/viewUMKM', [UMKMController::class, 'viewUMKM'])->name('view_umkm');
     Route::get('/addUMKM', [UMKMController::class, 'addUMKM'])->name('umkm.add');
+    Route::post('/UMKMStore', [UMKMController::class, 'storeUMKM'])->name('umkms.store');
+    Route::get('/edit/umkm/{id}', [UMKMController::class, 'UMKMEdit'])->name('umkms.edit');
+    Route::post('/update/umkm/{id}', [UMKMController::class, 'UMKMUpdate'])->name('umkms.update');
+    Route::get('/delete/umkm/{id}', [UMKMController::class, 'UMKMDelete'])->name('umkms.delete');
     });
 
 // Route::middleware('auth','ceklevel:superadmin')->group(function () {
