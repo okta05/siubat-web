@@ -11,7 +11,8 @@ class UMKMController extends Controller
 {
     //
     public function viewUMKM(){
-        return view('backend.superadmin.umkm.view_umkm');
+        $data['allDataUMKM']=Umkm::all();
+        return view('backend.superadmin.umkm.view_umkm', $data);
     }
 
     public function addUMKM(){
