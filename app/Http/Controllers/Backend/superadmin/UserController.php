@@ -41,13 +41,13 @@ class UserController extends Controller
         return redirect()->route('view_user');
     }
 
-    public function UserUpdate($id){
+    public function UserEdit($id){
         // dd('berhasil masuk controller user edit');
         $editData= User::find($id);
         return view('backend.superadmin.user.edit_user', compact('editData'));
     }
 
-    public function UserEdit(Request $request, $id){
+    public function UserUpdate(Request $request, $id){
 
         // dd($request);
         $validateData=$request->validate([
@@ -81,4 +81,3 @@ class UserController extends Controller
         return redirect()->route('view_user');
     }
 }
-

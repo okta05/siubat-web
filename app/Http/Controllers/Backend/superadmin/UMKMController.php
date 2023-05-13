@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Backend\SuperAdmin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use App\Models\Umkm;
 use Auth;
 
@@ -22,10 +23,18 @@ class UMKMController extends Controller
 
     public function storeUMKM(Request $request){
 
-        // dd($request);
+            
         $validateData=$request->validate([
             'textNama' => 'required',
+            'foto' => 'mimes:jpg,jpeg,png|max:2000',
         ]);
+
+        // $file_name = $request->foto->getClientOriginalName();
+        // $foto = $request->foto->storeAs('uploads', $file_name);
+
+        if($request->file('foto')) {
+        $foto = $request->file('foto')->store('uploads');
+    }
 
         // dd($request);
         $data=new Umkm();
@@ -34,24 +43,27 @@ class UMKMController extends Controller
         $data->harga=$request->harga;
         $data->deskripsi=$request->deskripsi;
         $data->alamat=$request->alamat;
-        $data->foto=$request->gambar;
+        $data->foto=$foto;
         $data->save();
 
         return redirect()->route('view_umkm');
     }
 
-    public function UMKMUpdate($id){
+    public function UMKMEdit($id){
         $editData = Umkm::find($id);
         return view('backend.superadmin.umkm.edit_umkm', compact('editData'));
     }
 
-    public function UMKMEdit(Request $request, $id){
+    public function UMKMUpdate(Request $request, $id){
 
         // dd($request);
         $validateData=$request->validate([
             'textNama' => 'required',
         ]);
 
+        if($request->file('foto')) {
+            $foto = $request->file('foto')->store('uploads');
+        }
         // dd($request);
         $data=Umkm::find($id);
         $data->nm_pemilik=$request->textNama;
@@ -59,7 +71,7 @@ class UMKMController extends Controller
         $data->harga=$request->harga;
         $data->deskripsi=$request->deskripsi;
         $data->alamat=$request->alamat;
-        $data->foto=$request->gambar;
+        $data->foto=$foto;
         $data->save();
 
         return redirect()->route('view_umkm');

@@ -22,32 +22,44 @@
 
                 <!-- Card Content - Edit -->
                 <div class="card-body">
-                    <form class="user" method="POST" action="{{route('umkms.store')}}">
+                    <form class="user" method="POST" action="{{route('umkms.store')}}" enctype="multipart/form-data">
                         @csrf
 
                         <div class="form-group">
                             <label for="textNama">Nama Pemilik UMKM</label>
-                            <input type="text" name="textNama" class="form-control" id="textNama" required placeholder="Nama Pemilik UMKM">
+                            <input type="text" name="textNama" class="form-control" id="textNama" required
+                                placeholder="Nama Pemilik UMKM">
                         </div>
                         <div class="form-group">
                             <label for="textNamaProduk">Nama Produk</label>
-                            <input type="text" name="textNamaProduk" class="form-control" id="textNamaProduk" required placeholder="Nama Produk">
+                            <input type="text" name="textNamaProduk" class="form-control" id="textNamaProduk" required
+                                placeholder="Nama Produk">
                         </div>
                         <div class="form-group">
                             <label for="harga">Harga</label>
-                            <input type="number" name="harga" class="form-control" id="harga" required placeholder="Harga">
+                            <input type="number" name="harga" class="form-control" id="harga" required
+                                placeholder="Harga">
                         </div>
                         <div class="form-group">
                             <label for="deskripsi">Deskripsi</label>
-                            <input type="text" name="deskripsi" class="form-control" id="deskripsi" required placeholder="Deskripsi">
+                            <input type="text" name="deskripsi" class="form-control" id="deskripsi" required
+                                placeholder="Deskripsi">
                         </div>
                         <div class="form-group">
                             <label for="deskripsi">Alamat</label>
-                            <input type="text" name="alamat" class="form-control" id="alamat" required placeholder="Alamat">
+                            <input type="text" name="alamat" class="form-control" id="alamat" required
+                                placeholder="Alamat">
                         </div>
                         <div class="form-group">
-                            <label for="gambar">Gambar</label>
-                            <input type="file" name="gambar" class="form-control" id="gambar" placeholder="Gambar">
+                            <label for="foto">Gambar</label>
+                            <img class="img-preview img-fluid mb-3 col-sm-5">
+                            <input type="file" name="foto" class="form-control @error('foto') is-ivalid @enderror"
+                                id="foto" accept="image/*" onchange="previewImage()" placeholder="Gambar">
+                            @error('foto')
+                            <div class="invalid-feedback">
+                                {{ $message }}
+                            </div>
+                            @enderror
                         </div>
 
                         <button type="submit" class="btn btn-success">Tambah Data</button>

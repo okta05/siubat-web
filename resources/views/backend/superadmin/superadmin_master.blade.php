@@ -168,5 +168,19 @@ $(function() {
             // toggle the eye slash icon
             this.classList.toggle('fa-eye-slash');
         });
+        
+        function previewImage(){
+        const foto = document.querySelector('#foto');
+        const imgPreview = document.querySelector('.img-preview');
+        
+            imgPreview.style.display = 'block';
+            
+            const oFReader = new FileReader();
+            oFReader.readAsDataURL(foto.files[0]);
+
+            oFReader.onload = function(oFREvent) {
+                imgPreview.src = oFREvent.target.result;
+            }
+    }
     </script>
 </html>
