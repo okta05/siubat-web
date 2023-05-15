@@ -24,6 +24,7 @@
                 @else
                 <img src="{{asset('backend/img/undraw_profile.svg')}}" alt="" class="card-img-top">
                 @endif
+                <hr>
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <ul class="list-group">
