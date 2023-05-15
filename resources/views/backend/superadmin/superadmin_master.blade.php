@@ -42,8 +42,8 @@
 
             </div>
             <!-- End of Content Wrapper -->
-            <<<<<<< HEAD @include('backend.superadmin.body.footer')=======@include('backend.superadmin.body.footer')>
-                >>>>>> origin/anugrah-wiby
+            @include('backend.superadmin.body.footer')
+
         </div>
         <!-- End of Page Wrapper -->
 
@@ -65,12 +65,9 @@
                     </div>
                     <div class="modal-body">Apakah anda yakin ingin keluar?</div>
                     <div class="modal-footer">
-                        <<<<<<< HEAD <button class="btn btn-secondary" type="button" data-dismiss="modal">Batal</button>
+                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Batal</button>
 
-                            =======
-                            <button class="btn btn-secondary" type="button" data-dismiss="modal">Batal</button>
-                            >>>>>>> origin/anugrah-wiby
-                            <a class="btn btn-danger" href="{{route('admin.logout')}}">Logout</a>
+                        <a class="btn btn-danger" href="{{route('admin.logout')}}">Logout</a>
                     </div>
                 </div>
             </div>
