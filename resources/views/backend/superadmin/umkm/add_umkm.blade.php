@@ -52,8 +52,9 @@
                         </div>
                         <div class="form-group">
                             <label for="foto">Gambar</label>
+                            <img class="img-preview img-fluid mb-3 col-sm-5" style="width: 250px; height: auto;">
                             <input type="file" name="foto" class="form-control @error('foto') is-invalid @enderror"
-                                id="foto" accept="image/*" placeholder="Gambar">
+                                id="foto" accept="image/*" onchange="previewImage()" placeholder="Gambar">
                             @error('foto')
                             <div class="invalid-feedback">
                                 {{ $message }}
@@ -62,6 +63,7 @@
                         </div>
 
                         <button type="submit" class="btn btn-success">Tambah Data</button>
+                        <button type="reset" class="btn btn-secondary">Kosongkan</button>
                         <a href="{{route('view_umkm')}}" class="btn btn-danger">Batalkan</a>
                     </form>
                 </div>

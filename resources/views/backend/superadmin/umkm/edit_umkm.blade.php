@@ -46,13 +46,7 @@
                         </div>
                         <div class="form-group">
                             <label for="foto">Gambar</label>
-                            <input type="hidden" name="oldImage" value="{{ $editData->foto }}">
-                            @if($editData->foto)
-                                <img src="{{asset('storage/'. $editData->foto)}}" class="img-preview img-fluid mb-3 col-sm-5 d-block">
-                            @else
-                                <img class="img-preview img-fluid mb-3 col-sm-5">
-                            @endif
-                            <img class="img-preview img-fluid mb-3 col-sm-5">
+                            <img class="img-preview img-fluid mb-3 col-sm-5" style="width: 250px; height: auto;">
                             <input type="file" name="foto" class="form-control @error('foto') is-invalid @enderror"
                                 id="foto" accept="image/*" onchange="previewImage()" placeholder="Gambar">
                             @error('foto')
@@ -60,6 +54,14 @@
                                 {{ $message }}
                             </div>
                             @enderror
+                            <input type="hidden" name="oldImage" value="{{ $editData->foto }}">
+                            @if($editData->foto)
+                            <br>
+                            Foto saat ini:
+                                <img src="{{asset('storage/'. $editData->foto)}}" class="img-preview img-fluid mb-3 col-sm-5 d-block" style="height: 250px; width: auto;">
+                            @else
+                                <img class="img-preview img-fluid mb-3 col-sm-5">
+                            @endif
                         </div>
 
                         <button type="submit" class="btn btn-success">Simpan Data</button>
