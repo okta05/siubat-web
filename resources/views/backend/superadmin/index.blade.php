@@ -12,21 +12,7 @@
     <div class="row">
           <!-- Earnings (Monthly) Card Example -->
           <!-- Card Pengajuan -->
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-          @if(auth()->user()->usertype=="superadmin")
-          <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card1 border-left-success shadow h-100 py-2">
-                  <div class="card-body">
-                      <div class="row no-gutters align-items-center">
-                        <div class="col md-2">
-                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                  User
-                            </div>
-                            <div class="h2 mb-0 font-weight-bold text-gray-800">{{auth()->user()->count()}}</div>
-=======
->>>>>>> origin/oktaviano
+
         @if(auth()->user()->usertype=="superadmin")
         <div class="col-xl-3 col-md-6 mb-4">
             <div class="card1 border-left-primary shadow h-100 py-2">
@@ -35,10 +21,6 @@
                     <div class="col md-2">
                         <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                 User
-<<<<<<< HEAD
-=======
->>>>>>> a96c99b65addb98ee5f75d59c3444e3239dab414
->>>>>>> origin/oktaviano
                         </div>
                         <div class="h2 mb-0 font-weight-bold text-gray-800">{{auth()->user()->count()}}</div>
                     </div>
