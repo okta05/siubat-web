@@ -22,7 +22,7 @@
 
                 <!-- Card Content - Edit -->
                 <div class="card-body">
-                    <form class="user" method="POST" action="{{route('users.update', $editData->id )}}">
+                    <form class="user" method="POST" action="{{route('users.update',Z )}}">
                         @csrf
                         @if($editData->id == 1)
                         <div class="form-group">
@@ -77,7 +77,3 @@
 <!-- End Page Content -->
 
 @endsection
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/oktaviano
