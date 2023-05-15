@@ -13,7 +13,11 @@
         @foreach($allDataUMKM as $key => $umkm)
         <div class="col-xl-3 col-md-6 mb-4">
             <div class="card h-auto py-2">
-                <img src="images/{{($umkm->foto)}}" class="card-img-top" alt="{{$umkm->foto}}" name="gambar"/>
+                @if($umkm->foto)
+                <img src="{{asset('storage/'. $umkm->foto)}}" alt="" class="card-img-top">
+                @else
+                <img src="{{asset('backend/img/undraw_profile.svg')}}" alt="" class="card-img-top">
+                @endif
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <ul class="list-group">
@@ -31,8 +35,9 @@
                             </li>
                         </ul>
                     </div>
-                    <a href="{{route('umkms.edit', $umkm->id)}}" class="btn btn-warning" title="Ubah"><i class="fas fa-fw fa-edit"></i></a>
-                    <a href="{{route('umkms.delete', $umkm->id)}}" class="btn btn-danger" title="Hapus"><i class="fas fa-fw fa-trash"></i></a>
+                    <a href="{{route('umkm.edit', $umkm->id)}}" class="btn btn-warning" title="Ubah"><i class="fas fa-fw fa-edit"></i></a>
+                    <a href="{{route('umkms.delete', $umkm->id)}}" class="btn btn-danger" title="Hapus"><i
+                            class="fas fa-fw fa-trash"></i></a>
                 </div>
             </div>
         </div>

@@ -60,7 +60,7 @@ Route::middleware('auth', 'ceklevel:superadmin,admin')->group(function () {
     Route::get('/viewUMKM', [UMKMController::class, 'viewUMKM'])->name('view_umkm');
     Route::get('/addUMKM', [UMKMController::class, 'addUMKM'])->name('umkm.add');
     Route::post('/UMKMStore', [UMKMController::class, 'storeUMKM'])->name('umkms.store');
-    Route::get('/edit/umkm/{id}', [UMKMController::class, 'UMKMEdit'])->name('umkms.edit');
+    Route::get('/edit/umkm/{id}', [UMKMController::class, 'UMKMEdit'])->name('umkm.edit');
     Route::post('/update/umkm/{id}', [UMKMController::class, 'UMKMUpdate'])->name('umkms.update');
     Route::get('/delete/umkm/{id}', [UMKMController::class, 'UMKMDelete'])->name('umkms.delete');
     });

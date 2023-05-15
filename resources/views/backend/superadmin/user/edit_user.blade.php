@@ -77,4 +77,7 @@
 <!-- End Page Content -->
 
 @endsection
+<<<<<<< HEAD
+=======
 
+>>>>>>> origin/oktaviano

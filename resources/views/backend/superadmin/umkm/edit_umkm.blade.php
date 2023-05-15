@@ -22,7 +22,11 @@
 
                 <!-- Card Content - Edit -->
                 <div class="card-body">
+<<<<<<< HEAD
                     <form class="user" method="POST" action="{{route('umkms.update', $editData->id)}}">
+=======
+                    <form class="user" method="POST" action="{{route('umkms.update',  $editData->id)}}" enctype="multipart/form-data">
+>>>>>>> origin/oktaviano
                         @csrf
                         <div class="form-group">
                             <label for="textNama">Nama Pemilik UMKM</label>
@@ -45,9 +49,21 @@
                             <input type="text" name="alamat" value="{{$editData->alamat}}" class="form-control" id="alamat" required placeholder="Alamat">
                         </div>
                         <div class="form-group">
-                            <label for="gambar">Gambar</label>
-                            <input type="file" name="gambar" class="form-control" id="gambar" placeholder="Gambar" style="display: inline;">
-                            <button class="btn" type="reset" style="margin-left:2px; cursor:pointer; margin-top:5px;">Reset</button>
+                            <label for="foto">Gambar</label>
+                            <input type="hidden" name="oldImage" value="{{ $editData->foto }}">
+                            @if($editData->foto)
+                                <img src="{{asset('storage/'. $editData->foto)}}" class="img-preview img-fluid mb-3 col-sm-5 d-block">
+                            @else
+                                <img class="img-preview img-fluid mb-3 col-sm-5">
+                            @endif
+                            <img class="img-preview img-fluid mb-3 col-sm-5">
+                            <input type="file" name="foto" class="form-control @error('foto') is-invalid @enderror"
+                                id="foto" accept="image/*" onchange="previewImage()" placeholder="Gambar">
+                            @error('foto')
+                            <div class="invalid-feedback">
+                                {{ $message }}
+                            </div>
+                            @enderror
                         </div>
 
                         <button type="submit" class="btn btn-success">Simpan Data</button>

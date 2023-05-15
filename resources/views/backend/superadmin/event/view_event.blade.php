@@ -11,9 +11,9 @@
     <!-- Content Row -->
     <div class="row">
         <!-- Earnings (Monthly) Card Example -->
-        @foreach($allDataEvent as $key => $event)
         <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card h-100 py-2" id="card">
+            @foreach($allDataEvent as $key => $event)
+            <div class="card h-100 py-2">
                 <img src="{{asset('backend/img/gesibu.svg')}}" class="card-img-top" alt="..." />
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
@@ -24,10 +24,10 @@
                         <a href="edit-produk.html" class="btn btn-dark">Edit</a>
                     </div>
                 </div>
-               
             </div>
+            @endforeach
         </div>
-        @endforeach
+
     </div>
     <!-- /.container-fluid -->
 
