@@ -1,5 +1,6 @@
 @extends('backend.superadmin.superadmin_master')
 @section('backend.superadmin')
+
 <!-- Begin Page Content -->
 <div class="container-fluid">
     <!-- Page Heading -->
@@ -10,59 +11,34 @@
     <!-- Content Row -->
     <div class="row">
         <!-- Earnings (Monthly) Card Example -->
-        <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card h-100 py-2">
-                <img src="img/gesibu.svg" class="card-img-top" alt="..." />
-                <div class="card-body">
-                    <div class="row no-gutters align-items-center">
-                        <h5 class="card-title">GESIBU BLAMBANGAN</h5>
-                        <p class="card-text">Kapasitas max 600 orang</p>
-                        <a href="edit-produk.html" class="btn btn-dark">Edit</a>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- Earnings (Monthly) Card Example -->
+        @foreach($allDataUMKM as $key => $umkm)
         <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card h-100 py-2">
-                <img src="img/dormitory-sritanjung.svg" class="card-img-top" alt="..." />
+            <div class="card h-auto py-2">
+                <img src="{{asset('backend/img/gesibu.svg')}}" class="card-img-top" alt="..." />
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
-                        <h5 class="card-title">DORMITORY SRITANJUNG</h5>
-                        <p class="card-text">Kapasitas max 600 orang</p>
-                        <a href="edit-produk.html" class="btn btn-dark">Edit</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+                        <ul class="list-group">
+                            <li class="list-unstyled">
+                                <h2 class="card-title">{{$umkm->nm_produk}}</h5>
+                            </li>
+                            <li class="list-unstyled">
+                                <p class="">Pemilik: {{$umkm->nm_pemilik}}</p>
+                            </li>
+                            <li class="list-unstyled">
+                                <p class="">Harga: Rp. {{$umkm->harga}}</p>
+                            </li>
+                            <li class="list-unstyled">
+                                <p class="">Alamat: {{$umkm->alamat}}</p>
+                            </li>
+                        </ul>
 
-        <!-- Earnings (Monthly) Card Example -->
-        <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card h-100 py-2">
-                <img src="img/pelinggihan.svg" class="card-img-top" alt="..." />
-                <div class="card-body">
-                    <div class="row no-gutters align-items-center">
-                        <h5 class="card-title">AULA PELINGGIHAN</h5>
-                        <p class="card-text">Kapasitas max 600 orang</p>
-                        <a href="edit-produk.html" class="btn btn-dark">Edit</a>
                     </div>
                 </div>
             </div>
         </div>
+        @endforeach
 
-        <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card h-100 py-2">
-                <img src="img/bwi-creativ.svg" class="card-img-top" alt="..." />
-                <div class="card-body">
-                    <div class="row no-gutters align-items-center">
-                        <h5 class="card-title">BANYUWANGI CREATIV SPACE</h5>
-                        <p class="card-text">Kapasitas max 600 orang</p>
-                        <a href="edit-produk.html" class="btn btn-dark">Edit</a>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
     <!-- /.container-fluid -->
 
