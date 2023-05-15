@@ -1414,6 +1414,10 @@
 
             "version": "v3.1.2",
 
+<<<<<<< HEAD
+>>>>>>> origin/oktaviano
+=======
+>>>>>>> a96c99b65addb98ee5f75d59c3444e3239dab414
 >>>>>>> origin/oktaviano
             "version": "v3.1.1",
             "source": {
@@ -1431,6 +1435,10 @@
                 "url": "https://api.github.com/repos/laravel/jetstream/zipball/4bedb125c742c3f8d43226d1ab0a9a27b8383cde",
                 "reference": "4bedb125c742c3f8d43226d1ab0a9a27b8383cde",
 
+<<<<<<< HEAD
+>>>>>>> origin/oktaviano
+=======
+>>>>>>> a96c99b65addb98ee5f75d59c3444e3239dab414
 >>>>>>> origin/oktaviano
                 "shasum": ""
             },
@@ -1487,6 +1495,10 @@
 =======
 
             "time": "2023-04-21T15:56:37+00:00"
+<<<<<<< HEAD
+>>>>>>> origin/oktaviano
+=======
+>>>>>>> a96c99b65addb98ee5f75d59c3444e3239dab414
 >>>>>>> origin/oktaviano
         },
         {
@@ -7056,6 +7068,10 @@
 <<<<<<< HEAD
 =======
 
+<<<<<<< HEAD
+>>>>>>> origin/oktaviano
+=======
+>>>>>>> a96c99b65addb98ee5f75d59c3444e3239dab414
 >>>>>>> origin/oktaviano
                 "shasum": ""
             },
@@ -7108,6 +7124,10 @@
 <<<<<<< HEAD
 =======
 
+<<<<<<< HEAD
+>>>>>>> origin/oktaviano
+=======
+>>>>>>> a96c99b65addb98ee5f75d59c3444e3239dab414
 >>>>>>> origin/oktaviano
                 "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/10.1.0"
             },

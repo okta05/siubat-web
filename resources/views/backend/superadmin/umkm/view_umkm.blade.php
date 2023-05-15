@@ -1,6 +1,5 @@
 @extends('backend.superadmin.superadmin_master')
 @section('backend.superadmin')
-
 <!-- Begin Page Content -->
 <div class="container-fluid">
     <!-- Page Heading -->
@@ -11,11 +10,15 @@
     <!-- Content Row -->
     <div class="row">
         <!-- Earnings (Monthly) Card Example -->
-
         @foreach($allDataUMKM as $key => $umkm)
         <div class="col-xl-3 col-md-6 mb-4">
             <div class="card h-auto py-2">
-                <img src="{{asset('backend/img/gesibu.svg')}}" class="card-img-top" alt="..." />
+                @if($umkm->foto)
+                <img src="{{asset('storage/'. $umkm->foto)}}" alt="" class="card-img-top">
+                @else
+                <img src="{{asset('backend/img/undraw_profile.svg')}}" alt="" class="card-img-top">
+                @endif
+
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <ul class="list-group">
@@ -32,17 +35,18 @@
                                 <p class="">Alamat: {{$umkm->alamat}}</p>
                             </li>
                         </ul>
-
                     </div>
+                    <a href="{{route('umkm.edit', $umkm->id)}}" class="btn btn-warning" title="Ubah"><i class="fas fa-fw fa-edit"></i></a>
+                    <a href="{{route('umkms.delete', $umkm->id)}}" class="btn btn-danger" title="Hapus"><i
+                            class="fas fa-fw fa-trash"></i></a>
                 </div>
             </div>
         </div>
         @endforeach
-
     </div>
     <!-- /.container-fluid -->
 
-    <a href="tambah.html" class="btn btn-danger">Tambah Tempat</a>
+    <a href="{{route('umkm.add')}}" class="btn btn-success">Tambah UMKM</a>
 </div>
 <!-- End of Main Content -->
 @endsection
