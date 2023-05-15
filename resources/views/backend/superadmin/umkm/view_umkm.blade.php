@@ -14,7 +14,7 @@
         <div class="col-xl-3 col-md-6 mb-4">
             <div class="card h-auto py-2">
                 @if($umkm->foto)
-                <img src="{{asset('storage/'. $umkm->foto)}}" alt="" class="card-img-top">
+                <img src="{{asset('storage/'. $umkm->foto)}}" alt="" class="card-img-top" id="imgUMKM">
                 @else
                 <img src="{{asset('backend/img/undraw_profile.svg')}}" alt="" class="card-img-top">
                 @endif
