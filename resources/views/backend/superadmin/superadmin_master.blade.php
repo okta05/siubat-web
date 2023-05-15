@@ -10,10 +10,14 @@
     <meta name="author" content="">
 
     <title>Dashboard - Admin</title>
+
+    <!-- Custom fonts for this template-->
+
     <link href="{{asset('backend/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
+
     <!-- Custom styles for this template-->
     <link href="{{asset('backend/css/sb-admin-2.min.css')}}" rel="stylesheet">
 
@@ -38,9 +42,8 @@
 
             </div>
             <!-- End of Content Wrapper -->
-
-            @include('backend.superadmin.body.footer')
-
+            <<<<<<< HEAD @include('backend.superadmin.body.footer')=======@include('backend.superadmin.body.footer')>
+                >>>>>> origin/anugrah-wiby
         </div>
         <!-- End of Page Wrapper -->
 
@@ -62,10 +65,12 @@
                     </div>
                     <div class="modal-body">Apakah anda yakin ingin keluar?</div>
                     <div class="modal-footer">
+                        <<<<<<< HEAD <button class="btn btn-secondary" type="button" data-dismiss="modal">Batal</button>
 
-                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Batal</button>
-
-                        <a class="btn btn-danger" href="{{route('admin.logout')}}">Logout</a>
+                            =======
+                            <button class="btn btn-secondary" type="button" data-dismiss="modal">Batal</button>
+                            >>>>>>> origin/anugrah-wiby
+                            <a class="btn btn-danger" href="{{route('admin.logout')}}">Logout</a>
                     </div>
                 </div>
             </div>

@@ -12,13 +12,19 @@
         <!-- Earnings (Monthly) Card Example -->
         @foreach($allDataUMKM as $key => $umkm)
         <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card h-auto py-2">
+            <div class="card d-inline-block w-100 p-2" style="
+            height: 100%!important;
+            background-color: #fff;
+            background-clip: border-box;
+            border: 1px solid #e3e6f0;
+            border-radius: 0.35rem;
+            ">
                 @if($umkm->foto)
-                <img src="{{asset('storage/'. $umkm->foto)}}" alt="" class="card-img-top" id="imgUMKM">
+                <img src="{{asset('storage/'. $umkm->foto)}}" alt="" class="card-img-top"
+                    style="height: auto; display: block;">
                 @else
                 <img src="{{asset('backend/img/undraw_profile.svg')}}" alt="" class="card-img-top">
                 @endif
-
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <ul class="list-group">
@@ -36,8 +42,9 @@
                             </li>
                         </ul>
                     </div>
-                    <a href="{{route('umkm.edit', $umkm->id)}}" class="btn btn-warning" title="Ubah"><i class="fas fa-fw fa-edit"></i></a>
-                    <a href="{{route('umkms.delete', $umkm->id)}}" class="btn btn-danger" title="Hapus"><i
+                    <a href="{{route('umkm.edit', $umkm->id)}}" class="btn btn-warning" title="Ubah"><i
+                            class="fas fa-fw fa-edit"></i></a>
+                    <a href="{{route('umkms.delete', $umkm->id)}}" class="btn btn-danger" id="delete" title="Hapus"><i
                             class="fas fa-fw fa-trash"></i></a>
                 </div>
             </div>
