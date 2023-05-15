@@ -52,9 +52,8 @@
                         </div>
                         <div class="form-group">
                             <label for="foto">Gambar</label>
-                            <img class="img-preview img-fluid mb-3 col-sm-5">
-                            <input type="file" name="foto" class="form-control @error('foto') is-ivalid @enderror"
-                                id="foto" accept="image/*" onchange="previewImage()" placeholder="Gambar">
+                            <input type="file" name="foto" class="form-control @error('foto') is-invalid @enderror"
+                                id="foto" accept="image/*" placeholder="Gambar">
                             @error('foto')
                             <div class="invalid-feedback">
                                 {{ $message }}

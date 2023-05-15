@@ -26,15 +26,21 @@ class UMKMController extends Controller
             
         $validateData=$request->validate([
             'textNama' => 'required',
-            'foto' => 'mimes:jpg,jpeg,png|max:2000',
+            'foto' => 'mimes:jpg,jpeg,png|image|file|max:2000',
         ]);
 
         // $file_name = $request->foto->getClientOriginalName();
         // $foto = $request->foto->storeAs('uploads', $file_name);
 
-        if($request->file('foto')) {
-        $foto = $request->file('foto')->store('uploads');
-    }
+    //     if($request->file('foto')) {
+    //     $foto = $request->file('foto')->store('uploads');
+    // } 
+
+        if ($request->file('foto')) {
+            $foto = $request->file('foto')->store('uploads');
+        } else {
+            $foto = '';
+        }
 
         // dd($request);
         $data=new Umkm();
@@ -61,8 +67,20 @@ class UMKMController extends Controller
             'textNama' => 'required',
         ]);
 
-        if($request->file('foto')) {
+        // if($request->file('foto')) {
+        //     if($request->oldImage){
+        //         Storage::delete($request->oldImage);
+        //     }
+        //     $foto = $request->file('foto')->store('uploads');
+        // }
+
+        if ($request->file('foto')) {
+            if($request->oldImage){
+            Storage::delete($request->oldImage);
+                }
             $foto = $request->file('foto')->store('uploads');
+        } else {
+            $foto = $request->oldImage;
         }
         // dd($request);
         $data=Umkm::find($id);
@@ -79,7 +97,13 @@ class UMKMController extends Controller
 
     public function UMKMDelete($id){
         $deleteData= Umkm::find($id);
+        $pathFoto = $deleteData->foto;
         $deleteData->delete();
+
+        
+        if ($pathFoto != null || $pathFoto != '') {
+            Storage::delete($pathFoto);
+        }
 
         return redirect()->route('view_umkm');
     }
