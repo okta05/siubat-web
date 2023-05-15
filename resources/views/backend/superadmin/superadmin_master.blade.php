@@ -12,6 +12,7 @@
     <title>Dashboard - Admin</title>
 
     <!-- Custom fonts for this template-->
+<<<<<<< HEAD
 
     <link href="{{asset('vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
 
@@ -25,6 +26,10 @@
         rel="stylesheet">
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+=======
+
+    <link href="{{asset('backend/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
+>>>>>>> a96c99b65addb98ee5f75d59c3444e3239dab414
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Custom styles for this template-->
@@ -183,5 +188,19 @@ $(function() {
             // toggle the eye slash icon
             this.classList.toggle('fa-eye-slash');
         });
+        
+        function previewImage(){
+        const foto = document.querySelector('#foto');
+        const imgPreview = document.querySelector('.img-preview');
+        
+            imgPreview.style.display = 'block';
+            
+            const oFReader = new FileReader();
+            oFReader.readAsDataURL(foto.files[0]);
+
+            oFReader.onload = function(oFREvent) {
+                imgPreview.src = oFREvent.target.result;
+            }
+    }
     </script>
 </html>

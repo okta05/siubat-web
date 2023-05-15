@@ -5,14 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Event extends Model
+class Umkm extends Model
 {
     use HasFactory;
 
-    protected $fillable = [
-        'nama',
-        'tgl_mulai',
-        'tgli_selesai',
-        'durasi',
-    ];
 }

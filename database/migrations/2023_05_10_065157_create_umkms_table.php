@@ -11,13 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('events', function (Blueprint $table) {
+        Schema::create('umkms', function (Blueprint $table) {
             $table->id();
-            $table->string('foto')->nullabble();
-            $table->string('nama')->nullable();
-            $table->string('tgl_mulai')->nullable();
-            $table->string('tgl_selesai')->nullable();
-            $table->string('durasi')->nullable();
+            $table->string('nm_pemilik')->nullable();
+            $table->string('nm_produk')->nullable();
+            $table->string('harga')->nullable();
+            $table->string('deskripsi')->nullable();
+            $table->string('alamat')->nullable();
+            $table->string('foto')->nullable();
             $table->timestamps();
         });
     }
@@ -27,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('events');
+        Schema::dropIfExists('umkms');
     }
 };

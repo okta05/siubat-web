@@ -81,4 +81,3 @@ class UserController extends Controller
         return redirect()->route('view_user');
     }
 }
-

@@ -10,63 +10,43 @@
     <!-- Content Row -->
     <div class="row">
         <!-- Earnings (Monthly) Card Example -->
+        @foreach($allDataUMKM as $key => $umkm)
         <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card h-100 py-2">
-                <img src="img/gesibu.svg" class="card-img-top" alt="..." />
-                <div class="card-body">
-                    <div class="row no-gutters align-items-center">
-                        <h5 class="card-title">GESIBU BLAMBANGAN</h5>
-                        <p class="card-text">Kapasitas max 600 orang</p>
-                        <a href="edit-produk.html" class="btn btn-dark">Edit</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+            <div class="card h-auto py-2">
+                @if($umkm->foto)
+                <img src="{{asset('storage/'. $umkm->foto)}}" alt="" class="card-img-top">
+                @else
+                <img src="{{asset('backend/img/undraw_profile.svg')}}" alt="" class="card-img-top">
+                @endif
 
-        <!-- Earnings (Monthly) Card Example -->
-        <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card h-100 py-2">
-                <img src="img/dormitory-sritanjung.svg" class="card-img-top" alt="..." />
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
-                        <h5 class="card-title">DORMITORY SRITANJUNG</h5>
-                        <p class="card-text">Kapasitas max 600 orang</p>
-                        <a href="edit-produk.html" class="btn btn-dark">Edit</a>
+                        <ul class="list-group">
+                            <li class="list-unstyled">
+                                <h2 class="card-title">{{$umkm->nm_produk}}</h5>
+                            </li>
+                            <li class="list-unstyled">
+                                <p class="">Pemilik: {{$umkm->nm_pemilik}}</p>
+                            </li>
+                            <li class="list-unstyled">
+                                <p class="">Harga: Rp. {{$umkm->harga}}</p>
+                            </li>
+                            <li class="list-unstyled">
+                                <p class="">Alamat: {{$umkm->alamat}}</p>
+                            </li>
+                        </ul>
                     </div>
+                    <a href="{{route('umkm.edit', $umkm->id)}}" class="btn btn-warning" title="Ubah"><i class="fas fa-fw fa-edit"></i></a>
+                    <a href="{{route('umkms.delete', $umkm->id)}}" class="btn btn-danger" title="Hapus"><i
+                            class="fas fa-fw fa-trash"></i></a>
                 </div>
             </div>
         </div>
-
-        <!-- Earnings (Monthly) Card Example -->
-        <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card h-100 py-2">
-                <img src="img/pelinggihan.svg" class="card-img-top" alt="..." />
-                <div class="card-body">
-                    <div class="row no-gutters align-items-center">
-                        <h5 class="card-title">AULA PELINGGIHAN</h5>
-                        <p class="card-text">Kapasitas max 600 orang</p>
-                        <a href="edit-produk.html" class="btn btn-dark">Edit</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card h-100 py-2">
-                <img src="img/bwi-creativ.svg" class="card-img-top" alt="..." />
-                <div class="card-body">
-                    <div class="row no-gutters align-items-center">
-                        <h5 class="card-title">BANYUWANGI CREATIV SPACE</h5>
-                        <p class="card-text">Kapasitas max 600 orang</p>
-                        <a href="edit-produk.html" class="btn btn-dark">Edit</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        @endforeach
     </div>
     <!-- /.container-fluid -->
 
-    <a href="tambah.html" class="btn btn-danger">Tambah Tempat</a>
+    <a href="{{route('umkm.add')}}" class="btn btn-success">Tambah UMKM</a>
 </div>
 <!-- End of Main Content -->
 @endsection
