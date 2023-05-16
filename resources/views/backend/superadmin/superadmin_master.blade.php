@@ -14,7 +14,9 @@
     <!-- Custom fonts for this template-->
 
     <link href="{{asset('backend/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
 
     <!-- Custom styles for this template-->
     <link href="{{asset('backend/css/sb-admin-2.min.css')}}" rel="stylesheet">
@@ -41,6 +43,7 @@
             </div>
             <!-- End of Content Wrapper -->
             @include('backend.superadmin.body.footer')
+
         </div>
         <!-- End of Page Wrapper -->
 
@@ -63,6 +66,7 @@
                     <div class="modal-body">Apakah anda yakin ingin keluar?</div>
                     <div class="modal-footer">
                         <button class="btn btn-secondary" type="button" data-dismiss="modal">Batal</button>
+
                         <a class="btn btn-danger" href="{{route('admin.logout')}}">Logout</a>
                     </div>
                 </div>
@@ -131,56 +135,57 @@ $(function() {
         })
     })
     swalWithBootstrapButtons.fire({
-        title: 'Konfirmasi untuk menghapus?',
-        text: "Data tidak akan dikembalikan setelah dihapus!",
-        icon: 'warning',
-        showCancelButton: true,
-        confirmButtonText: 'Hapus',
-        cancelButtonText: 'Batalkan',
-        reverseButtons: false
-    })
-    .then((result) => {
-        if (result.isConfirmed) {
-            window.location.href=link
-            swalWithBootstrapButtons.fire(
-                'Terhapus!',
-                'Data berhasil dihapus.',
-                'success'
-            )
-        } else if (result.dismiss === Swal.DismissReason.cancel){
-            swalWithBootstrapButtons.fire(
-                'Dibatalkan',
-                'Data tetap disimpan!',
-                'success'
+            title: 'Konfirmasi untuk menghapus?',
+            text: "Data tidak akan dikembalikan setelah dihapus!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonText: 'Hapus',
+            cancelButtonText: 'Batalkan',
+            reverseButtons: false
+        })
+        .then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = link
+                swalWithBootstrapButtons.fire(
+                    'Terhapus!',
+                    'Data berhasil dihapus.',
+                    'success'
+                )
+            } else if (result.dismiss === Swal.DismissReason.cancel) {
+                swalWithBootstrapButtons.fire(
+                    'Dibatalkan',
+                    'Data tetap disimpan!',
+                    'success'
                 )
             }
         })
-    })
+})
 </script>
 <script>
-        const togglePassword = document.querySelector('#togglePassword');
-        const password = document.querySelector('#password');
+const togglePassword = document.querySelector('#togglePassword');
+const password = document.querySelector('#password');
 
-        togglePassword.addEventListener('click', function (e) {
-            // toggle the type attribute
-            const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
-            password.setAttribute('type', type);
-            // toggle the eye slash icon
-            this.classList.toggle('fa-eye-slash');
-        });
-        
-        function previewImage(){
-        const foto = document.querySelector('#foto');
-        const imgPreview = document.querySelector('.img-preview');
-        
-            imgPreview.style.display = 'block';
-            
-            const oFReader = new FileReader();
-            oFReader.readAsDataURL(foto.files[0]);
+togglePassword.addEventListener('click', function(e) {
+    // toggle the type attribute
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+    // toggle the eye slash icon
+    this.classList.toggle('fa-eye-slash');
+});
 
-            oFReader.onload = function(oFREvent) {
-                imgPreview.src = oFREvent.target.result;
-            }
+function previewImage() {
+    const foto = document.querySelector('#foto');
+    const imgPreview = document.querySelector('.img-preview');
+
+    imgPreview.style.display = 'block';
+
+    const oFReader = new FileReader();
+    oFReader.readAsDataURL(foto.files[0]);
+
+    oFReader.onload = function(oFREvent) {
+        imgPreview.src = oFREvent.target.result;
     }
-    </script>
+}
+</script>
+
 </html>
