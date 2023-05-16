@@ -3,7 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Backend\superadmin\UserController;
-use App\Http\Controllers\Backend\SuperAdmin\EventController;
+use App\Http\Controllers\Backend\SuperAdmin\AcaraController;
 use App\Http\Controllers\Backend\SuperAdmin\UMKMController;
 use App\Http\Controllers\Backend\SuperAdmin\BerandaController;
 use App\Http\Controllers\AdminController;
@@ -52,7 +52,7 @@ Route::get('/delete/{id}', [UserController::class, 'UserDelete'])->name('users.d
 });
 
 Route::middleware('auth', 'ceklevel:superadmin,admin')->group(function () {
-Route::get('/viewEvent', [EventController::class, 'viewEvent'])->name('view_acara');
+Route::get('/viewEvent', [AcaraController::class, 'viewAcara'])->name('view_acara');
 
 });
 
