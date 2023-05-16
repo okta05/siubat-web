@@ -52,8 +52,8 @@ Route::get('/delete/{id}', [UserController::class, 'UserDelete'])->name('users.d
 });
 
 Route::middleware('auth', 'ceklevel:superadmin,admin')->group(function () {
-Route::get('/viewEvent', [AcaraController::class, 'viewAcara'])->name('view_acara');
-
+Route::get('/view', [AcaraController::class, 'viewAcara'])->name('view_acara');
+Route::get('/add', [AcaraController::class, 'addAcara'])->name('acara.add');
 });
 
 Route::middleware('auth', 'ceklevel:superadmin,admin')->group(function () {
@@ -65,7 +65,3 @@ Route::middleware('auth', 'ceklevel:superadmin,admin')->group(function () {
     Route::get('/delete/umkm/{id}', [UMKMController::class, 'UMKMDelete'])->name('umkms.delete');
     });
 
-// Route::middleware('auth','ceklevel:superadmin')->group(function () {
-//     Route::get('/halaman-user', [BerandaController::class, 'user'])->name('halaman-user');
-//     Route::get('/halaman-event', [BerandaController::class, 'event'])->name('halaman-event');    
-// });

@@ -31,16 +31,16 @@
                     <div class="row no-gutters align-items-center">
                         <ul class="list-group">
                             <li class="list-unstyled">
-                                <h2 class="card-title">nama : {{$acara->nm_produk}}</h5>
+                                <h2 class="card-title">{{$acara->nm_acara}}</h5>
                             </li>
                             <li class="list-unstyled">
-                                <p class="">Pemilik: {{$acara->tgl_mulai}}</p>
+                                <p class="">Tanggal Mulai: {{$acara->tgl_mulai}}</p>
                             </li>
                             <li class="list-unstyled">
-                                <p class="">Harga: Rp. {{$acara->tgl_selesai}}</p>
+                                <p class="">Tanggal Selesai : {{$acara->tgl_selesai}}</p>
                             </li>
                             <li class="list-unstyled">
-                                <p class="">Alamat: {{$acara->durasi}}</p>
+                                <p class="">Durasi : {{$acara->durasi}}</p>
                             </li>
                         </ul>
                     </div>
@@ -55,7 +55,7 @@
     </div>
     <!-- /.container-fluid -->
 
-    <a href="tambah.html" class="btn btn-danger">Tambah Tempat</a>
+    <a href="{{route('acara.add')}}" class="btn btn-danger">Tambah Tempat</a>
 </div>
 <!-- End of Main Content -->
 @endsection
