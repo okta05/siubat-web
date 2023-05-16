@@ -30,7 +30,7 @@
                     <div class="row no-gutters align-items-center">
                         <ul class="list-group">
                             <li class="list-unstyled">
-                                <h2 class="card-title">{{$umkm->nm_produk}}</h5>
+                                <h2 class="card-title">nama : {{$umkm->nm_produk}}</h5>
                             </li>
                             <li class="list-unstyled">
                                 <p class="">Pemilik: {{$umkm->nm_pemilik}}</p>
