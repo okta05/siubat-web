@@ -65,6 +65,7 @@ class UMKMController extends Controller
         // dd($request);
         $validateData=$request->validate([
             'textNama' => 'required',
+            'foto' => 'mimes:jpg,jpeg,png|image|file|max:2048',
         ]);
 
         // if($request->file('foto')) {
