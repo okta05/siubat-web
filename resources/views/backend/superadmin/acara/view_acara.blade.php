@@ -20,13 +20,14 @@
             border: 1px solid #e3e6f0;
             border-radius: 0.35rem;
             ">
-                <!-- @if($acara->foto)
+                @if($acara->foto)
                 <img src="{{asset('storage/'. $acara->foto)}}" alt="" class="card-img-top"
                     style="height: auto; display: block;">
+                
                 @else
                 <img src="{{asset('backend/img/undraw_profile.svg')}}" alt="" class="card-img-top">
                 @endif
-                <hr> -->
+                <hr>
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <ul class="list-group">
