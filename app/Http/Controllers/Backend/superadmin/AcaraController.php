@@ -47,6 +47,7 @@ class AcaraController extends Controller
         $data->tgl_mulai=$request->tgl_mulai;
         $data->tgl_selesai=$request->tgl_selesai;
         $data->durasi=$request->durasi;
+        $data->deskripsi=$request->deskripsi;
         $data->foto=$foto;
         $data->save();
 

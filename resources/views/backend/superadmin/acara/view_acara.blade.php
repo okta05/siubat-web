@@ -43,6 +43,9 @@
                             <li class="list-unstyled">
                                 <p class="">Durasi : {{$acara->durasi}}</p>
                             </li>
+                            <li class="list-unstyled">
+                                <p class="">Deskripsi : {{$acara->deskripsi}}</p>
+                            </li>
                         </ul>
                     </div>
                     <a href="#" class="btn btn-warning" title="Ubah"><i
