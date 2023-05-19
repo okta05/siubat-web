@@ -64,14 +64,9 @@
                     <div class="modal-body">Apakah anda yakin ingin keluar?</div>
                     <div class="modal-footer">
                         <button class="btn btn-secondary" type="button" data-dismiss="modal">Batal</button>
-<<<<<<< HEAD
-
-                        <a class="btn btn-danger" href="{{route('admin.logout')}}">Keluar</a>
-=======
                         <a class="btn btn-danger" href="{{route('admin.logout')}}">
                             Keluar <i class="fas fa-sign-out-alt"></i>
                         </a>
->>>>>>> origin/anugrah-wiby
                     </div>
                 </div>
             </div> 

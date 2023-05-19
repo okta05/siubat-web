@@ -47,8 +47,13 @@
                         </div>
                         <div class="form-group">
                             <label for="deskripsi">Deskripsi</label>
-                            <input type="text" name="deskripsi" class="form-control" id="deskripsi" required
-                                placeholder="deskripsi">
+                            <input type="text" name="deskripsi" class="form-control @error('deskripsi') is-invalid @enderror" 
+                            id="deskripsi" required placeholder="Deskripsi">
+                            @error('deskripsi')
+                            <div class="invalid-feedback">
+                                {{ $message }}
+                            </div>
+                            @enderror
                         </div>
                         <div class="form-group">
                             <label for="foto">Gambar</label>
