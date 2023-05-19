@@ -67,7 +67,7 @@
                     <div class="modal-footer">
                         <button class="btn btn-secondary" type="button" data-dismiss="modal">Batal</button>
 
-                        <a class="btn btn-danger" href="{{route('admin.logout')}}">Logout</a>
+                        <a class="btn btn-danger" href="{{route('admin.logout')}}">Keluar</a>
                     </div>
                 </div>
             </div>

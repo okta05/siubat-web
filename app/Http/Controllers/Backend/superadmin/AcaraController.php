@@ -53,4 +53,18 @@ class AcaraController extends Controller
         return redirect()->route('view_acara');
     }
 
+
+
+    public function AcaraDelete($id){
+        $deleteData= Acara::find($id);
+        $pathFoto = $deleteData->foto;
+        $deleteData->delete();
+
+        
+        if ($pathFoto != null || $pathFoto != '') {
+            Storage::delete($pathFoto);
+        }
+
+        return redirect()->route('view_acara');
+    }
 }

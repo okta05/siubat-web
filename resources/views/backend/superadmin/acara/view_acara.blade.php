@@ -47,7 +47,7 @@
                     </div>
                     <a href="#" class="btn btn-warning" title="Ubah"><i
                             class="fas fa-fw fa-edit"></i></a>
-                    <a href="#" class="btn btn-danger" id="delete" title="Hapus"><i
+                    <a href="{{route('acaras.delete', $acara->id)}}" class="btn btn-danger" id="delete" title="Hapus"><i
                             class="fas fa-fw fa-trash"></i></a>
                 </div>
             </div>
