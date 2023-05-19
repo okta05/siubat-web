@@ -32,7 +32,8 @@ Route::get('/dashboard', function () {
     return view('backend.superadmin.index');
 })->middleware(['auth', 'verified', 'disable_back'])->name('dashboard');
 
-Route::middleware('auth')->group(function () {
+Route::middleware('auth', 'ceklevel:superadmin,admin')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'view'])->name('profile.view');
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
@@ -69,3 +70,7 @@ Route::middleware('auth', 'ceklevel:superadmin,admin')->group(function () {
 //     Route::get('/halaman-user', [BerandaController::class, 'user'])->name('halaman-user');
 //     Route::get('/halaman-event', [BerandaController::class, 'event'])->name('halaman-event');    
 // });
+
+Route::middleware('auth', 'ceklevel:superadmin')->group(function () {
+    Route::get('/viewProfile', [ProfileController::class, 'viewProfile'])->name('view_profile');
+    });
