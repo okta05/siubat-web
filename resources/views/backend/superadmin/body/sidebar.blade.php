@@ -5,7 +5,7 @@
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{route('dashboard')}}">
         <div class="sidebar-brand-icon">
             <!-- <i class="fas fa-laugh-wink"></i> -->
-            <img src="https://i.postimg.cc/9XTTKJLP/Ijengeopark-logo.png" style="width : 60px" >
+            <img src="https://i.ibb.co/nMbY25j/logo-bwi.png" alt="logo-bwi" style="width : 45px">
         </div>
         <div class="sidebar-brand-text mx-3">SIUBAT</div>
     </a>
