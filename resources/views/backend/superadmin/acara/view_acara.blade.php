@@ -44,14 +44,12 @@
                                 <p class="">Durasi : {{$acara->durasi}}</p>
                             </li>
                             <li class="list-unstyled">
-                                <p class="">Deskripsi : {{$acara->deskripsi}}</p>
+                                Deskripsi : <p class="text-justify d-inline">{{$acara->deskripsi}}</p>
                             </li>
                         </ul>
                     </div>
-                    <a href="#" class="btn btn-warning" title="Ubah"><i
-                            class="fas fa-fw fa-edit"></i></a>
-                    <a href="{{route('acaras.delete', $acara->id)}}" class="btn btn-danger" id="delete" title="Hapus"><i
-                            class="fas fa-fw fa-trash"></i></a>
+                    <a href="{{route('acaras.edit', $acara->id)}}" class="btn btn-warning" title="Ubah"><i class="fas fa-fw fa-edit"></i></a>
+                    <a href="{{route('acaras.delete', $acara->id)}}" class="btn btn-danger" id="delete" title="Hapus"><i class="fas fa-fw fa-trash"></i></a>
                 </div>
             </div>
         </div>

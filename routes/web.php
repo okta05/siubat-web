@@ -52,10 +52,12 @@ Route::get('/delete/{id}', [UserController::class, 'UserDelete'])->name('users.d
 });
 
 Route::middleware('auth', 'ceklevel:superadmin,admin')->group(function () {
-Route::get('/view', [AcaraController::class, 'viewAcara'])->name('view_acara');
-Route::get('/add', [AcaraController::class, 'addAcara'])->name('acara.add');
-Route::post('/store', [AcaraController::class, 'storeAcara'])->name('acaras.store');
-Route::get('/delete/{id}', [AcaraController::class, 'AcaraDelete'])->name('acaras.delete');
+    Route::get('/view', [AcaraController::class, 'viewAcara'])->name('view_acara');
+    Route::get('/add', [AcaraController::class, 'addAcara'])->name('acara.add');
+    Route::post('/store', [AcaraController::class, 'storeAcara'])->name('acaras.store');
+    Route::get('/edit/event/{id}', [AcaraController::class, 'AcaraEdit'])->name('acaras.edit');
+    Route::post('/update/event/{id}', [AcaraController::class, 'AcaraUpdate'])->name('acaras.update');
+    Route::get('/delete/{id}', [AcaraController::class, 'AcaraDelete'])->name('acaras.delete');
 });
 
 Route::middleware('auth', 'ceklevel:superadmin,admin')->group(function () {

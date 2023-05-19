@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('tgl_mulai')->nullable();
             $table->string('tgl_selesai')->nullable();
             $table->string('durasi')->nullable();
-            $table->string('deskripsi')->nullable();
+            $table->text('deskripsi', 4096)->nullable();
             $table->timestamps();
         });
     }

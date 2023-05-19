@@ -64,14 +64,8 @@
                     <div class="modal-body">Apakah anda yakin ingin keluar?</div>
                     <div class="modal-footer">
                         <button class="btn btn-secondary" type="button" data-dismiss="modal">Batal</button>
-<<<<<<< HEAD
-
-                        <a class="btn btn-danger" href="{{route('admin.logout')}}">Keluar</a>
-=======
-                        <a class="btn btn-danger" href="{{route('admin.logout')}}">
-                            Keluar <i class="fas fa-sign-out-alt"></i>
+                        <a class="btn btn-danger" href="{{route('admin.logout')}}"> Keluar <i class="fas fa-sign-out-alt"></i>
                         </a>
->>>>>>> origin/anugrah-wiby
                     </div>
                 </div>
             </div> 
@@ -97,85 +91,85 @@
 </body>
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script type="text/javascript">
-$(function() {
-    $(document).on('click', '#delete', function(e) {
-        e.preventDefault();
-        var link = $(this).attr("href");
+    $(function() {
+        $(document).on('click', '#delete', function(e) {
+            e.preventDefault();
+            var link = $(this).attr("href");
 
-        const swalWithBootstrapButtons = Swal.mixin({
-            customClass: {
-                confirmButton: 'btn btn-success',
-                cancelButton: 'btn btn-danger'
-            },
-            buttonsStyling: false
+            const swalWithBootstrapButtons = Swal.mixin({
+                customClass: {
+                    confirmButton: 'btn btn-success',
+                    cancelButton: 'btn btn-danger'
+                },
+                buttonsStyling: false
+            })
+
+            swalWithBootstrapButtons.fire({
+                title: 'Konfirmasi untuk menghapus?',
+                text: "Data tidak akan dikembalikan setelah dihapus!",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonText: 'Ya, hapus data!',
+                cancelButtonText: 'Tidak, batalkan!',
+                reverseButtons: false
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href = link
+                    swalWithBootstrapButtons.fire(
+                        'Terhapus!',
+                        'Data berhasil dihapus.',
+                        'success'
+                    )
+                } else if (
+                    /* Read more about handling dismissals below */
+                    result.dismiss === Swal.DismissReason.cancel
+                ) {
+                    swalWithBootstrapButtons.fire(
+                        'Dibatalkan',
+                        'Data kembali disimpan',
+                        'error'
+                    )
+                }
+            })
         })
-
         swalWithBootstrapButtons.fire({
-            title: 'Konfirmasi untuk menghapus?',
-            text: "Data tidak akan dikembalikan setelah dihapus!",
-            icon: 'warning',
-            showCancelButton: true,
-            confirmButtonText: 'Ya, hapus data!',
-            cancelButtonText: 'Tidak, batalkan!',
-            reverseButtons: false
-        }).then((result) => {
-            if (result.isConfirmed) {
-                window.location.href = link
-                swalWithBootstrapButtons.fire(
-                    'Terhapus!',
-                    'Data berhasil dihapus.',
-                    'success'
-                )
-            } else if (
-                /* Read more about handling dismissals below */
-                result.dismiss === Swal.DismissReason.cancel
-            ) {
-                swalWithBootstrapButtons.fire(
-                    'Dibatalkan',
-                    'Data kembali disimpan',
-                    'error'
-                )
-            }
-        })
+                title: 'Konfirmasi untuk menghapus?',
+                text: "Data tidak akan dikembalikan setelah dihapus!",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonText: 'Hapus',
+                cancelButtonText: 'Batalkan',
+                reverseButtons: false
+            })
+            .then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href = link
+                    swalWithBootstrapButtons.fire(
+                        'Terhapus!',
+                        'Data berhasil dihapus.',
+                        'success'
+                    )
+                } else if (result.dismiss === Swal.DismissReason.cancel) {
+                    swalWithBootstrapButtons.fire(
+                        'Dibatalkan',
+                        'Data tetap disimpan!',
+                        'success'
+                    )
+                }
+            })
     })
-    swalWithBootstrapButtons.fire({
-            title: 'Konfirmasi untuk menghapus?',
-            text: "Data tidak akan dikembalikan setelah dihapus!",
-            icon: 'warning',
-            showCancelButton: true,
-            confirmButtonText: 'Hapus',
-            cancelButtonText: 'Batalkan',
-            reverseButtons: false
-        })
-        .then((result) => {
-            if (result.isConfirmed) {
-                window.location.href = link
-                swalWithBootstrapButtons.fire(
-                    'Terhapus!',
-                    'Data berhasil dihapus.',
-                    'success'
-                )
-            } else if (result.dismiss === Swal.DismissReason.cancel) {
-                swalWithBootstrapButtons.fire(
-                    'Dibatalkan',
-                    'Data tetap disimpan!',
-                    'success'
-                )
-            }
-        })
-})
 </script>
 <script>
-const togglePassword = document.querySelector('#togglePassword');
-const password = document.querySelector('#password');
+        const togglePassword = document.querySelector('#togglePassword');
+        const password = document.querySelector('#password');
 
-togglePassword.addEventListener('click', function(e) {
-    // toggle the type attribute
-    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
-    password.setAttribute('type', type);
-    // toggle the eye slash icon
-    this.classList.toggle('fa-eye-slash');
-});
+        togglePassword.addEventListener('click', function(e) {
+            // toggle the type attribute
+            const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+            password.setAttribute('type', type);
+            // toggle the eye slash icon
+            this.classList.toggle('fa-eye-slash');
+        });
         togglePassword.addEventListener('click', function (e) {
             // toggle the type attribute
             const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
@@ -184,28 +178,21 @@ togglePassword.addEventListener('click', function(e) {
             this.classList.toggle('fa-eye-slash');
         });
 
-        function previewImage(){
-        const foto = document.querySelector('#foto');
-        const imgPreview = document.querySelector('.img-preview');
-        
+        function previewImage() {
+            const foto = document.querySelector('#foto');
+            const imgPreview = document.querySelector('.img-preview');
+
             imgPreview.style.display = 'block';
-            
+
             const oFReader = new FileReader();
             oFReader.readAsDataURL(foto.files[0]);
 
-function previewImage() {
-    const foto = document.querySelector('#foto');
-    const imgPreview = document.querySelector('.img-preview');
-
-    imgPreview.style.display = 'block';
-
-    const oFReader = new FileReader();
-    oFReader.readAsDataURL(foto.files[0]);
-
-    oFReader.onload = function(oFREvent) {
-        imgPreview.src = oFREvent.target.result;
-    }
-}
-</script>
-
+            oFReader.onload = function(oFREvent) {
+                imgPreview.src = oFREvent.target.result;
+            }
+        }
+        function resetImage(){
+            alert("Seluruh field kembali keadaan awal!");
+        }
+    </script>
 </html>

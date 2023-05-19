@@ -62,6 +62,7 @@
                             @else
                                 <img class="img-preview img-fluid mb-3 col-sm-5">
                             @endif
+                            <button type="reset" class="btn btn-secondary">Kosongkan</button>
                         </div>
 
                         <button type="submit" class="btn btn-success">Simpan Data</button>

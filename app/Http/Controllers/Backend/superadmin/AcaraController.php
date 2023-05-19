@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Backend\SuperAdmin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use App\Models\Acara;
 use Auth;
 
@@ -16,24 +17,16 @@ class AcaraController extends Controller
     }
 
     public function addAcara(){
-        // dd('berhasil masuk add umkm');
+        // dd('berhasil masuk add Acara');
         return view('backend.superadmin.acara.add_acara');
     }
 
     public function storeAcara(Request $request){
 
-            
         $validateData=$request->validate([
             'nm_acara' => 'required',
             'foto' => 'mimes:jpg,jpeg,png,mp4,avi|file',
         ]);
-
-        // $file_name = $request->foto->getClientOriginalName();
-        // $foto = $request->foto->storeAs('uploads', $file_name);
-
-    //     if($request->file('foto')) {
-    //     $foto = $request->file('foto')->store('uploads');
-    // } 
 
         if ($request->file('foto')) {
             $foto = $request->file('foto')->store('media');
@@ -54,6 +47,39 @@ class AcaraController extends Controller
         return redirect()->route('view_acara');
     }
 
+    public function AcaraEdit($id){
+        $editData = Acara::find($id);
+        return view('backend.superadmin.acara.edit_acara', compact('editData'));
+    }
+
+    public function AcaraUpdate(Request $request, $id){
+
+        // dd($request);
+        $validateData=$request->validate([
+            'nm_acara' => 'required',
+            'foto' => 'mimes:jpg,jpeg,png|image|file|max:2048',
+        ]);
+
+        if ($request->file('foto')) {
+            if($request->oldImage){
+            Storage::delete($request->oldImage);
+                }
+            $foto = $request->file('foto')->store('uploads');
+        } else {
+            $foto = $request->oldImage;
+        }
+        // dd($request);
+        $data=Acara::find($id);
+        $data->nm_acara=$request->nm_acara;
+        $data->tgl_mulai=$request->tgl_mulai;
+        $data->tgl_selesai=$request->tgl_selesai;
+        $data->durasi=$request->durasi;
+        $data->deskripsi=$request->deskripsi;
+        $data->foto=$foto;
+        $data->save();
+
+        return redirect()->route('view_acara');
+    }
 
 
     public function AcaraDelete($id){
