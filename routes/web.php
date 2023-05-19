@@ -66,15 +66,3 @@ Route::middleware('auth', 'ceklevel:superadmin,admin')->group(function () {
     Route::post('/update/umkm/{id}', [UMKMController::class, 'UMKMUpdate'])->name('umkms.update');
     Route::get('/delete/umkm/{id}', [UMKMController::class, 'UMKMDelete'])->name('umkms.delete');
     });
-
-<<<<<<< HEAD
-// Route::middleware('auth','ceklevel:superadmin')->group(function () {
-//     Route::get('/halaman-user', [BerandaController::class, 'user'])->name('halaman-user');
-//     Route::get('/halaman-event', [BerandaController::class, 'event'])->name('halaman-event');    
-// });
-
-Route::middleware('auth', 'ceklevel:superadmin')->group(function () {
-    Route::get('/viewProfile', [ProfileController::class, 'viewProfile'])->name('view_profile');
-    });
-=======
->>>>>>> origin/oktaviano
