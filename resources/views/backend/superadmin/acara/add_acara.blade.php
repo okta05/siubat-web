@@ -17,7 +17,7 @@
             <div class="card shadow mb-4">
                 <!-- Card Header - Edit -->
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                    <h6 class="m-0 font-weight-bold text-dark">Tambah Data UMKM</h6>
+                    <h6 class="m-0 font-weight-bold text-dark">Tambah Acara</h6>
                 </div>
 
                 <!-- Card Content - Edit -->
@@ -28,22 +28,22 @@
                         <div class="form-group">
                             <label for="nm_acara">Nama Acara</label>
                             <input type="text" name="nm_acara" class="form-control" id="nm_acara" required
-                                placeholder="Nama Pemilik UMKM">
+                                placeholder="Nama Acara">
                         </div>
                         <div class="form-group">
                             <label for="tgl_mulai">Tanggal Mulai</label>
                             <input type="date" name="tgl_mulai" class="form-control" id="tgl_mulai" required
-                                placeholder="Nama Produk">
+                                placeholder="Tanggal Lahir">
                         </div>
                         <div class="form-group">
                             <label for="tgl_selesai">Tanggal Selesai</label>
                             <input type="date" name="tgl_selesai" class="form-control" id="tgl_selesai" required
-                                placeholder="tgl_selesai">
+                                placeholder="Tanggal Selesai">
                         </div>
                         <div class="form-group">
                             <label for="durasi">Durasi</label>
                             <input type="text" name="durasi" class="form-control" id="durasi" required
-                                placeholder="durasi">
+                                placeholder="Durasi">
                         </div>
                         <div class="form-group">
                             <label for="foto">Gambar</label>
