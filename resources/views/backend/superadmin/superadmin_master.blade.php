@@ -14,9 +14,7 @@
     <!-- Custom fonts for this template-->
 
     <link href="{{asset('backend/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
-    <link
-        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Custom styles for this template-->
     <link href="{{asset('backend/css/sb-admin-2.min.css')}}" rel="stylesheet">
@@ -58,7 +56,7 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Siap untuk Keluar?</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Siap untuk keluar?</h5>
                         <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">×</span>
                         </button>
@@ -66,11 +64,17 @@
                     <div class="modal-body">Apakah anda yakin ingin keluar?</div>
                     <div class="modal-footer">
                         <button class="btn btn-secondary" type="button" data-dismiss="modal">Batal</button>
+<<<<<<< HEAD
 
                         <a class="btn btn-danger" href="{{route('admin.logout')}}">Keluar</a>
+=======
+                        <a class="btn btn-danger" href="{{route('admin.logout')}}">
+                            Keluar <i class="fas fa-sign-out-alt"></i>
+                        </a>
+>>>>>>> origin/anugrah-wiby
                     </div>
                 </div>
-            </div>
+            </div> 
         </div>
 
         <!-- Bootstrap core JavaScript-->
@@ -172,6 +176,22 @@ togglePassword.addEventListener('click', function(e) {
     // toggle the eye slash icon
     this.classList.toggle('fa-eye-slash');
 });
+        togglePassword.addEventListener('click', function (e) {
+            // toggle the type attribute
+            const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+            password.setAttribute('type', type);
+            // toggle the eye slash icon
+            this.classList.toggle('fa-eye-slash');
+        });
+
+        function previewImage(){
+        const foto = document.querySelector('#foto');
+        const imgPreview = document.querySelector('.img-preview');
+        
+            imgPreview.style.display = 'block';
+            
+            const oFReader = new FileReader();
+            oFReader.readAsDataURL(foto.files[0]);
 
 function previewImage() {
     const foto = document.querySelector('#foto');

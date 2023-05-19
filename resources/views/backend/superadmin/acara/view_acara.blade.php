@@ -25,7 +25,7 @@
                     style="height: auto; display: block;">
                 
                 @else
-                <img src="{{asset('backend/img/undraw_profile.svg')}}" alt="" class="card-img-top">
+                <img src="{{asset('backend/img/no-image.jpg')}}" alt="" class="card-img-top">
                 @endif
                 <hr>
                 <div class="card-body">
@@ -43,6 +43,9 @@
                             <li class="list-unstyled">
                                 <p class="">Durasi : {{$acara->durasi}}</p>
                             </li>
+                            <li class="list-unstyled">
+                                <p class="">Deskripsi : {{$acara->deskripsi}}</p>
+                            </li>
                         </ul>
                     </div>
                     <a href="#" class="btn btn-warning" title="Ubah"><i
@@ -56,7 +59,7 @@
     </div>
     <!-- /.container-fluid -->
 
-    <a href="{{route('acara.add')}}" class="btn btn-danger">Tambah Tempat</a>
+    <a href="{{route('acara.add')}}" class="btn btn-success">Tambah Tempat</a>
 </div>
 <!-- End of Main Content -->
 @endsection
