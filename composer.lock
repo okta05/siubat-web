@@ -1406,12 +1406,6 @@
         },
         {
             "name": "laravel/jetstream",
-<<<<<<< HEAD
-            "version": "v3.2.0", 
-
-
-=======
->>>>>>> origin/anugrah-wiby
             "version": "v3.1.2",
             "source": {
                 "type": "git",
@@ -1471,13 +1465,7 @@
                 "issues": "https://github.com/laravel/jetstream/issues",
                 "source": "https://github.com/laravel/jetstream"
             },
-<<<<<<< HEAD
-            "time": "2023-05-10T00:10:17+00:00"
-        
-        
-=======
             "time": "2023-04-21T15:56:37+00:00"
->>>>>>> origin/anugrah-wiby
         },
         {
             "name": "laravel/sanctum",
@@ -7042,12 +7030,8 @@
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/fc4f5ee614fa82d50ecf9014b51af0a9561f3df8",
-<<<<<<< HEAD
-                "reference": "fc4f5ee614fa82d50ecf9014b51af0a9561f3df8"
-=======
                 "reference": "fc4f5ee614fa82d50ecf9014b51af0a9561f3df8",
                 "shasum": ""
->>>>>>> origin/anugrah-wiby
             },
             "require": {
                 "ext-dom": "*",
