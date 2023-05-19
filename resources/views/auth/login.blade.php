@@ -1,10 +1,7 @@
-<x-guest-layout>
-    <x-authentication-card>
-        <x-slot name="logo">
-            <x-authentication-card-logo />
-        </x-slot>
+<!DOCTYPE html>
+<html lang="en">
 
-        <x-validation-errors class="mb-4" />
+<head>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -73,10 +70,9 @@
                     </div>
                 </div>
             </div>
-        @endif
+        </div>
 
-        <form method="POST" action="{{ route('login') }}">
-            @csrf
+    </div>
 
     <!-- Bootstrap core JavaScript-->
     <script src="{{asset('backend/vendor/jquery/jquery.min.js')}}"></script>
@@ -85,12 +81,8 @@
     <!-- Core plugin JavaScript-->
     <script src="{{('backend/vendor/jquery-easing/jquery.easing.min.js')}}"></script>
 
-            <div class="block mt-4">
-                <label for="remember_me" class="flex items-center">
-                    <x-checkbox id="remember_me" name="remember" />
-                    <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
-                </label>
-            </div>
+    <!-- Custom scripts for all pages-->
+    <script src="{{asset('backend/js/sb-admin-2.min.js')}}"></script>
 
     <script>
         const togglePassword = document.querySelector('#togglePassword');
@@ -107,10 +99,4 @@
 
     </body>
 
-                <x-button class="ml-4">
-                    {{ __('Log in') }}
-                </x-button>
-            </div>
-        </form>
-    </x-authentication-card>
-</x-guest-layout>
+</html>
