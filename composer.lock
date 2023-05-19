@@ -1476,18 +1476,23 @@
         {
             "name": "laravel/jetstream",
 <<<<<<< HEAD
+<<<<<<< HEAD
             "version": "v3.2.0",
 =======
 <<<<<<< HEAD
             "version": "v3.1.2",
-
-
 =======
+            "version": "v3.2.0", 
+>>>>>>> origin/oktaviano
+
 
             "version": "v3.1.2",
+<<<<<<< HEAD
 
 >>>>>>> a96c99b65addb98ee5f75d59c3444e3239dab414
             "version": "v3.1.1",
+>>>>>>> origin/oktaviano
+=======
 >>>>>>> origin/oktaviano
             "source": {
                 "type": "git",
@@ -1496,6 +1501,7 @@
             },
             "dist": {
                 "type": "zip",
+<<<<<<< HEAD
 <<<<<<< HEAD
                 "url": "https://api.github.com/repos/laravel/jetstream/zipball/aee77609b40067c83fd613e134f0982239566ce0",
                 "reference": "aee77609b40067c83fd613e134f0982239566ce0",
@@ -1509,6 +1515,10 @@
                 "reference": "4bedb125c742c3f8d43226d1ab0a9a27b8383cde",
 
 >>>>>>> a96c99b65addb98ee5f75d59c3444e3239dab414
+>>>>>>> origin/oktaviano
+=======
+                "url": "https://api.github.com/repos/laravel/jetstream/zipball/4bedb125c742c3f8d43226d1ab0a9a27b8383cde",
+                "reference": "4bedb125c742c3f8d43226d1ab0a9a27b8383cde",
 >>>>>>> origin/oktaviano
                 "shasum": ""
             },
@@ -1560,6 +1570,7 @@
                 "source": "https://github.com/laravel/jetstream"
             },
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2023-05-10T00:10:17+00:00"
 =======
 <<<<<<< HEAD
@@ -1569,6 +1580,11 @@
 
             "time": "2023-04-21T15:56:37+00:00"
 >>>>>>> a96c99b65addb98ee5f75d59c3444e3239dab414
+>>>>>>> origin/oktaviano
+=======
+            "time": "2023-05-10T00:10:17+00:00"
+        
+        
 >>>>>>> origin/oktaviano
         },
         {
@@ -7134,12 +7150,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/fc4f5ee614fa82d50ecf9014b51af0a9561f3df8",
-                "reference": "fc4f5ee614fa82d50ecf9014b51af0a9561f3df8",
-<<<<<<< HEAD
-=======
-
->>>>>>> a96c99b65addb98ee5f75d59c3444e3239dab414
-                "shasum": ""
+                "reference": "fc4f5ee614fa82d50ecf9014b51af0a9561f3df8"
             },
             "require": {
                 "ext-dom": "*",
@@ -7187,10 +7198,6 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/php-code-coverage/issues",
                 "security": "https://github.com/sebastianbergmann/php-code-coverage/security/policy",
-<<<<<<< HEAD
-=======
-
->>>>>>> a96c99b65addb98ee5f75d59c3444e3239dab414
                 "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/10.1.0"
             },
             "funding": [

@@ -10,7 +10,14 @@
     "require": {
         "php": "^8.1",
         "guzzlehttp/guzzle": "^7.2",
+<<<<<<< HEAD
         "laravel/breeze": "^1.21",
+=======
+<<<<<<< HEAD
+        "laravel/breeze": "^1.21",
+=======
+>>>>>>> origin/oktaviano
+>>>>>>> origin/oktaviano
         "laravel/framework": "^10.0",
         "laravel/jetstream": "^3.2",
         "laravel/sanctum": "^3.2",

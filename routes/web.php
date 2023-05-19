@@ -3,7 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Backend\superadmin\UserController;
-use App\Http\Controllers\Backend\SuperAdmin\EventController;
+use App\Http\Controllers\Backend\SuperAdmin\AcaraController;
 use App\Http\Controllers\Backend\SuperAdmin\UMKMController;
 use App\Http\Controllers\Backend\SuperAdmin\BerandaController;
 use App\Http\Controllers\AdminController;
@@ -53,8 +53,9 @@ Route::get('/delete/{id}', [UserController::class, 'UserDelete'])->name('users.d
 });
 
 Route::middleware('auth', 'ceklevel:superadmin,admin')->group(function () {
-Route::get('/viewEvent', [EventController::class, 'viewEvent'])->name('view_acara');
-
+Route::get('/view', [AcaraController::class, 'viewAcara'])->name('view_acara');
+Route::get('/add', [AcaraController::class, 'addAcara'])->name('acara.add');
+Route::post('/store', [AcaraController::class, 'storeAcara'])->name('acaras.store');
 });
 
 Route::middleware('auth', 'ceklevel:superadmin,admin')->group(function () {
@@ -66,6 +67,7 @@ Route::middleware('auth', 'ceklevel:superadmin,admin')->group(function () {
     Route::get('/delete/umkm/{id}', [UMKMController::class, 'UMKMDelete'])->name('umkms.delete');
     });
 
+<<<<<<< HEAD
 // Route::middleware('auth','ceklevel:superadmin')->group(function () {
 //     Route::get('/halaman-user', [BerandaController::class, 'user'])->name('halaman-user');
 //     Route::get('/halaman-event', [BerandaController::class, 'event'])->name('halaman-event');    
@@ -74,3 +76,5 @@ Route::middleware('auth', 'ceklevel:superadmin,admin')->group(function () {
 Route::middleware('auth', 'ceklevel:superadmin')->group(function () {
     Route::get('/viewProfile', [ProfileController::class, 'viewProfile'])->name('view_profile');
     });
+=======
+>>>>>>> origin/oktaviano
