@@ -43,12 +43,12 @@ require __DIR__.'/auth.php';
 Route::get('/admin/logout', [AdminController::class, 'logout'])->name('admin.logout');
 
 Route::middleware('auth', 'ceklevel:superadmin')->group(function () {
-Route::get('/viewUser', [UserController::class, 'viewUser'])->name('view_user');
-Route::get('/addUser', [UserController::class, 'addUser'])->name('user.add');
-Route::post('/userStore', [UserController::class, 'storeUser'])->name('users.store');
-Route::get('/edit/{id}', [UserController::class, 'UserEdit'])->name('users.edit');
-Route::post('/update/{id}', [UserController::class, 'UserUpdate'])->name('users.update');
-Route::get('/delete/{id}', [UserController::class, 'UserDelete'])->name('users.delete');
+    Route::get('/viewUser', [UserController::class, 'viewUser'])->name('view_user');
+    Route::get('/addUser', [UserController::class, 'addUser'])->name('user.add');
+    Route::post('/userStore', [UserController::class, 'storeUser'])->name('users.store');
+    Route::get('/edit/{id}', [UserController::class, 'UserEdit'])->name('users.edit');
+    Route::post('/update/{id}', [UserController::class, 'UserUpdate'])->name('users.update');
+    Route::get('/delete/user/{id}', [UserController::class, 'UserDelete'])->name('users.delete');
 });
 
 Route::middleware('auth', 'ceklevel:superadmin,admin')->group(function () {
@@ -57,7 +57,7 @@ Route::middleware('auth', 'ceklevel:superadmin,admin')->group(function () {
     Route::post('/store', [AcaraController::class, 'storeAcara'])->name('acaras.store');
     Route::get('/edit/event/{id}', [AcaraController::class, 'AcaraEdit'])->name('acaras.edit');
     Route::post('/update/event/{id}', [AcaraController::class, 'AcaraUpdate'])->name('acaras.update');
-    Route::get('/delete/{id}', [AcaraController::class, 'AcaraDelete'])->name('acaras.delete');
+    Route::get('/delete/event/{id}', [AcaraController::class, 'AcaraDelete'])->name('acaras.delete');
 });
 
 Route::middleware('auth', 'ceklevel:superadmin,admin')->group(function () {

@@ -41,7 +41,7 @@
                                 <p class="">Tanggal Selesai : {{$acara->tgl_selesai}}</p>
                             </li>
                             <li class="list-unstyled">
-                                <p class="">Durasi : {{$acara->durasi}}</p>
+                                <p class="">Durasi : {{$acara->durasi}} Jam</p>
                             </li>
                             <li class="list-unstyled">
                                 Deskripsi : <p class="text-justify d-inline">{{$acara->deskripsi}}</p>
@@ -57,7 +57,7 @@
     </div>
     <!-- /.container-fluid -->
 
-    <a href="{{route('acara.add')}}" class="btn btn-success">Tambah Tempat</a>
+    <a href="{{route('acara.add')}}" class="btn btn-success">Tambah Event</a>
 </div>
 <!-- End of Main Content -->
 @endsection
