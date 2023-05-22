@@ -57,9 +57,9 @@
                         </div>
                         <div class="form-group">
                             <label for="foto">Gambar</label>
-                            <!-- <img class="img-preview img-fluid mb-3 col-sm-5" style="width: 250px; height: auto;"> -->
+                            <img class="img-preview img-fluid mb-3 col-sm-5" style="width: 250px; height: auto;">
                             <input type="file" name="foto" class="form-control @error('foto') is-invalid @enderror"
-                                id="foto" placeholder="Gambar">
+                                id="foto"  onchange="previewImage()"  placeholder="Gambar">
                             @error('foto')
                             <div class="invalid-feedback">
                                 {{ $message }}
