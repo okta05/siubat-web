@@ -23,14 +23,14 @@
                 <img src="{{asset('storage/'. $umkm->foto)}}" alt="" class="card-img-top"
                     style="height: auto; display: block;">
                 @else
-                <img src="{{asset('backend/img/undraw_profile.svg')}}" alt="" class="card-img-top">
+                <img src="{{asset('backend/img/no-image.jpg')}}" alt="" class="card-img-top">
                 @endif
                 <hr>
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <ul class="list-group">
                             <li class="list-unstyled">
-                                <h2 class="card-title">nama : {{$umkm->nm_produk}}</h5>
+                                <h2 class="card-title">Nama : {{$umkm->nm_produk}}</h5>
                             </li>
                             <li class="list-unstyled">
                                 <p class="">Pemilik: {{$umkm->nm_pemilik}}</p>

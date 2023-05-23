@@ -5,7 +5,7 @@
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Dashboard | Tambah Data UMKM</h1>
+        <h1 class="h3 mb-0 text-gray-800">Dashboard | Ubah Data Event</h1>
     </div>
 
     <!-- Content Row -->
@@ -17,38 +17,39 @@
             <div class="card shadow mb-4">
                 <!-- Card Header - Edit -->
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                    <h6 class="m-0 font-weight-bold text-dark">Tambah Data UMKM</h6>
+                    <h6 class="m-0 font-weight-bold text-dark">Edit Event</h6>
                 </div>
 
                 <!-- Card Content - Edit -->
                 <div class="card-body">
-                    <form class="user" method="POST" action="{{route('umkms.update',  $editData->id)}}" enctype="multipart/form-data">
+                    <form class="user" method="POST" action="{{route('acaras.update', $editData->id)}}" enctype="multipart/form-data">
                         @csrf
                         <div class="form-group">
-                            <label for="textNama">Nama Pemilik UMKM</label>
-                            <input type="text" name="textNama" value="{{$editData->nm_pemilik}}" class="form-control" id="textNama" required placeholder="Nama Pemilik UMKM">
+                            <label for="nm_acara">Nama Acara</label>
+                            <input type="text" name="nm_acara" class="form-control" id="nm_acara" value="{{$editData->nm_acara}}" required placeholder="Nama Acara">
                         </div>
                         <div class="form-group">
-                            <label for="textNamaProduk">Nama Produk</label>
-                            <input type="text" name="textNamaProduk" value="{{$editData->nm_produk}}" class="form-control" id="textNamaProduk" required placeholder="Nama Produk">
+                            <label for="tgl_mulai">Tanggal Mulai</label>
+                            <input type="date" name="tgl_mulai" class="form-control" id="tgl_mulai" value="{{$editData->tgl_mulai}}" required placeholder="Tanggal Lahir">
                         </div>
                         <div class="form-group">
-                            <label for="harga">Harga</label>
-                            <input type="number" name="harga" value="{{$editData->harga}}" class="form-control" id="harga" required placeholder="Harga">
+                            <label for="tgl_selesai">Tanggal Selesai</label>
+                            <input type="date" name="tgl_selesai" class="form-control" id="tgl_selesai" value="{{$editData->tgl_selesai}}" required placeholder="Tanggal Selesai">
+                        </div>
+                        <div class="form-group">
+                            <label for="durasi">Durasi</label>
+                            <input type="number" name="durasi" class="form-control" id="durasi" value="{{$editData->durasi}}" required
+                                placeholder="Durasi">
                         </div>
                         <div class="form-group">
                             <label for="deskripsi">Deskripsi</label>
-                            <input type="text" name="deskripsi" value="{{$editData->deskripsi}}" class="form-control" id="deskripsi" required placeholder="Deskripsi">
-                        </div>
-                        <div class="form-group">
-                            <label for="deskripsi">Alamat</label>
-                            <input type="text" name="alamat" value="{{$editData->alamat}}" class="form-control" id="alamat" required placeholder="Alamat">
+                            <input type="textbox" name="deskripsi" class="form-control" id="deskripsi" value="{{$editData->deskripsi}}" required placeholder="deskripsi">
                         </div>
                         <div class="form-group">
                             <label for="foto">Gambar</label>
+                            <input type="file" name="foto" class="form-control @error('foto') is-invalid @enderror" id="foto" accept="image/*" onchange="previewImage()" placeholder="Gambar">
+                            Preview:
                             <img class="img-preview img-fluid mb-3 col-sm-5" style="width: 250px; height: auto;">
-                            <input type="file" name="foto" class="form-control @error('foto') is-invalid @enderror"
-                                id="foto" accept="image/*" onchange="previewImage()" placeholder="Gambar">
                             @error('foto')
                             <div class="invalid-feedback">
                                 {{ $message }}
@@ -60,13 +61,13 @@
                             Foto saat ini:
                                 <img src="{{asset('storage/'. $editData->foto)}}" class="img-preview img-fluid mb-3 col-sm-5 d-block" style="height: 250px; width: auto;">
                             @else
-                                <img class="img-preview img-fluid mb-3 col-sm-5">
+                                <img class="img-preview img-fluid mb-3 col-sm-5 col-sm-5 d-block">
                             @endif
-                            <button type="reset" class="btn btn-secondary">Kosongkan</button>
                         </div>
-
-                        <button type="submit" class="btn btn-success">Simpan Data</button>
-                        <a href="{{route('view_umkm')}}" class="btn btn-danger">Batalkan</a>
+                        <div class="form-group" style="margin-top: 100px;">
+                            <button type="submit" class="btn btn-success">Ubah Data</button>
+                            <a href="{{route('view_acara')}}" class="btn btn-danger">Batalkan</a>
+                        </div>
                     </form>
                 </div>
             </div>

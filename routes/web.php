@@ -1,11 +1,10 @@
 <?php
 
-
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Backend\superadmin\ProfileController;
 use App\Http\Controllers\Backend\superadmin\UserController;
 use App\Http\Controllers\Backend\SuperAdmin\AcaraController;
 use App\Http\Controllers\Backend\SuperAdmin\UMKMController;
-use App\Http\Controllers\Backend\superadmin\ProfileController;
 use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Auth;
 
@@ -32,24 +31,30 @@ Route::get('/dashboard', function () {
     return view('backend.superadmin.index');
 })->middleware(['auth', 'verified', 'disable_back'])->name('dashboard');
 
+Route::middleware('auth', 'ceklevel:superadmin,admin')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'ProfileView'])->name('profile.view');
+});
+
 require __DIR__.'/auth.php';
 
 Route::get('/admin/logout', [AdminController::class, 'logout'])->name('admin.logout');
 
 Route::middleware('auth', 'ceklevel:superadmin')->group(function () {
-Route::get('/viewUser', [UserController::class, 'viewUser'])->name('view_user');
-Route::get('/addUser', [UserController::class, 'addUser'])->name('user.add');
-Route::post('/userStore', [UserController::class, 'storeUser'])->name('users.store');
-Route::get('/edit/{id}', [UserController::class, 'UserEdit'])->name('users.edit');
-Route::post('/update/{id}', [UserController::class, 'UserUpdate'])->name('users.update');
-Route::get('/delete/user/{id}', [UserController::class, 'UserDelete'])->name('users.delete');
+    Route::get('/viewUser', [UserController::class, 'viewUser'])->name('view_user');
+    Route::get('/addUser', [UserController::class, 'addUser'])->name('user.add');
+    Route::post('/userStore', [UserController::class, 'storeUser'])->name('users.store');
+    Route::get('/edit/{id}', [UserController::class, 'UserEdit'])->name('users.edit');
+    Route::post('/update/{id}', [UserController::class, 'UserUpdate'])->name('users.update');
+    Route::get('/delete/user/{id}', [UserController::class, 'UserDelete'])->name('users.delete');
 });
 
 Route::middleware('auth', 'ceklevel:superadmin,admin')->group(function () {
-Route::get('/view', [AcaraController::class, 'viewAcara'])->name('view_acara');
-Route::get('/add', [AcaraController::class, 'addAcara'])->name('acara.add');
-Route::post('/store', [AcaraController::class, 'storeAcara'])->name('acaras.store');
-Route::get('/delete/event/{id}', [AcaraController::class, 'AcaraDelete'])->name('acaras.delete');
+    Route::get('/view', [AcaraController::class, 'viewAcara'])->name('view_acara');
+    Route::get('/add', [AcaraController::class, 'addAcara'])->name('acara.add');
+    Route::post('/store', [AcaraController::class, 'storeAcara'])->name('acaras.store');
+    Route::get('/edit/event/{id}', [AcaraController::class, 'AcaraEdit'])->name('acaras.edit');
+    Route::post('/update/event/{id}', [AcaraController::class, 'AcaraUpdate'])->name('acaras.update');
+    Route::get('/delete/event/{id}', [AcaraController::class, 'AcaraDelete'])->name('acaras.delete');
 });
 
 Route::middleware('auth', 'ceklevel:superadmin,admin')->group(function () {
@@ -60,7 +65,3 @@ Route::middleware('auth', 'ceklevel:superadmin,admin')->group(function () {
     Route::post('/update/umkm/{id}', [UMKMController::class, 'UMKMUpdate'])->name('umkms.update');
     Route::get('/delete/umkm/{id}', [UMKMController::class, 'UMKMDelete'])->name('umkms.delete');
     });
-
-    Route::middleware('auth', 'ceklevel:superadmin,admin')->group(function () {
-        Route::get('/vieww', [ProfileController::class, 'profileView'])->name('profile.view');
-        });

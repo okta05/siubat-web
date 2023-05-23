@@ -5,7 +5,7 @@
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Dashboard | Tambah Data UMKM</h1>
+        <h1 class="h3 mb-0 text-gray-800">Dashboard | Tambah Data Event</h1>
     </div>
 
     <!-- Content Row -->
@@ -47,19 +47,14 @@
                         </div>
                         <div class="form-group">
                             <label for="deskripsi">Deskripsi</label>
-                            <input type="text" name="deskripsi" class="form-control @error('deskripsi') is-invalid @enderror" 
-                            id="deskripsi" required placeholder="Deskripsi">
-                            @error('deskripsi')
-                            <div class="invalid-feedback">
-                                {{ $message }}
-                            </div>
-                            @enderror
+                            <input type="text" name="deskripsi" class="form-control" id="deskripsi" required
+                                placeholder="Deskripsi">
                         </div>
                         <div class="form-group">
                             <label for="foto">Gambar</label>
                             <img class="img-preview img-fluid mb-3 col-sm-5" style="width: 250px; height: auto;">
                             <input type="file" name="foto" class="form-control @error('foto') is-invalid @enderror"
-                                id="foto"  onchange="previewImage()"  placeholder="Gambar">
+                                id="foto" accept="image/*" onchange="previewImage()" placeholder="Gambar">
                             @error('foto')
                             <div class="invalid-feedback">
                                 {{ $message }}
@@ -69,7 +64,7 @@
 
                         <button type="submit" class="btn btn-success">Tambah Data</button>
                         <button type="reset" class="btn btn-secondary">Kosongkan</button>
-                        <a href="{{route('view_umkm')}}" class="btn btn-danger">Batalkan</a>
+                        <a href="{{route('view_acara')}}" class="btn btn-danger">Batalkan</a>
                     </form>
                 </div>
             </div>
