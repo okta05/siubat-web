@@ -19,6 +19,7 @@
                             <th>Email</th>
                             <th>No. WA</th>
                             <th>Role</th>
+                            <th>foto</th>
                             <th>Aksi</th>
                         </tr>
                     </thead>
@@ -30,6 +31,7 @@
                         <td>{{$user->email}}</td>
                         <td>{{$user->no_wa}}</td>
                         <td>{{$user->usertype}}</td>
+                        <td>{{$user->foto}}</td>
                         @if($user->id != 1 && $user->id != 2)
                         <td>
                             <a href="{{route('users.edit', $user->id)}}" class="btn btn-warning">Edit</a> 

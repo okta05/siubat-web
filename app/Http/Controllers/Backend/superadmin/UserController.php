@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Backend\superadmin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use App\Models\User;
 use Auth;
 
@@ -25,8 +26,14 @@ class UserController extends Controller
         // dd($request);
         $validateData=$request->validate([
             'email' => 'required|unique:users',
-            'textNama' => 'required',
+            'foto' => 'mimes:jpg,jpeg,png|image|file|max:2048',
         ]);
+
+        if ($request->file('foto')) {
+            $foto = $request->file('foto')->store('profile');
+        } else {
+            $foto = '';
+        }
 
         // dd($request);
         $data=new User();
@@ -36,6 +43,7 @@ class UserController extends Controller
         $data->no_wa=$request->textNo_Wa;
         $data->usertype=$request->selectUser;
         $data->password=bcrypt($request->password);
+        $data->foto=$foto;
         $data->save();
 
         return redirect()->route('view_user');
@@ -52,8 +60,17 @@ class UserController extends Controller
         // dd($request);
         $validateData=$request->validate([
             'email' => 'required',
-            'textNama' => 'required',
+            'foto' => 'mimes:jpg,jpeg,png|image|file|max:2048',
         ]);
+
+        if ($request->file('foto')) {
+            if($request->oldImage){
+            Storage::delete($request->oldImage);
+                }
+            $foto = $request->file('foto')->store('profile');
+        } else {
+            $foto = $request->oldImage;
+        }
 
         // dd($request);
         $data=User::find($id);
@@ -63,6 +80,7 @@ class UserController extends Controller
         $data->no_wa=$request->textNo_Wa;
         $data->usertype=$request->selectUser;
         $data->password=bcrypt($request->password);
+        $data->foto=$foto;
         $data->save();
 
         return redirect()->route('view_user');

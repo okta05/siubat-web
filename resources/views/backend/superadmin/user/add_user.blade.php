@@ -22,24 +22,28 @@
 
                 <!-- Card Content - Edit -->
                 <div class="card-body">
-                    <form class="user" method="POST" action="{{route('users.store')}}">
+                    <form class="user" method="POST" action="{{route('users.store')}}" enctype="multipart/form-data">
                         @csrf
 
                         <div class="form-group">
                             <label for="textNama">Nama</label>
-                            <input type="text" name="textNama" class="form-control" id="textNama" required placeholder="Nama lengkap">
+                            <input type="text" name="textNama" class="form-control" id="textNama" required
+                                placeholder="Nama lengkap">
                         </div>
                         <div class="form-group">
                             <label for="textAlamat">Alamat</label>
-                            <input type="text" name="textAlamat" class="form-control" id="textAlamat" required placeholder="Alamat lengkap">
+                            <input type="text" name="textAlamat" class="form-control" id="textAlamat" required
+                                placeholder="Alamat lengkap">
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" name="email" class="form-control" id="email" required placeholder="Email">
+                            <input type="email" name="email" class="form-control" id="email" required
+                                placeholder="Email">
                         </div>
                         <div class="form-group">
                             <label for="textNo_Wa">No WA</label>
-                            <input type="number" name="textNo_Wa" class="form-control" id="textNo_Wa" required placeholder="Nomor Telepon/WhatsApp">
+                            <input type="number" name="textNo_Wa" class="form-control" id="textNo_Wa" required
+                                placeholder="Nomor Telepon/WhatsApp">
                         </div>
                         <div class="form-group">
                             <label for="selectUser">Role <span class="text-danger">*</span></label>
@@ -53,8 +57,21 @@
                         </div>
                         <div class="form-group">
                             <label for="password">Password</label>
-                            <input type="password" name="password" class="form-control" id="password" required placeholder="Password" style="display: inline; width: 99.74%;">
+                            <input type="password" name="password" class="form-control" id="password" required
+                                placeholder="Password" style="display: inline; width: 99.74%;">
                             <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="foto">Foto Profile</label>
+                            <img class="img-preview img-fluid mb-3 col-sm-5" style="width: 250px; height: auto;">
+                            <input type="file" name="foto" class="form-control @error('foto') is-invalid @enderror"
+                                id="foto" accept="image/*" onchange="previewImage()" placeholder="Gambar">
+                            @error('foto')
+                            <div class="invalid-feedback">
+                                {{ $message }}
+                            </div>
+                            @enderror
                         </div>
 
                         <button type="submit" class="btn btn-success">Tambah User</button>
