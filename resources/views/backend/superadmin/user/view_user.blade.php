@@ -19,7 +19,7 @@
                             <th>Email</th>
                             <th>No. WA</th>
                             <th>Role</th>
-                            <th>foto</th>
+                            <th>Foto</th>
                             <th>Aksi</th>
                         </tr>
                     </thead>
@@ -31,7 +31,13 @@
                         <td>{{$user->email}}</td>
                         <td>{{$user->no_wa}}</td>
                         <td>{{$user->usertype}}</td>
-                        <td>{{$user->foto}}</td>
+                        <td>
+                        @if($user->foto)
+                        <img src="{{asset('storage/'. $user->foto)}}" alt="" title="{{$user->foto}}" class="card-img-top" style="width: 100px; display: block;">
+                        @else
+                        <img src="{{asset('backend/img/no-image.jpg')}}" alt="" title="Tidak ada gambar." class="card-img-top" style="width: 100px; display: block;">
+                        @endif
+                        </td>
                         @if($user->id != 1 && $user->id != 2)
                         <td>
                             <a href="{{route('users.edit', $user->id)}}" class="btn btn-warning">Edit</a> 

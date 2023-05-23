@@ -90,9 +90,9 @@ class UserController extends Controller
         // dd('berhasil masuk controller user edit');
         $deleteData = User::find($id);
         if (User::find($id == 1)) {
-            return redirect()->route('view_user');
+            return redirect()->route('view_user')->with('alert','Tidak dapat menghapus user ini!');
         }elseif (User::find($id == 2)) {
-            return redirect()->route('view_user');
+            return redirect()->route('view_user')->with('alert','Tidak dapat menghapus user ini!');
         }
         $deleteData->delete();
 
