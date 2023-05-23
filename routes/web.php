@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\Backend\superadmin\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Backend\superadmin\UserController;
 use App\Http\Controllers\Backend\SuperAdmin\AcaraController;
@@ -34,9 +34,6 @@ Route::get('/dashboard', function () {
 
 Route::middleware('auth', 'ceklevel:superadmin,admin')->group(function () {
     Route::get('/profile', [ProfileController::class, 'view'])->name('profile.view');
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
 require __DIR__.'/auth.php';

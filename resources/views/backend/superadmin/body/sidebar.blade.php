@@ -24,7 +24,7 @@
     <!-- Nav Item - Profil -->
     <li class="nav-item">
 
-        <a class="nav-link" href="{{route('profile.edit')}}">
+        <a class="nav-link" href="{{route('profile.view')}}">
             <i class="fas fa-fw fa-user"></i>
             <span>Profil</span></a>
     </li>
