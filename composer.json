@@ -2,15 +2,15 @@
     "name": "laravel/laravel",
     "type": "project",
     "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
     "license": "MIT",
     "require": {
         "php": "^8.1",
         "guzzlehttp/guzzle": "^7.2",
-<<<<<<< HEAD
         "laravel/breeze": "^1.21",
-=======
->>>>>>> origin/oktaviano
         "laravel/framework": "^10.0",
         "laravel/jetstream": "^3.2",
         "laravel/sanctum": "^3.2",

@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\Backend\superadmin\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Backend\superadmin\UserController;
 use App\Http\Controllers\Backend\SuperAdmin\AcaraController;
@@ -32,10 +32,8 @@ Route::get('/dashboard', function () {
     return view('backend.superadmin.index');
 })->middleware(['auth', 'verified', 'disable_back'])->name('dashboard');
 
-Route::middleware('auth')->group(function () {
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+Route::middleware('auth', 'ceklevel:superadmin,admin')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'view'])->name('profile.view');
 });
 
 require __DIR__.'/auth.php';
@@ -68,4 +66,3 @@ Route::middleware('auth', 'ceklevel:superadmin,admin')->group(function () {
     Route::post('/update/umkm/{id}', [UMKMController::class, 'UMKMUpdate'])->name('umkms.update');
     Route::get('/delete/umkm/{id}', [UMKMController::class, 'UMKMDelete'])->name('umkms.delete');
     });
-
