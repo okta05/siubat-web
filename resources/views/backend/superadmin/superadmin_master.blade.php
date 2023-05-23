@@ -194,5 +194,8 @@
         function resetImage(){
             alert("Seluruh field kembali keadaan awal!");
         }
+        function alertMSG(){
+            alert("Fitur belum selesai!");
+        }
     </script>
 </html>

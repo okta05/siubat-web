@@ -1,7 +1,7 @@
 <?php
 
-use App\Http\Controllers\Backend\superadmin\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Backend\superadmin\ProfileController;
 use App\Http\Controllers\Backend\superadmin\UserController;
 use App\Http\Controllers\Backend\SuperAdmin\AcaraController;
 use App\Http\Controllers\Backend\SuperAdmin\UMKMController;
@@ -33,7 +33,7 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified', 'disable_back'])->name('dashboard');
 
 Route::middleware('auth', 'ceklevel:superadmin,admin')->group(function () {
-    Route::get('/profile', [ProfileController::class, 'view'])->name('profile.view');
+    Route::get('/profile', [ProfileController::class, 'ProfileView'])->name('profile.view');
 });
 
 require __DIR__.'/auth.php';
