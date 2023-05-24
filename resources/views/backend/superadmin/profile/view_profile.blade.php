@@ -20,12 +20,19 @@
                 </div>
                 <div class="card h-100 py-2">
                     <center>
-                        <img class="img-profile rounded-circle mt-5" src="{{asset('backend/img/no-image.jpg')}}"
-                            width="150">
-                        <h6 class="m-0 font-weight-bold text-dark mt-4">{{auth()->user()->name}}</h6>
+                        @if(auth()->user()->foto)
+                        <img src="{{Storage::url(auth()->user()->foto)}}" class="img-profile rounded-circle" width="200" height="200">
+                        @else
+                        <img src="{{asset('backend/img/no-image.jpg')}}" alt="" class="img-profile rounded-circle mt-2" width="200">
+                        @endif
+                        
+                        <h6 class="m-0 font-weight-bold text-dark mt-4">Hai, {{auth()->user()->name}}!</h6>
                     </center>
                     <hr>
                     <div class="card-body">
+                        <span>Nama
+                            <p class="text-dark">{{auth()->user()->name}}</p>
+                        </span>
                         <span>Email
                             <p class="text-dark">{{auth()->user()->email}}</p>
                         </span>
@@ -35,6 +42,7 @@
                         <span>Alamat
                             <p class="text-dark">{{auth()->user()->alamat}}</p>
                         </span>
+                        <a href="#" class="btn btn-secondary" onclick="alertMSG()">Ubah Profil</a>
                     </div>
                 </div>
             </div>

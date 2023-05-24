@@ -18,7 +18,7 @@ class CekLevel
         if (in_array($request->user()->usertype,$levels)){
             return $next($request);
         }
-        return redirect('/');
+        return redirect('/dashboard');
     }
 }
  

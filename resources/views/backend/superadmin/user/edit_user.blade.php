@@ -27,7 +27,7 @@
                         @csrf
                         @if($editData->id == 1)
                         <div class="form-group">
-                            Hayoo, mau ngapain?
+                            Anda tidak bisa mengubah user ini!
                             <p>
                                 <br>
                                 <a href="{{route('view_user')}}" class="btn btn-success">Kembali</a>
@@ -90,10 +90,10 @@
                             @endif
                             @endif
                         </div>
-
                         <button type="submit" class="btn btn-success">Simpan Perubahan</button>
                         <button type="reset" class="btn btn-secondary">Kosongkan</button>
                         <a href="{{route('view_user')}}" class="btn btn-danger">Batalkan</a>
+                        @endif
                     </form>
                 </div>
             </div>

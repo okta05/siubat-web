@@ -91,9 +91,9 @@ class UserController extends Controller
         $deleteData = User::find($id);
         $pathFoto = $deleteData->foto;
         if (User::find($id == 1)) {
-            return redirect()->route('view_user');
+            return redirect()->route('view_user')->with('alert','Tidak dapat menghapus user ini!');
         }elseif (User::find($id == 2)) {
-            return redirect()->route('view_user');
+            return redirect()->route('view_user')->with('alert','Tidak dapat menghapus user ini!');
         }
           
         elseif ($pathFoto != null || $pathFoto != '') {

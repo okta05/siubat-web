@@ -11,7 +11,7 @@ class ProfileController extends Controller
 {
     //
 
-    public function ProfileView(){
+    public function ProfilView(){
         // dd('berhasil');
         return view('backend.superadmin.profile.view_profile');
     }

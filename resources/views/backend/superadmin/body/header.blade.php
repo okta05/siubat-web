@@ -54,9 +54,9 @@
                  aria-haspopup="true" aria-expanded="false">
                  <span class="mr-2 d-none d-lg-inline text-gray-600 small">{{auth()->user()->name}}</span>
                  @if(auth()->user()->foto)
-                 <img src="{{Storage::url(auth()->user()->foto)}}" class="img-profile rounded-circle" style="width:30%;">
+                 <img src="{{Storage::url(auth()->user()->foto)}}" class="img-profile rounded-circle">
                  @else
-                 <img src="{{asset('backend/img/no-image.jpg')}}" alt="" class="img-profile rounded-circle mt-2"  width="150">
+                 <img src="{{asset('backend/img/no-image.jpg')}}" alt="" class="img-profile rounded-circle mt-2" width="150">
                  @endif
              </a>
              <!-- Dropdown - User Information -->
