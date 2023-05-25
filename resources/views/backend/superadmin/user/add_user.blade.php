@@ -58,7 +58,7 @@
                         <div class="form-group">
                             <label for="password">Password</label>
                             <input type="password" name="password" class="form-control" id="password" required
-                                placeholder="Password" style="display: inline; width: 99.74%;">
+                                placeholder="Password" style="display: inline; width: 99.565%;">
                             <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
                         </div>
 
