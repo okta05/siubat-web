@@ -74,7 +74,8 @@
                         <div class="form-group">
                             <label for="foto">Foto Profil</label>
                             <img class="img-preview img-fluid mb-3 col-sm-5" style="width: 250px; height: auto;">
-                            <input type="file" name="foto" class="form-control @error('foto') is-invalid @enderror" id="foto" accept="image/*" onchange="previewImage()" placeholder="Gambar">
+                            <input type="file" name="foto" class="form-control @error('foto') is-invalid @enderror"
+                                id="foto" accept="image/*" onchange="previewImage()" placeholder="Gambar">
                             @error('foto')
                             <div class="invalid-feedback">
                                 {{ $message }}
@@ -84,10 +85,10 @@
                             @if($editData->foto)
                             <br>
                             Foto saat ini:
-                                <img src="{{asset('storage/'. $editData->foto)}}" class="img-preview img-fluid mb-3 col-sm-5 d-block" style="height: 250px; width: auto;">
+                            <img src="{{asset('storage/'. $editData->foto)}}"
+                                class="img-preview img-fluid mb-3 col-sm-5 d-block" style="height: 250px; width: auto;">
                             @else
-                                <img class="img-preview img-fluid mb-3 col-sm-5">
-                            @endif
+                            <img class="img-preview img-fluid mb-3 col-sm-5">
                             @endif
                         </div>
                         <button type="submit" class="btn btn-success">Simpan Perubahan</button>
