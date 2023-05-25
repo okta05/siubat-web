@@ -5,6 +5,7 @@ use App\Http\Controllers\Backend\superadmin\ProfileController;
 use App\Http\Controllers\Backend\superadmin\UserController;
 use App\Http\Controllers\Backend\SuperAdmin\AcaraController;
 use App\Http\Controllers\Backend\SuperAdmin\UMKMController;
+use App\Http\Controllers\Backend\SuperAdmin\BerandaController;
 use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Auth;
 
@@ -20,23 +21,26 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
-// Route::get('/', function () {
-//     // return view('welcome');
+Route::get('/', function () {
+    // return view('welcome');
+    // return view('auth.login');
+});
 
-//     return view('auth.login');
-// });
-
-Route::middleware('auth')->group(function (){
+Route::middleware('auth','disable_back')->group(function () {
     Route::get('/login');
 });
 
-Route::get('/dashboard', function () {
-    // return view('dashboard');
-    return view('backend.superadmin.index');
-})->middleware(['auth', 'verified', 'disable_back'])->name('dashboard');
+// Route::get('/dashboard', function () {
+//   
+//     return view('backend.superadmin.index');
+// })->middleware(['auth', 'verified', 'disable_back'])->name('dashboard');
 
-Route::middleware('auth', 'ceklevel:superadmin,admin')->group(function () {
+Route::middleware('auth',  'ceklevel:superadmin,admin')->group(function () {
     Route::get('/profile', [ProfileController::class, 'ProfilView'])->name('profile.view');
+});
+
+Route::middleware('auth', 'verified', 'disable_back')->group(function () {
+    Route::get('/dashboard', [BerandaController::class, 'beranda'])->name('dashboard');
 });
 
 require __DIR__.'/auth.php';

@@ -21,7 +21,7 @@
                         <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                 User
                         </div>
-                        <div class="h2 mb-0 font-weight-bold text-gray-800"></div>
+                        <div class="h2 mb-0 font-weight-bold text-gray-800">{{ $userCount }}</div>
                     </div>
                     </div>
                     <hr />
@@ -42,7 +42,7 @@
                         <div class="col mr-2">
                             <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
                                 Event</div>
-                            <div class="h2 mb-0 font-weight-bold text-gray-800"></div>
+                            <div class="h2 mb-0 font-weight-bold text-gray-800">{{ $eventCount }}</div>
                         </div>
                     </div>
                     <hr />
@@ -62,7 +62,7 @@
                         <div class="col mr-2">
                             <div class="text-xs font-weight-bold text-info text-uppercase mb-1">UMKM
                             </div>
-                            <div class="h2 mb-0 font-weight-bold text-gray-800"></div>
+                            <div class="h2 mb-0 font-weight-bold text-gray-800">{{ $umkmCount }}</div>
                         </div>
                     </div>
                     <hr />

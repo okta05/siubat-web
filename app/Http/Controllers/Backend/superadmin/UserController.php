@@ -89,10 +89,15 @@ class UserController extends Controller
     public function UserDelete($id){
         // dd('berhasil masuk controller user edit');
         $deleteData = User::find($id);
+        $pathFoto = $deleteData->foto;
         if (User::find($id == 1)) {
             return redirect()->route('view_user')->with('alert','Tidak dapat menghapus user ini!');
         }elseif (User::find($id == 2)) {
             return redirect()->route('view_user')->with('alert','Tidak dapat menghapus user ini!');
+        }
+          
+        elseif ($pathFoto != null || $pathFoto != '') {
+            Storage::delete($pathFoto);
         }
         $deleteData->delete();
 
