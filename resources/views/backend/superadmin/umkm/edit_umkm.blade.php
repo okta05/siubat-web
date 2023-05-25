@@ -62,10 +62,10 @@
                             @else
                                 <img class="img-preview img-fluid mb-3 col-sm-5">
                             @endif
-                            <button type="reset" class="btn btn-secondary">Kosongkan</button>
                         </div>
 
                         <button type="submit" class="btn btn-success">Simpan Data</button>
+                        <button type="reset" class="btn btn-secondary">Kosongkan</button>
                         <a href="{{route('view_umkm')}}" class="btn btn-danger">Batalkan</a>
                     </form>
                 </div>
