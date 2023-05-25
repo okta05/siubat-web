@@ -18,4 +18,11 @@ class ProfileController extends Controller
 
         return view('backend.superadmin.profile.view_profile', compact('user'));
     }
+
+    public function ProfilEdit() {
+        $id=Auth::user()->id;
+        $editData=User::find($id);
+
+        return view('backend.superadmin.profile.edit_profile', compact('editData'));
+    }
 }
