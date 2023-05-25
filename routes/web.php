@@ -20,10 +20,14 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
-Route::get('/', function () {
-    // return view('welcome');
+// Route::get('/', function () {
+//     // return view('welcome');
 
-    return view('auth.login');
+//     return view('auth.login');
+// });
+
+Route::middleware('auth')->group(function (){
+    Route::get('/login');
 });
 
 Route::get('/dashboard', function () {
