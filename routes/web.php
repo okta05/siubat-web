@@ -36,8 +36,9 @@ Route::middleware('auth','disable_back')->group(function () {
 // })->middleware(['auth', 'verified', 'disable_back'])->name('dashboard');
 
 Route::middleware('auth',  'ceklevel:superadmin,admin')->group(function () {
-    Route::get('/profile', [ProfileController::class, 'ProfilView'])->name('profile.view');
-    Route::get('/profileEdit', [ProfileController::class, 'ProfilEdit'])->name('profile.edit');
+    Route::get('/profile/view', [ProfileController::class, 'ProfilView'])->name('profile.view');
+    Route::get('/profile/edit', [ProfileController::class, 'ProfilEdit'])->name('profile.edit');
+    Route::post('/profile/update', [ProfileController::class, 'ProfilUpdate'])->name('profile.update');
 });
 
 Route::middleware('auth', 'verified', 'disable_back')->group(function () {

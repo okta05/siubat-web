@@ -22,7 +22,7 @@
 
                 <!-- Card Content - Edit -->
                 <div class="card-body">
-                    <form class="user" method="POST" action="{{route('users.update', $editData->id )}}"
+                    <form class="user" method="POST" action="{{route('profile.update', $editData->id )}}"
                         enctype="multipart/form-data">
                         @csrf
                         @if($editData->id == 1)
@@ -54,7 +54,7 @@
                             <input type="text" name="textNo_Wa" value="{{$editData->no_wa}}" class="form-control"
                                 id="textNo_Wa" placeholder="Nomor Telepon/WhatsApp">
                         </div>
-                        <div class="form-group">
+                        <!-- <div class="form-group">
                             <label for="selectUser">Role <span class="text-danger">*</span></label>
                             <select name="selectUser" id="selectUser" required class="form-control">
                                 <option value="">--- Pilih Role User ---</option>
@@ -69,7 +69,7 @@
                             <input type="password" name="password" required class="form-control" id="password"
                                 placeholder="Password" style="display: inline; width: 99.74%;">
                             <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
-                        </div>
+                        </div> -->
 
                         <div class="form-group">
                             <label for="foto">Foto Profil</label>
