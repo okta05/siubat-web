@@ -42,7 +42,7 @@
                         <span>Alamat
                             <p class="text-dark">{{$user->alamat}}</p>
                         </span>
-                        <a href="#" class="btn btn-secondary" onclick="alertMSG()">Ubah Profil</a>
+                        <a href="{{route('profile.edit')}}" class="btn btn-secondary">Ubah Profil</a>
                     </div>
                 </div>
             </div>

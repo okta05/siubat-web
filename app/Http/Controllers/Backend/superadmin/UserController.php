@@ -30,7 +30,7 @@ class UserController extends Controller
         ]);
 
         if ($request->file('foto')) {
-            $foto = $request->file('foto')->store('profile');
+            $foto = $request->file('foto')->getstore('profile');
         } else {
             $foto = '';
         }
