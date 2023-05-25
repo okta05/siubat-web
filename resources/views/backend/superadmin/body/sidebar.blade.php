@@ -5,7 +5,11 @@
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{route('dashboard')}}">
         <div class="sidebar-brand-icon">
             <!-- <i class="fas fa-laugh-wink"></i> -->
+<<<<<<< .merge_file_iV4ChH
             <img src="https://i.ibb.co/GsFV6HN/logo-login-white.png" style="width : 60px">
+=======
+            <img src="https://i.ibb.co/nMbY25j/logo-bwi.png" alt="logo-bwi" style="width : 45px">
+>>>>>>> .merge_file_rNxv1W
         </div>
         <div class="sidebar-brand-text mx-3">SIUBAT</div>
     </a>
