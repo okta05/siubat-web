@@ -1,19 +1,22 @@
 <?php
 
-namespace App\Http\Controllers\Backend\SuperAdmin;
+namespace App\Http\Controllers\Backend\superadmin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Auth;
+use App\Models\Beranda;
+use App\Models\Acara;
+use App\Models\Umkm;
+use App\Models\User;
 
 class BerandaController extends Controller
 {
     //
-    public function user(){
-        return view('backend.superadmin.user.view_user');
-    }
-
-    public function event(){
-        return view('backend.superadmin.event.view_event');
+    public function beranda(){
+        $userCount = User::count();
+        $eventCount = Acara::count();
+        $umkmCount = Umkm::count();
+        return view('backend.superadmin.index', compact('userCount', 'eventCount', 'umkmCount'));
     }
 }

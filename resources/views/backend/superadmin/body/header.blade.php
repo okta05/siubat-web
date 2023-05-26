@@ -53,7 +53,11 @@
              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
                  aria-haspopup="true" aria-expanded="false">
                  <span class="mr-2 d-none d-lg-inline text-gray-600 small">{{auth()->user()->name}}</span>
-                 <img class="img-profile rounded-circle" src="{{asset('backend/img/undraw_profile.svg')}}">
+                 @if(auth()->user()->foto)
+                 <img src="{{Storage::url(auth()->user()->foto)}}" class="img-profile rounded-circle">
+                 @else
+                 <img src="{{asset('backend/img/no-image.jpg')}}" alt="" class="img-profile rounded-circle mt-2" width="150">
+                 @endif
              </a>
              <!-- Dropdown - User Information -->
              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
