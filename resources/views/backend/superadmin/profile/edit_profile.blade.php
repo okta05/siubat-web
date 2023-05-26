@@ -92,8 +92,7 @@
                             @endif
                         </div>
                         <button type="submit" class="btn btn-success">Simpan Perubahan</button>
-                        <button type="reset" class="btn btn-secondary">Kosongkan</button>
-                        <a href="{{route('view_user')}}" class="btn btn-danger">Batalkan</a>
+                        <a href="{{route('profile.view')}}" class="btn btn-danger">Batalkan</a>
                         @endif
                     </form>
                 </div>
