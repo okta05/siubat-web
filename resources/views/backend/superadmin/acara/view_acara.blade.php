@@ -41,7 +41,7 @@
                                 <p class="">Tanggal Selesai : {{$acara->tgl_selesai}}</p>
                             </li>
                             <li class="list-unstyled">
-                                <p class="">Durasi : {{$acara->durasi}} Jam</p>
+                                <p class="">Durasi : {{$acara->durasi}}</p>
                             </li>
                             <li class="list-unstyled">
                                 Deskripsi : <p class="text-justify d-inline">{{$acara->deskripsi}}</p>
