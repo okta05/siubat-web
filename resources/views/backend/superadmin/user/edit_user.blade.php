@@ -67,7 +67,7 @@
                             <label for="password">Password <span class="text-danger" style="font-weight: bolder;">*Wajib
                                     diisi</span></label>
                             <input type="password" name="password" required class="form-control" id="password"
-                                placeholder="Password" style="display: inline; width: 99.74%;">
+                                placeholder="Password" style="display: inline; width: 99.565%;">
                             <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
                         </div>
 
