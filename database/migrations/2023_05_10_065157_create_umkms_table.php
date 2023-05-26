@@ -19,6 +19,8 @@ return new class extends Migration
             $table->string('deskripsi')->nullable();
             $table->string('alamat')->nullable();
             $table->string('foto')->nullable();
+            $table->string('produk1')->nullable();
+            $table->string('produk2')->nullable();
             $table->timestamps();
         });
     }

@@ -184,12 +184,45 @@
                 imgPreview.src = oFREvent.target.result;
             }
         }
+
         function resetImage(){
             alert("Seluruh field kembali keadaan awal!");
         }
         function alertMSG(){
             alert("Fitur belum selesai!");
         }
+    </script>
+    <script>
+       function previewImage1() {
+            const produk1 = document.querySelector('#produk1');
+            const imgPreview = document.querySelector('.img-preview1');
+
+            imgPreview.style.display = 'block';
+
+            const oFReader = new FileReader();
+            oFReader.readAsDataURL(produk1.files[0]);
+
+            oFReader.onload = function(oFREvent) {
+                imgPreview.src = oFREvent.target.result;
+            }
+        }
+
+    </script>
+    <script>
+       function previewImage2() {
+            const produk12 = document.querySelector('#produk2');
+            const imgPreview = document.querySelector('.img-preview2');
+
+            imgPreview.style.display = 'block';
+
+            const oFReader = new FileReader();
+            oFReader.readAsDataURL(produk2.files[0]);
+
+            oFReader.onload = function(oFREvent) {
+                imgPreview.src = oFREvent.target.result;
+            }
+        }
+
     </script>
     <script>
         var msg = '{{Session::get('alert')}}';
