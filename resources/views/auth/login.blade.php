@@ -25,7 +25,6 @@
 <body class="bg-gradient-primary">
 
     <div class="container">
-
         <div class="card2 o-hidden border-0 shadow-lg my-5">
             <div class="card-body p-0">
                 <!-- Nested Row within Card Body -->
@@ -42,7 +41,7 @@
                                 @csrf
                                 <hr>
                                 <div class="form-group">
-                                    <input type="email" class="form-control" style="width: 98.8%; id="email" name="email" placeholder="Email" autofocus required>
+                                    <input type="email" class="form-control" style="width: 98.8%;" id="email" name="email" placeholder="Email" autofocus required>
                                 </div>
                                 <div class="form-group">
                                     <input type="password" class="form-control" style="width: 98.8%; display: inline;" id="password" name="password" placeholder="Password" autocomplete="current-password" required="">
@@ -71,7 +70,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 
     <!-- Bootstrap core JavaScript-->

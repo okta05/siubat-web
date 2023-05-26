@@ -2,10 +2,11 @@
 <ul class="navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion" id="accordionSidebar">
 
     <!-- Sidebar - Brand -->
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{route('dashboard')}}">
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{route('dashboard')}}" style="height:15%;">
         <div class="sidebar-brand-icon">
             <!-- <i class="fas fa-laugh-wink"></i> -->
-            <img src="https://i.ibb.co/nMbY25j/logo-bwi.png" alt="logo-bwi" style="width : 45px">
+
+            <img src="https://banyuwangikab.go.id/presentation/b-asset/img/logo_bwi_small.png" style="width : 70px">
         </div>
         <div class="sidebar-brand-text mx-3">SIUBAT</div>
     </a>
