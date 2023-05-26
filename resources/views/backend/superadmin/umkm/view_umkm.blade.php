@@ -27,6 +27,7 @@
                     background-clip: border-box;
                     border: 1px solid #e3e6f0;
                     border-radius: 0.35rem;
+                    border-radius: 0.35rem;
                     ">
                         @if($umkm->foto)
                         <img src="{{asset('storage/'. $umkm->foto)}}" alt="" class="card-img-top"
@@ -50,12 +51,38 @@
                                     <li class="list-unstyled">
                                         <p class="">Alamat: {{$umkm->alamat}}</p>
                                     </li>
+                                    <li class="list-unstyled">
+                                        <p class="">Deskripsi Produk: {{$umkm->deskripsi}}</p>
+                                    </li>
+                                    <li class="list-unstyled">
+                                        <p class="">foto produk</p>
+                                        @if($umkm->produk1)
+                                        <img src="{{asset('storage/'. $umkm->produk1)}}" alt="" class="card-img-top"
+                                            style="height: auto; display: block;"><br>
+                                        @else
+                                        <img src="{{asset('backend/img/no-image.jpg')}}" alt=""
+                                            class="card-img-top"><br>
+                                        @endif
+                                        <br>
+                                    </li>
+                                    <li class="list-unstyled">
+                                        @if($umkm->produk2)
+                                        <img src="{{asset('storage/'. $umkm->produk2)}}" alt="" class="card-img-top"
+                                            style="height: auto; display: block;"><br>
+                                        @else
+                                        <img src="{{asset('backend/img/no-image.jpg')}}" alt=""
+                                            class="card-img-top"><br>
+                                        @endif
+                                        <br>
+                                    </li>
+
+                                    </li>
                                 </ul>
                             </div>
                             <a href="{{route('umkm.edit', $umkm->id)}}" class="btn btn-warning" title="Ubah"><i
                                     class="fas fa-fw fa-edit"></i></a>
-                            <a href="{{route('umkms.delete', $umkm->id)}}" class="btn btn-danger" id="delete" title="Hapus"><i
-                                    class="fas fa-fw fa-trash"></i></a>
+                            <a href="{{route('umkms.delete', $umkm->id)}}" class="btn btn-danger" id="delete"
+                                title="Hapus"><i class="fas fa-fw fa-trash"></i></a>
                         </div>
                     </div>
                 </div>
