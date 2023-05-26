@@ -43,7 +43,7 @@
                         <div class="form-group">
                             <label for="durasi">Durasi</label>
                             <input type="text" name="durasi" class="form-control" id="durasi" required
-                                placeholder="Durasi">
+                                placeholder="Durasi (contoh: 6 Jam, 2 Hari)">
                         </div>
                         <div class="form-group">
                             <label for="deskripsi">Deskripsi</label>

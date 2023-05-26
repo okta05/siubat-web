@@ -13,6 +13,9 @@
                 <a href="{{route('user.add')}}" class="btn btn-success mb-3">
                     <i class="fas fa-plus"></i> Tambah User
                 </a>
+                <p>
+                    Jumlah user saat ini: <b>{{ $userCount }}</b>
+                </p>
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>
                         <tr>

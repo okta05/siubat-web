@@ -38,8 +38,8 @@
                         </div>
                         <div class="form-group">
                             <label for="durasi">Durasi</label>
-                            <input type="number" name="durasi" class="form-control" id="durasi" value="{{$editData->durasi}}" required
-                                placeholder="Durasi">
+                            <input type="text" name="durasi" class="form-control" id="durasi" value="{{$editData->durasi}}" required
+                                placeholder="Durasi (contoh: 6 Jam, 2 Hari)">
                         </div>
                         <div class="form-group">
                             <label for="deskripsi">Deskripsi</label>

@@ -13,6 +13,10 @@
             <a href="{{route('umkm.add')}}" class="btn btn-success mb-3">
                 <i class="fas fa-plus"></i> Tambah UMKM
             </a>
+            <p>
+                Jumlah UMKM saat ini: <b>{{ $umkmCount }}</b>
+            </p>
+            <hr>
             <div class="row">
                 <!-- Earnings (Monthly) Card Example -->
                 @foreach($allDataUMKM as $key => $umkm)

@@ -14,6 +14,10 @@
             <a href="{{route('acara.add')}}" class="btn btn-success mb-3">
                 <i class="fas fa-plus"></i> Tambah Event
             </a>
+            <p>
+                Jumlah Event saat ini: <b>{{ $eventCount }}</b>
+            </p>
+            <hr>
             <div class="row">
                 <!-- Earnings (Monthly) Card Example -->
                 @foreach($allDataAcara as $key => $acara)
@@ -46,7 +50,7 @@
                                         <p class="">Tanggal Selesai : {{$acara->tgl_selesai}}</p>
                                     </li>
                                     <li class="list-unstyled">
-                                        <p class="">Durasi : {{$acara->durasi}} Jam</p>
+                                        <p class="">Durasi : {{$acara->durasi}}</p>
                                     </li>
                                     <li class="list-unstyled">
                                         Deskripsi : <p class="text-justify d-inline">{{$acara->deskripsi}}</p>
