@@ -5,7 +5,7 @@
 <div class="container-fluid">
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Dashboard | Event</h1>
+        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
     </div>
 
     <!-- Content Row -->
@@ -23,7 +23,7 @@
                 @if($acara->foto)
                 <img src="{{asset('storage/'. $acara->foto)}}" alt="" class="card-img-top"
                     style="height: auto; display: block;">
-                
+
                 @else
                 <img src="{{asset('backend/img/no-image.jpg')}}" alt="" class="card-img-top">
                 @endif
@@ -48,17 +48,18 @@
                             </li>
                         </ul>
                     </div>
+                    <a href="{{route('acaras.edit', $acara->id)}}" class="btn btn-warning" title="Ubah"><i
+                            class="fas fa-fw fa-edit"></i></a>
+                    <a href="{{route('acaras.delete', $acara->id)}}" class="btn btn-danger" id="delete" title="Hapus"><i
+                            class="fas fa-fw fa-trash"></i></a>
                 </div>
-                @endforeach
             </div>
-            <!-- /.container-fluid -->
-
-            <a href="{{route('acara.add')}}" class="btn btn-success">
-                <i class="fas fa-plus"></i> Tambah Event
-            </a>
-            <a href="{{route('dashboard')}}" class="btn btn-primary">Kembali</a>
         </div>
+        @endforeach
     </div>
+    <!-- /.container-fluid -->
+
+    <a href="{{route('acara.add')}}" class="btn btn-success">Tambah Event</a>
 </div>
 <!-- End of Main Content -->
 @endsection
