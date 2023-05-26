@@ -64,12 +64,8 @@
                     <div class="modal-body">Apakah anda yakin ingin keluar?</div>
                     <div class="modal-footer">
                         <button class="btn btn-secondary" type="button" data-dismiss="modal">Batal</button>
-<<<<<<< .merge_file_WoZxk2
                         <a class="btn btn-danger" href="{{route('admin.logout')}}"> Keluar <i class="fas fa-sign-out-alt"></i>
                         </a>
-=======
-                        <a class="btn btn-danger" href="{{route('admin.logout')}}">Logout</a>
->>>>>>> .merge_file_CSSTu3
                     </div>
                 </div>
             </div> 
