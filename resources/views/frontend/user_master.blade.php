@@ -131,6 +131,7 @@
             </div>
         </div>
     </div>
+    
     <!-- Carousel End -->
 
 
@@ -152,7 +153,7 @@
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
                     <div class="position-relative h-100">
-                        <img class="img-fluid position-absolute w-100 h-100" src="aula.jpg" alt=""
+                        <img class="img-fluid position-absolute w-100 h-100" src="{{asset('frontend/img/aula.jpg')}}" alt=""
                             style="object-fit: cover;">
                     </div>
                 </div>
@@ -350,13 +351,13 @@
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="{{asset('frontend/lib/wow/wow.min.js')}}"></script>
+    <script src="{{asset('frontend/lib/easing/easing.min.js')}}"></script>
+    <script src="{{asset('frontend/lib/waypoints/waypoints.min.js')}}"></script>
+    <script src="{{asset('frontend/lib/owlcarousel/owl.carousel.min.js')}}"></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="{{asset('frontend/js/main.js')}}"></script>
 </body>
 
 </html>
