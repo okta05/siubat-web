@@ -29,6 +29,8 @@ class UMKMController extends Controller
             'foto' => 'mimes:jpg,jpeg,png|image|file|max:2048',
             'produk1' => 'mimes:jpg,jpeg,png|image|file|max:2048',
             'produk2' => 'mimes:jpg,jpeg,png|image|file|max:2048',
+            'produk3' => 'mimes:jpg,jpeg,png|image|file|max:2048',
+            'produk4' => 'mimes:jpg,jpeg,png|image|file|max:2048',
         ]);
 
         // $file_name = $request->foto->getClientOriginalName();
@@ -56,6 +58,18 @@ class UMKMController extends Controller
             $produk2 = '';
         }
 
+        if ($request->file('produk3')) {
+            $produk3 = $request->file('produk3')->store('foto_produk3');
+        } else {
+            $produk3 = '';
+        }
+
+        if ($request->file('produk4')) {
+            $produk4 = $request->file('produk4')->store('foto_produk4');
+        } else {
+            $produk4 = '';
+        }
+
         // dd($request);
         $data=new Umkm();
         $data->nm_pemilik=$request->textNama;
@@ -66,6 +80,8 @@ class UMKMController extends Controller
         $data->foto=$foto;
         $data->produk1=$produk1;
         $data->produk2=$produk2;
+        $data->produk3=$produk3;
+        $data->produk4=$produk4;
         $data->save();
 
         return redirect()->route('view_umkm');
