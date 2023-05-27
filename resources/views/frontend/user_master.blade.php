@@ -99,7 +99,7 @@
                                 <p class="fs-5 text-white mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor at sed
                                     stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea sanctus
                                     eirmod elitr.</p>
-                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read
+                                <a href="#deskripsi_dusun" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read
                                     More</a>
                                 <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</a>
                             </div>
@@ -152,8 +152,8 @@
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
                     <div class="position-relative h-100">
-                        <img class="img-fluid position-absolute w-100 h-100" src="aula.jpg" alt=""
-                            style="object-fit: cover;">
+                        <img class="img-fluid position-absolute w-100 h-100" src="{{asset('frontend/img/aula.jpg')}}"
+                            alt="" style="object-fit: cover;">
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -215,8 +215,8 @@
                 </div>
                 <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
                     <a class="position-relative d-block h-100 overflow-hidden" href="">
-                        <img class="img-fluid position-absolute w-100 h-100" src="{{asset('frontend/img/cat-4.jpg')}}" alt=""
-                            style="object-fit: cover;">
+                        <img class="img-fluid position-absolute w-100 h-100" src="{{asset('frontend/img/cat-4.jpg')}}"
+                            alt="" style="object-fit: cover;">
                         <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
                             style="margin:  1px;">
                             <h5 class="m-0">Mantren</h5>
@@ -231,6 +231,10 @@
     <!-- Service Start -->
     <div class="container-xxl py-5">
         <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 id="deskripsi_dusun" class="section-title bg-white text-center text-primary px-3">Desa</h6>
+                <h1 class="mb-5">Deskripsi Dusun</h1>
+            </div>
             <div class="row g-4">
                 <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item text-center pt-3">
@@ -350,13 +354,13 @@
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="{{asset('frontend/lib/wow/wow.min.js')}}"></script>
+    <script src="{{asset('frontend/lib/easing/easing.min.js')}}"></script>
+    <script src="{{asset('frontendlib/waypoints/waypoints.min.js')}}"></script>
+    <script src="{{asset('frontend/lib/owlcarousel/owl.carousel.min.js')}}"></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="{{asset('frontend/js/main.js')}}"></script>
 </body>
 
 </html>
