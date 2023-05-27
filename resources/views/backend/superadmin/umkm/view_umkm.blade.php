@@ -56,7 +56,7 @@
                                     </li>
 
                                     <div>
-                                        <p>Gambar Produk</p>
+                                        <p><b>Gambar Produk</b></p>
                                         @if($umkm->produk1)
                                         <img src="{{asset('storage/'. $umkm->produk1)}}" alt="" class="card-img-top"
                                             id="foto_produk">
