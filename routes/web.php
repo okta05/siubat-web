@@ -22,8 +22,8 @@ use Illuminate\Support\Facades\Auth;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-    // return view('auth.login');
+    // return view('welcome');
+    return view('frontend.user_master');
 });
 
 Route::middleware('auth','disable_back')->group(function () {
