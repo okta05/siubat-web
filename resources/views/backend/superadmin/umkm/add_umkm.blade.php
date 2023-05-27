@@ -30,26 +30,31 @@
                             <input type="text" name="textNama" class="form-control" id="textNama" required
                                 placeholder="Nama Pemilik UMKM">
                         </div>
+
                         <div class="form-group">
                             <label for="textNamaProduk">Nama Produk</label>
                             <input type="text" name="textNamaProduk" class="form-control" id="textNamaProduk" required
                                 placeholder="Nama Produk">
                         </div>
+
                         <div class="form-group">
                             <label for="harga">Harga</label>
                             <input type="number" name="harga" class="form-control" id="harga" required
                                 placeholder="Harga">
                         </div>
+
                         <div class="form-group">
                             <label for="deskripsi">Deskripsi</label>
                             <input type="text" name="deskripsi" class="form-control" id="deskripsi" required
                                 placeholder="Deskripsi">
                         </div>
+
                         <div class="form-group">
                             <label for="deskripsi">Alamat</label>
                             <input type="text" name="alamat" class="form-control" id="alamat" required
                                 placeholder="Alamat">
                         </div>
+
                         <div class="form-group">
                             <label for="foto">Gambar</label>
                             <img class="img-preview img-fluid mb-3 col-sm-5" style="width: 200px; height: auto;">
@@ -61,6 +66,7 @@
                             </div>
                             @enderror
                         </div>
+
                         <div class="form-group">
                             <label for="produk1">Produk 1</label>
                             <img class="img-preview1 img-fluid mb-3 col-sm-5" style="width: 200px; height: auto;">
@@ -73,6 +79,7 @@
                             </div>
                             @enderror
                         </div>
+
                         <div class="form-group">
                             <label for="produk2">Produk 2</label>
                             <img class="img-preview2 img-fluid mb-3 col-sm-5" style="width: 200px; height: auto;">
@@ -85,6 +92,7 @@
                             </div>
                             @enderror
                         </div>
+
                         <div class="form-group">
                             <label for="produk3">Produk 3</label>
                             <img class="img-preview3 img-fluid mb-3 col-sm-5" style="width: 200px; height: auto;">
@@ -97,6 +105,7 @@
                             </div>
                             @enderror
                         </div>
+
                         <div class="form-group">
                             <label for="produk4">Produk 4</label>
                             <img class="img-preview4 img-fluid mb-3 col-sm-5" style="width: 200px; height: auto;">
