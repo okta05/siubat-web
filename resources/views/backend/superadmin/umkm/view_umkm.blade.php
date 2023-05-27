@@ -70,24 +70,7 @@
                                         @endif
                                     </div>
 
-                                    <div>
-                                        <br>
-                                        @if($umkm->produk1)
-                                        <img src="{{asset('storage/'. $umkm->produk1)}}" alt="" class="card-img-top"
-                                            id="foto_produk">
-                                        @else
-                                        <img src="{{asset('backend/img/no-image.jpg')}}" alt="" class="card-img-top"
-                                            id="foto_produk">
-                                        @endif
-
-                                        @if($umkm->produk2)
-                                        <img src="{{asset('storage/'. $umkm->produk2)}}" alt="" class="card-img-top"
-                                            id="foto_produk">
-                                        @else
-                                        <img src="{{asset('backend/img/no-image.jpg')}}" alt="" class="card-img-top"
-                                            id="foto_produk">
-                                        @endif
-                                    </div><br>
+                                    
                                 </ul>
                             </div>
                             <br> <a href="{{route('umkm.edit', $umkm->id)}}" class="btn btn-warning" title="Ubah"><i
