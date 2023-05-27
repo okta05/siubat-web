@@ -66,7 +66,7 @@
                             <img class="img-preview1 img-fluid mb-3 col-sm-5" style="width: 200px; height: auto;">
                             <input type="file" name="produk1"
                                 class="form-control @error('produk1') is-invalid @enderror" id="produk1"
-                                accept="image/*" onchange="previewImage1()" placeholder="Gambar">
+                                accept="image/*" onchange="previewImage1()" placeholder="Produk 1">
                             @error('produk1')
                             <div class="invalid-feedback">
                                 {{ $message }}
@@ -78,8 +78,32 @@
                             <img class="img-preview2 img-fluid mb-3 col-sm-5" style="width: 200px; height: auto;">
                             <input type="file" name="produk2"
                                 class="form-control @error('produk2') is-invalid @enderror" id="produk2"
-                                accept="image/*" onchange="previewImage2()" placeholder="Gambar">
+                                accept="image/*" onchange="previewImage2()" placeholder="Produk 2">
                             @error('produk2')
+                            <div class="invalid-feedback">
+                                {{ $message }}
+                            </div>
+                            @enderror
+                        </div>
+                        <div class="form-group">
+                            <label for="produk3">Produk 3</label>
+                            <img class="img-preview3 img-fluid mb-3 col-sm-5" style="width: 200px; height: auto;">
+                            <input type="file" name="produk3"
+                                class="form-control @error('produk3') is-invalid @enderror" id="produk3"
+                                accept="image/*" onchange="previewImage3()" placeholder="Produk 3">
+                            @error('produk3')
+                            <div class="invalid-feedback">
+                                {{ $message }}
+                            </div>
+                            @enderror
+                        </div>
+                        <div class="form-group">
+                            <label for="produk4">Produk 4</label>
+                            <img class="img-preview4 img-fluid mb-3 col-sm-5" style="width: 200px; height: auto;">
+                            <input type="file" name="produk4"
+                                class="form-control @error('produk4') is-invalid @enderror" id="produk4"
+                                accept="image/*" onchange="previewImage4()" placeholder="Produk 4">
+                            @error('produk4')
                             <div class="invalid-feedback">
                                 {{ $message }}
                             </div>

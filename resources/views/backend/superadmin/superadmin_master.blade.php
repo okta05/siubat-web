@@ -210,13 +210,45 @@
     </script>
     <script>
        function previewImage2() {
-            const produk12 = document.querySelector('#produk2');
+            const produk2 = document.querySelector('#produk2');
             const imgPreview = document.querySelector('.img-preview2');
 
             imgPreview.style.display = 'block';
 
             const oFReader = new FileReader();
             oFReader.readAsDataURL(produk2.files[0]);
+
+            oFReader.onload = function(oFREvent) {
+                imgPreview.src = oFREvent.target.result;
+            }
+        }
+
+    </script>
+    <script>
+       function previewImage3() {
+            const produk3 = document.querySelector('#produk3');
+            const imgPreview = document.querySelector('.img-preview3');
+
+            imgPreview.style.display = 'block';
+
+            const oFReader = new FileReader();
+            oFReader.readAsDataURL(produk3.files[0]);
+
+            oFReader.onload = function(oFREvent) {
+                imgPreview.src = oFREvent.target.result;
+            }
+        }
+
+    </script>
+    <script>
+       function previewImage4() {
+            const produk4 = document.querySelector('#produk4');
+            const imgPreview = document.querySelector('.img-preview4');
+
+            imgPreview.style.display = 'block';
+
+            const oFReader = new FileReader();
+            oFReader.readAsDataURL(produk4.files[0]);
 
             oFReader.onload = function(oFREvent) {
                 imgPreview.src = oFREvent.target.result;
