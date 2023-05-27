@@ -39,7 +39,7 @@ Route::middleware('auth',  'ceklevel:superadmin,admin')->group(function () {
     Route::get('/profile/view', [ProfileController::class, 'ProfilView'])->name('profile.view');
     Route::get('/profile/edit', [ProfileController::class, 'ProfilEdit'])->name('profile.edit');
     Route::post('/profile/update', [ProfileController::class, 'ProfilUpdate'])->name('profile.update');
-    Route::get('/profile/delete/{id}', [ProfileController::class, 'ProfilDelete'])->name('profile.delete');
+    Route::get('/profile/photo/delete/{id}', [ProfileController::class, 'ProfilDelete'])->name('profile.delete');
 });
 
 Route::middleware('auth', 'verified', 'disable_back')->group(function () {

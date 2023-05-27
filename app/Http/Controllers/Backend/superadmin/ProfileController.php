@@ -33,6 +33,7 @@ class ProfileController extends Controller
        if ($request->file('foto')) {
         if($request->oldImage){
         Storage::delete($request->oldImage);
+        Storage::put('backend/img/no-image.jpg');
             }
         $foto = $request->file('foto')->store('profile');
     } else {

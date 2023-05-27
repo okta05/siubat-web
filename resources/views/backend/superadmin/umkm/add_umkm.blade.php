@@ -52,10 +52,34 @@
                         </div>
                         <div class="form-group">
                             <label for="foto">Gambar</label>
-                            <img class="img-preview img-fluid mb-3 col-sm-5" style="width: 250px; height: auto;">
+                            <img class="img-preview img-fluid mb-3 col-sm-5" style="width: 200px; height: auto;">
                             <input type="file" name="foto" class="form-control @error('foto') is-invalid @enderror"
                                 id="foto" accept="image/*" onchange="previewImage()" placeholder="Gambar">
                             @error('foto')
+                            <div class="invalid-feedback">
+                                {{ $message }}
+                            </div>
+                            @enderror
+                        </div>
+                        <div class="form-group">
+                            <label for="produk1">Produk 1</label>
+                            <img class="img-preview1 img-fluid mb-3 col-sm-5" style="width: 200px; height: auto;">
+                            <input type="file" name="produk1"
+                                class="form-control @error('produk1') is-invalid @enderror" id="produk1"
+                                accept="image/*" onchange="previewImage1()" placeholder="Gambar">
+                            @error('produk1')
+                            <div class="invalid-feedback">
+                                {{ $message }}
+                            </div>
+                            @enderror
+                        </div>
+                        <div class="form-group">
+                            <label for="produk2">Produk 2</label>
+                            <img class="img-preview2 img-fluid mb-3 col-sm-5" style="width: 200px; height: auto;">
+                            <input type="file" name="produk2"
+                                class="form-control @error('produk2') is-invalid @enderror" id="produk2"
+                                accept="image/*" onchange="previewImage2()" placeholder="Gambar">
+                            @error('produk2')
                             <div class="invalid-feedback">
                                 {{ $message }}
                             </div>
