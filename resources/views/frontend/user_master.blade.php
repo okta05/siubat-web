@@ -195,7 +195,7 @@
                         </div>
                         <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
                             <a class="position-relative d-block overflow-hidden" href="">
-                                <img class="img-fluid" src="{{asset('frontend/img/cat-2.jpg')}}" alt="">
+                                <img class="img-fluid" src="{{asset('frontend/img/karangrejo.jpeg')}}" alt="">
                                 <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
                                     style="margin: 1px;">
                                     <h5 class="m-0">Karangrejo</h5>
@@ -204,7 +204,7 @@
                         </div>
                         <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
                             <a class="position-relative d-block overflow-hidden" href="">
-                                <img class="img-fluid" src="{{asset('frontend/img/cat-3.jpg')}}" alt="">
+                                <img class="img-fluid" src="{{asset('frontend/img/krajan.jpeg')}}" alt="">
                                 <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
                                     style="margin: 1px;">
                                     <h5 class="m-0">Krajan</h5>
