@@ -79,6 +79,8 @@
                                     </li>
                                 </ul>
                             </div>
+                            <hr>
+                            Opsi:
                             <a href="{{route('umkm.edit', $umkm->id)}}" class="btn btn-warning" title="Ubah"><i
                                     class="fas fa-fw fa-edit"></i></a>
                             <a href="{{route('umkms.delete', $umkm->id)}}" class="btn btn-danger" id="delete"
