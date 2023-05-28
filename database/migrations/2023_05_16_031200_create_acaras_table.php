@@ -19,6 +19,10 @@ return new class extends Migration
             $table->string('tgl_selesai')->nullable();
             $table->string('durasi')->nullable();
             $table->text('deskripsi', 4096)->nullable();
+            $table->string('foto_acara1')->nullable();
+            $table->string('foto_acara2')->nullable();
+            $table->string('foto_acara3')->nullable();
+            $table->string('foto_acara4')->nullable();
             $table->timestamps();
         });
     }

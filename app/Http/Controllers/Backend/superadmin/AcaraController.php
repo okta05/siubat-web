@@ -26,10 +26,17 @@ class AcaraController extends Controller
         $validateData=$request->validate([
             'nm_acara' => 'required',
             'foto' => 'mimes:jpg,jpeg,png,mp4,avi|file',
+            'acara1' => 'mimes:jpg,jpeg,png|image|file|max:2048',
         ]);
 
         if ($request->file('foto')) {
             $foto = $request->file('foto')->store('media');
+        } else {
+            $foto = '';
+        }
+
+        if ($request->file('acara1')) {
+            $acara1 = $request->file('acara1')->store('acara/acara1');
         } else {
             $foto = '';
         }
@@ -42,6 +49,7 @@ class AcaraController extends Controller
         $data->durasi=$request->durasi;
         $data->deskripsi=$request->deskripsi;
         $data->foto=$foto;
+        $data->foto_acara1=$acara1;
         $data->save();
 
         return redirect()->route('view_acara');
