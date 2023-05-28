@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Siubat</title>
+    <title>Sistem Informasi UMKM Desa Kabat | SIUBAT</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -14,9 +14,7 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -38,7 +36,7 @@
     <div id="spinner"
         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
+            <span class="sr-only">Tunggu sebentar...</span>
         </div>
     </div>
     <!-- Spinner End -->
@@ -46,15 +44,21 @@
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2> <img src="https://i.postimg.cc/PrCywBZh/logo-bwi.png" style="width : 45px"> Siubat</h2>
+        <a href="/" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <div class="sidebar-brand-icon">
+                <!-- <i class="fas fa-laugh-wink"></i> -->
+                <img src="https://i.ibb.co/nMbY25j/logo-bwi.png" alt="logo-bwi" style="width : 45px;">
+            </div>
+            <div class="sidebar-brand-text mx-3">
+                <span class="h2">SIUBAT</span>
+            </div>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="index.html" class="nav-item nav-link active">Utama</a>
                 <a href="#" class="nav-item nav-link">Event</a>
                 <a href="contact.html" class="nav-item nav-link">UMKM</a>
             </div>
