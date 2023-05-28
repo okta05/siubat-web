@@ -20,6 +20,7 @@
                 </div>
                 <div class="card h-100 py-2">
                     <center>
+                    
                         @if($user->foto)
                         <img src="{{asset('storage/'. $user->foto)}}" class="img-profile rounded-circle" width="200" height="200">
                         @else
@@ -42,6 +43,8 @@
                         <span>Alamat
                             <p class="text-dark">{{$user->alamat}}</p>
                         </span>
+                        <a href="{{route('profile.delete', $user->id)}}" class="btn btn-danger" id="delete"
+                                title="Hapus"><i class="fas fa-fw fa-trash"></i></a>
                         <a href="{{route('profile.edit')}}" class="btn btn-secondary">Ubah Profil</a>
                     </div>
                 </div>

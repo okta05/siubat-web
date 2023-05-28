@@ -23,7 +23,7 @@ use Illuminate\Support\Facades\Auth;
 
 Route::get('/', function () {
     // return view('welcome');
-    // return view('auth.login');
+    return view('frontend.user_master');
 });
 
 Route::middleware('auth','disable_back')->group(function () {
@@ -36,8 +36,10 @@ Route::middleware('auth','disable_back')->group(function () {
 // })->middleware(['auth', 'verified', 'disable_back'])->name('dashboard');
 
 Route::middleware('auth',  'ceklevel:superadmin,admin')->group(function () {
-    Route::get('/profile', [ProfileController::class, 'ProfilView'])->name('profile.view');
-    Route::get('/profileEdit', [ProfileController::class, 'ProfilEdit'])->name('profile.edit');
+    Route::get('/profile/view', [ProfileController::class, 'ProfilView'])->name('profile.view');
+    Route::get('/profile/edit', [ProfileController::class, 'ProfilEdit'])->name('profile.edit');
+    Route::post('/profile/update', [ProfileController::class, 'ProfilUpdate'])->name('profile.update');
+    Route::get('/profile/photo/delete/{id}', [ProfileController::class, 'ProfilDelete'])->name('profile.delete');
 });
 
 Route::middleware('auth', 'verified', 'disable_back')->group(function () {
@@ -58,7 +60,7 @@ Route::middleware('auth', 'ceklevel:superadmin')->group(function () {
 });
 
 Route::middleware('auth', 'ceklevel:superadmin,admin')->group(function () {
-    Route::get('/view', [AcaraController::class, 'viewAcara'])->name('view_acara');
+    Route::get('/event/view', [AcaraController::class, 'viewAcara'])->name('view_acara');
     Route::get('/event/add/', [AcaraController::class, 'addAcara'])->name('acara.add');
     Route::post('/event/store', [AcaraController::class, 'storeAcara'])->name('acaras.store');
     Route::get('/event/edit/{id}', [AcaraController::class, 'AcaraEdit'])->name('acaras.edit');

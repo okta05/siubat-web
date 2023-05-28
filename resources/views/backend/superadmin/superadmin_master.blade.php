@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Dashboard - Admin</title>
+    <title>Dashboard</title>
 
     <!-- Custom fonts for this template-->
 
@@ -64,8 +64,8 @@
                     <div class="modal-body">Apakah anda yakin ingin keluar?</div>
                     <div class="modal-footer">
                         <button class="btn btn-secondary" type="button" data-dismiss="modal">Batal</button>
-                        <a class="btn btn-danger" href="{{route('admin.logout')}}">Logout</a>
-
+                        <a class="btn btn-danger" href="{{route('admin.logout')}}"> Keluar <i class="fas fa-sign-out-alt"></i>
+                        </a>
                     </div>
                 </div>
             </div> 
@@ -184,12 +184,77 @@
                 imgPreview.src = oFREvent.target.result;
             }
         }
+
         function resetImage(){
             alert("Seluruh field kembali keadaan awal!");
         }
         function alertMSG(){
             alert("Fitur belum selesai!");
         }
+    </script>
+    <script>
+       function previewImage1() {
+            const produk1 = document.querySelector('#produk1');
+            const imgPreview = document.querySelector('.img-preview1');
+
+            imgPreview.style.display = 'block';
+
+            const oFReader = new FileReader();
+            oFReader.readAsDataURL(produk1.files[0]);
+
+            oFReader.onload = function(oFREvent) {
+                imgPreview.src = oFREvent.target.result;
+            }
+        }
+
+    </script>
+    <script>
+       function previewImage2() {
+            const produk2 = document.querySelector('#produk2');
+            const imgPreview = document.querySelector('.img-preview2');
+
+            imgPreview.style.display = 'block';
+
+            const oFReader = new FileReader();
+            oFReader.readAsDataURL(produk2.files[0]);
+
+            oFReader.onload = function(oFREvent) {
+                imgPreview.src = oFREvent.target.result;
+            }
+        }
+
+    </script>
+    <script>
+       function previewImage3() {
+            const produk3 = document.querySelector('#produk3');
+            const imgPreview = document.querySelector('.img-preview3');
+
+            imgPreview.style.display = 'block';
+
+            const oFReader = new FileReader();
+            oFReader.readAsDataURL(produk3.files[0]);
+
+            oFReader.onload = function(oFREvent) {
+                imgPreview.src = oFREvent.target.result;
+            }
+        }
+
+    </script>
+    <script>
+       function previewImage4() {
+            const produk4 = document.querySelector('#produk4');
+            const imgPreview = document.querySelector('.img-preview4');
+
+            imgPreview.style.display = 'block';
+
+            const oFReader = new FileReader();
+            oFReader.readAsDataURL(produk4.files[0]);
+
+            oFReader.onload = function(oFREvent) {
+                imgPreview.src = oFREvent.target.result;
+            }
+        }
+
     </script>
     <script>
         var msg = '{{Session::get('alert')}}';

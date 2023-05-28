@@ -50,6 +50,7 @@
                             <input type="text" name="deskripsi" class="form-control" id="deskripsi" required
                                 placeholder="Deskripsi">
                         </div>
+
                         <div class="form-group">
                             <label for="foto">Gambar</label>
                             <img class="img-preview img-fluid mb-3 col-sm-5" style="width: 250px; height: auto;">
@@ -61,6 +62,7 @@
                             </div>
                             @enderror
                         </div>
+
 
                         <button type="submit" class="btn btn-success">Tambah Data</button>
                         <button type="reset" class="btn btn-secondary">Kosongkan</button>
