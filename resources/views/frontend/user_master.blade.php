@@ -132,21 +132,7 @@
         </div>
     </div>
     
-    <!-- Carousel End -->
-
-
-
-    <!-- <br>
-    <header>
-        <center>
-            <video id="bg-video" poster="thumbnail.png" autoplay muted loop style="width: 100%;">
-                <source src="video umkm.mp4" type="video/mp4" />
-            </video>
-        </center>
-    </header>
-
-    <br> -->
-
+ 
     <!-- About Start -->
     <div class="container-xxl py-5">
         <div class="container">
@@ -173,6 +159,32 @@
         </div>
     </div>
     <!-- About End -->
+
+       <!-- Carousel End -->
+       <div class="container-xxl py-8">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                    <iframe width="500px" height="300px" src="https://www.youtube.com/embed/rX8mia65UXg?autoplay=1&amp;controls=0&amp;start=0&amp;end=0&amp;modestbranding=1&amp;wmode=transparent&amp;enablejsapi=1&amp;loop=1&amp;rel=0&amp;mute=1" data-src="https://www.youtube.com/embed/rX8mia65UXg?autoplay=1&amp;controls=0&amp;start=0&amp;end=0&amp;modestbranding=1&amp;wmode=transparent&amp;enablejsapi=1&amp;loop=1&amp;rel=0&amp;mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <h6 class="section-title bg-white text-start text-primary pe-3">ahbvjkanvjkdjh</h6>
+                    <h1 class="mb-4">Desa Kabat</h1>
+                    <p class="mb-4">Kabat adalah sebuah kecamatan di Kabupaten Banyuwangi, Provinsi Jawa Timur,
+                        Indonesia. Kecamatan Kabat memiliki 14 desa, diantaranya Desa Bareng, Desa Bunder, Desa
+                        Gombolirang, Desa Benelan Lor, Desa Labanesem, Desa Pakistaji, Desa Pondoknongko, Desa Dadapan,
+                        Desa Kedayunan, Desa Kabat, Desa Macan Putih, Desa Tambong, Desa Pendarungan, dan Desa Kalirejo.
+                        Kecamatan Kabat memiliki luas wilayah 94,17 km2 yang dibagi ke dalam 14 desa. Wilayah kecamatan
+                        ini dilewati oleh sungai Tambong yang memiliki panjang 24,35 km.
+                        .</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
     <!-- Categories Start -->
