@@ -52,7 +52,7 @@
                         </div>
                         <div class="form-group">
                             <label for="foto">Gambar</label>
-                            <img class="img-preview img-fluid mb-3 col-sm-5" style="width: 250px; height: auto;">
+                            <img class="img-preview img-fluid mb-3 col-sm-5" style="width: 200px; height: auto;">
                             <input type="file" name="foto" class="form-control @error('foto') is-invalid @enderror"
                                 id="foto" accept="image/*" onchange="previewImage()" placeholder="Gambar">
                             @error('foto')
@@ -65,7 +65,7 @@
                             <br>
                             Foto saat ini:
                             <img src="{{asset('storage/'. $editData->foto)}}"
-                                class="img-preview img-fluid mb-3 col-sm-5 d-block" style="height: 250px; width: auto;">
+                                class="img-preview img-fluid mb-3 col-sm-5 d-block" style="height: 200px; width: auto;">
                             @else
                             <img class="img-preview img-fluid mb-3 col-sm-5">
                             @endif
@@ -73,10 +73,10 @@
 
                         <div class="form-group">
                             <label for="produk1">Gambar Produk 1</label>
-                            <img class="img-preview1 img-fluid mb-3 col-sm-5" style="width: 250px; height: auto;">
+                            <img class="img-preview1 img-fluid mb-3 col-sm-5" style="width: 200px; height: auto;">
                             <input type="file" name="produk1"
                                 class="form-control @error('produk1') is-invalid @enderror" id="produk1"
-                                accept="image/*" onchange="previewImage1()" placeholder="Gambar">
+                                accept="image/*" onchange="previewImage1()" placeholder="Produk 1">
                             @error('produk1')
                             <div class="invalid-feedback">
                                 {{ $message }}
@@ -87,7 +87,8 @@
                             <br>
                             Foto saat ini:
                             <img src="{{asset('storage/'. $editData->produk1)}}"
-                                class="img-preview1 img-fluid mb-3 col-sm-5 d-block" style="height: 250px; width: auto;">
+                                class="img-preview1 img-fluid mb-3 col-sm-5 d-block"
+                                style="width: 200px; height: auto;">
                             @else
                             <img class="img-preview1 img-fluid mb-3 col-sm-5">
                             @endif
@@ -95,10 +96,10 @@
 
                         <div class="form-group">
                             <label for="produk2">Gambar Produk 2</label>
-                            <img class="img-preview2 img-fluid mb-3 col-sm-5" style="width: 250px; height: auto;">
+                            <img class="img-preview2 img-fluid mb-3 col-sm-5" style="width: 200px; height: auto;">
                             <input type="file" name="produk2"
-                                class="form-control @error('produk1') is-invalid @enderror" id="produk2"
-                                accept="image/*" onchange="previewImage2()" placeholder="Gambar">
+                                class="form-control @error('produk2') is-invalid @enderror" id="produk2"
+                                accept="image/*" onchange="previewImage2()" placeholder="Produk 2">
                             @error('produk2')
                             <div class="invalid-feedback">
                                 {{ $message }}
@@ -109,9 +110,56 @@
                             <br>
                             Foto saat ini:
                             <img src="{{asset('storage/'. $editData->produk2)}}"
-                                class="img-preview2 img-fluid mb-3 col-sm-5 d-block" style="height: 250px; width: auto;">
+                                class="img-preview2 img-fluid mb-3 col-sm-5 d-block"
+                                style="width: 200px; height: auto;">
                             @else
                             <img class="img-preview2 img-fluid mb-3 col-sm-5">
+                            @endif
+                        </div>
+
+                        <div class="form-group">
+                            <label for="produk3">Gambar Produk 3</label>
+                            <img class="img-preview3 img-fluid mb-3 col-sm-5" style="width: 200px; height: auto;">
+                            <input type="file" name="produk3"
+                                class="form-control @error('produk3') is-invalid @enderror" id="produk3"
+                                accept="image/*" onchange="previewImage3()" placeholder="Produk 3">
+                            @error('produk3')
+                            <div class="invalid-feedback">
+                                {{ $message }}
+                            </div>
+                            @enderror
+                            <input type="hidden" name="oldImage3" value="{{ $editData->produk3 }}">
+                            @if($editData->produk3)
+                            <br>
+                            Foto saat ini:
+                            <img src="{{asset('storage/'. $editData->produk3)}}"
+                                class="img-preview3 img-fluid mb-3 col-sm-5 d-block"
+                                style="width: 200px; height: auto;">
+                            @else
+                            <img class="img-preview3 img-fluid mb-3 col-sm-5">
+                            @endif
+                        </div>
+
+                        <div class="form-group">
+                            <label for="produk4">Gambar Produk 4</label>
+                            <img class="img-preview4 img-fluid mb-3 col-sm-5" style="width: 200px; height: auto;">
+                            <input type="file" name="produk4"
+                                class="form-control @error('produk4') is-invalid @enderror" id="produk4"
+                                accept="image/*" onchange="previewImage4()" placeholder="Produk 4">
+                            @error('produk4')
+                            <div class="invalid-feedback">
+                                {{ $message }}
+                            </div>
+                            @enderror
+                            <input type="hidden" name="oldImage4" value="{{ $editData->produk4 }}">
+                            @if($editData->produk4)
+                            <br>
+                            Foto saat ini:
+                            <img src="{{asset('storage/'. $editData->produk4)}}"
+                                class="img-preview4 img-fluid mb-3 col-sm-5 d-block"
+                                style="width: 200px; height: auto;">
+                            @else
+                            <img class="img-preview4 img-fluid mb-3 col-sm-5">
                             @endif
                         </div>
 

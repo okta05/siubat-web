@@ -21,6 +21,8 @@ return new class extends Migration
             $table->string('foto')->nullable();
             $table->string('produk1')->nullable();
             $table->string('produk2')->nullable();
+            $table->string('produk3')->nullable();
+            $table->string('produk4')->nullable();
             $table->timestamps();
         });
     }

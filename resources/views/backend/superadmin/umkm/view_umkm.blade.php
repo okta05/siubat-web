@@ -20,7 +20,7 @@
             <div class="row">
                 <!-- Earnings (Monthly) Card Example -->
                 @foreach($allDataUMKM as $key => $umkm)
-                <div class="col-xl-3 col-md-6 mb-4">
+                <div class="col-xl-4 col-md-6 mb-4">
                     <div class="card d-inline-block w-100 p-2" style="
                     height: 100%!important;
                     background-color: #fff;
@@ -54,35 +54,49 @@
                                     <li class="list-unstyled">
                                         <p class="">Deskripsi Produk: {{$umkm->deskripsi}}</p>
                                     </li>
-                                    <li class="list-unstyled">
-                                        <p class="">foto produk</p>
+
+                                    <div>
+                                        <p><b>Gambar Produk</b></p>
                                         @if($umkm->produk1)
                                         <img src="{{asset('storage/'. $umkm->produk1)}}" alt="" class="card-img-top"
-                                            style="height: auto; display: block;"><br>
+                                            id="foto_produk">
                                         @else
-                                        <img src="{{asset('backend/img/no-image.jpg')}}" alt=""
-                                            class="card-img-top"><br>
+                                        <img src="{{asset('backend/img/no-image.jpg')}}" alt="" class="card-img-top"
+                                            id="foto_produk">
                                         @endif
-                                        <br>
-                                    </li>
-                                    <li class="list-unstyled">
+
                                         @if($umkm->produk2)
                                         <img src="{{asset('storage/'. $umkm->produk2)}}" alt="" class="card-img-top"
-                                            style="height: auto; display: block;"><br>
+                                            id="foto_produk">
                                         @else
-                                        <img src="{{asset('backend/img/no-image.jpg')}}" alt=""
-                                            class="card-img-top"><br>
+                                        <img src="{{asset('backend/img/no-image.jpg')}}" alt="" class="card-img-top"
+                                            id="foto_produk">
                                         @endif
-                                        <br>
-                                    </li>
+                                    </div>
 
-                                    </li>
+                                    <div>
+                                        <br>
+                                        @if($umkm->produk3)
+                                        <img src="{{asset('storage/'. $umkm->produk3)}}" alt="" class="card-img-top"
+                                            id="foto_produk">
+                                        @else
+                                        <img src="{{asset('backend/img/no-image.jpg')}}" alt="" class="card-img-top"
+                                            id="foto_produk">
+                                        @endif
+
+                                        @if($umkm->produk4)
+                                        <img src="{{asset('storage/'. $umkm->produk4)}}" alt="" class="card-img-top"
+                                            id="foto_produk">
+                                        @else
+                                        <img src="{{asset('backend/img/no-image.jpg')}}" alt="" class="card-img-top"
+                                            id="foto_produk">
+                                        @endif
+                                    </div><br>
                                 </ul>
                             </div>
                             <hr>
                             Opsi:
-                            <a href="{{route('umkm.edit', $umkm->id)}}" class="btn btn-warning" title="Ubah"><i
-                                    class="fas fa-fw fa-edit"></i></a>
+                            <a href="{{route('umkm.edit', $umkm->id)}}" class="btn btn-warning" title="Ubah"><i class="fas fa-fw fa-edit"></i></a>
                             <a href="{{route('umkms.delete', $umkm->id)}}" class="btn btn-danger" id="delete"
                                 title="Hapus"><i class="fas fa-fw fa-trash"></i></a>
                         </div>
@@ -90,10 +104,6 @@
                 </div>
                 @endforeach
             </div>
-            <a href="{{route('umkm.add')}}" class="btn btn-success">
-                <i class="fas fa-plus"></i> Tambah UMKM
-            </a>
-            <a href="{{route('dashboard')}}" class="btn btn-primary">Kembali</a>
         </div>
     </div>
     <!-- /.container-fluid -->
