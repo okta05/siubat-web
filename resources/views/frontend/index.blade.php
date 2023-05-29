@@ -228,12 +228,14 @@
                 <div class="row g-5">
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
                         <div class="position-relative h-100">
-                            <iframe width="500px" height="300px"
+                            <!-- <iframe width="500px" height="300px"
                                 src="https://www.youtube.com/embed/rX8mia65UXg?autoplay=1&amp;controls=0&amp;start=0&amp;end=0&amp;modestbranding=1&amp;wmode=transparent&amp;enablejsapi=1&amp;loop=1&amp;rel=0&amp;mute=1"
                                 data-src="https://www.youtube.com/embed/rX8mia65UXg?autoplay=1&amp;controls=0&amp;start=0&amp;end=0&amp;modestbranding=1&amp;wmode=transparent&amp;enablejsapi=1&amp;loop=1&amp;rel=0&amp;mute=1"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe>
+                                allowfullscreen></iframe> -->
+                                <iframe width="500px" height="300px height="379" 
+                                src="https://www.youtube.com/embed/xWJHv6jajzc" title="Kknt desa kabat" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
                     </div>
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
