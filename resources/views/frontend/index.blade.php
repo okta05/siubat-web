@@ -269,7 +269,7 @@
                         <div class="row g-3">
                             <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
                                 <a class="position-relative d-block overflow-hidden" href="">
-                                    <img class="img-fluid" src="{{asset('frontend/img/cat-1.jpg')}}" alt="">
+                                    <img class="img-fluid" src="{{asset('frontend/img/bodean.jpeg')}}" alt="">
                                     <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
                                         style="margin: 1px;">
                                         <h5 class="m-0">Bodean</h5>
@@ -299,7 +299,7 @@
                     <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
                         <a class="position-relative d-block h-100 overflow-hidden" href="">
                             <img class="img-fluid position-absolute w-100 h-100"
-                                src="{{asset('frontend/img/cat-4.jpg')}}" alt="" style="object-fit: cover;">
+                                src="{{asset('frontend/img/mantren.jpeg')}}" alt="" style="object-fit: cover;">
                             <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
                                 style="margin:  1px;">
                                 <h5 class="m-0">Mantren</h5>
@@ -312,18 +312,12 @@
         <!-- Categories Start -->
 
         <!-- Service Start -->
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 id="deskripsi_dusun" class="section-title bg-white text-center text-primary px-3">Desa</h6>
-                    <h1 class="mb-5">Deskripsi Dusun</h1>
-                </div>
                 <div class="row g-4">
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="service-item text-center pt-3">
                             <div class="p-4">
                                 <h5 class="mb-3">Bodean</h5>
-                                <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                                <p>UMKM yang dominan di dusun ini yaitu dalam bidang kerajinan</p>
                             </div>
                         </div>
                     </div>
@@ -331,7 +325,7 @@
                         <div class="service-item text-center pt-3">
                             <div class="p-4">
                                 <h5 class="mb-3">Karangrejo</h5>
-                                <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                                <p>UMKM yang dominan di dusun ini yaitu produksi tahu</p>
                             </div>
                         </div>
                     </div>
@@ -339,7 +333,7 @@
                         <div class="service-item text-center pt-3">
                             <div class="p-4">
                                 <h5 class="mb-3">Krajan</h5>
-                                <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                                <p>UMKM yang dominan di dusun ini yaitu pembuatan roti basah dan kering</p>
                             </div>
                         </div>
                     </div>
@@ -347,7 +341,7 @@
                         <div class="service-item text-center pt-3">
                             <div class="p-4">
                                 <h5 class="mb-3">Mantren</h5>
-                                <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                                <p>UMKM yang dominan di dusun ini yaitu dalam pembuatan tempe sagu</p>
                             </div>
                         </div>
                     </div>
@@ -381,11 +375,11 @@
                         <div class="d-flex align-items-center mb-3">
                             <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary"
                                 style="width: 50px; height: 50px">
-                                <i class="fa fa-phone-alt text-white"></i>
+                                <img src="https://i.postimg.cc/0jKqVF78/www.png" style="width : 25px">
                             </div>
                             <div class="ms-3">
-                                <h5 class="text-primary">Nomor Telepon</h5>
-                                <p class="mb-0">+012 345 67890</p>
+                                <h5 class="text-primary">Website</h5>
+                                <p class="mb-0">kabat.desa.id</p>
                             </div>
                         </div>
                         <div class="d-flex align-items-center">
@@ -395,7 +389,7 @@
                             </div>
                             <div class="ms-3">
                                 <h5 class="text-primary">Email</h5>
-                                <p class="mb-0">info@example.com</p>
+                                <p class="mb-0">desakabat@gmail.com</p>
                             </div>
                         </div>
                     </div>
