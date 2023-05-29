@@ -33,12 +33,12 @@
 
 <body>
     <!-- Spinner Start -->
-    <div id="spinner"
+    <!-- <div id="spinner"
         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
             <span class="sr-only">Tunggu sebentar...</span>
         </div>
-    </div>
+    </div> -->
     <!-- Spinner End -->
 
 
@@ -74,8 +74,8 @@
             <div class="container">
                 <div class="row justify-content-start">
                     <div class="col-sm-10 col-lg-10">
-                        <h1 class="display-4 text-white animated slideInRight">SELAMAT DATANG DI SISTEM INFORMASI DAN
-                            UMKM DESA KABAT
+                        <h1 class="display-5 text-white float-left">
+                            SELAMAT DATANG DI SISTEM INFORMASI DAN UMKM DESA KABAT
                         </h1>
                     </div>
                 </div>
@@ -137,19 +137,19 @@
     </div>
     
     <!-- Carousel End -->
-
-
-
-    <!-- <br>
+    <br>
     <header>
         <center>
-            <video id="bg-video" poster="thumbnail.png" autoplay muted loop style="width: 100%;">
-                <source src="video umkm.mp4" type="video/mp4" />
-            </video>
+            <div data-loop="true" data-start="0" class="brz-bg-video absolute top-0 left-0">
+                <iframe src="https://www.youtube.com/embed/rX8mia65UXg?autoplay=1&amp;controls=0&amp;start=0&amp;end=0&amp;modestbranding=1&amp;wmode=transparent&amp;enablejsapi=1&amp;loop=1&amp;rel=0&amp;mute=1" data-src="https://www.youtube.com/embed/rX8mia65UXg?autoplay=1&amp;controls=0&amp;start=0&amp;end=0&amp;modestbranding=1&amp;wmode=transparent&amp;enablejsapi=1&amp;loop=1&amp;rel=0&amp;mute=1" 
+                    class="brz-iframe intrinsic-ignore brz-bg-video__cover absolute top-0 left-0 border-none !max-w-none bg-no-repeat bg-cover" 
+                    loading="lazy" style="width:560px; height:315px;"
+                    title="Sistem Informasi UMKM Desa Kabat | SIUBAT"></iframe>
+            </div>
         </center>
     </header>
 
-    <br> -->
+    <br>
 
     <!-- About Start -->
     <div class="container-xxl py-5">
