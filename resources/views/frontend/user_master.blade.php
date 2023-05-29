@@ -183,29 +183,16 @@
 
         </div>
     </div>
-    <!-- Carousel End -->
-
-
-
-    <!-- <br>
-    <header>
-        <center>
-            <video id="bg-video" poster="thumbnail.png" autoplay muted loop style="width: 100%;">
-                <source src="video umkm.mp4" type="video/mp4" />
-            </video>
-        </center>
-    </header>
-
-    <br> -->
-
+    
+ 
     <!-- About Start -->
     <div class="container-xxl py-5">
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
                     <div class="position-relative h-100">
-                        <img class="img-fluid position-absolute w-100 h-100" src="{{asset('frontend/img/aula.jpg')}}"
-                            alt="" style="object-fit: cover;">
+                        <img class="img-fluid position-absolute w-100 h-100" src="{{asset('frontend/img/aula.jpg')}}" alt=""
+                            style="object-fit: cover;">
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -224,6 +211,32 @@
         </div>
     </div>
     <!-- About End -->
+
+       <!-- Carousel End -->
+       <div class="container-xxl py-8">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                    <iframe width="500px" height="300px" src="https://www.youtube.com/embed/rX8mia65UXg?autoplay=1&amp;controls=0&amp;start=0&amp;end=0&amp;modestbranding=1&amp;wmode=transparent&amp;enablejsapi=1&amp;loop=1&amp;rel=0&amp;mute=1" data-src="https://www.youtube.com/embed/rX8mia65UXg?autoplay=1&amp;controls=0&amp;start=0&amp;end=0&amp;modestbranding=1&amp;wmode=transparent&amp;enablejsapi=1&amp;loop=1&amp;rel=0&amp;mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <h6 class="section-title bg-white text-start text-primary pe-3">ahbvjkanvjkdjh</h6>
+                    <h1 class="mb-4">Desa Kabat</h1>
+                    <p class="mb-4">Kabat adalah sebuah kecamatan di Kabupaten Banyuwangi, Provinsi Jawa Timur,
+                        Indonesia. Kecamatan Kabat memiliki 14 desa, diantaranya Desa Bareng, Desa Bunder, Desa
+                        Gombolirang, Desa Benelan Lor, Desa Labanesem, Desa Pakistaji, Desa Pondoknongko, Desa Dadapan,
+                        Desa Kedayunan, Desa Kabat, Desa Macan Putih, Desa Tambong, Desa Pendarungan, dan Desa Kalirejo.
+                        Kecamatan Kabat memiliki luas wilayah 94,17 km2 yang dibagi ke dalam 14 desa. Wilayah kecamatan
+                        ini dilewati oleh sungai Tambong yang memiliki panjang 24,35 km.
+                        .</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
     <!-- Categories Start -->
@@ -247,7 +260,7 @@
                         </div>
                         <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
                             <a class="position-relative d-block overflow-hidden" href="">
-                                <img class="img-fluid" src="{{asset('frontend/img/cat-2.jpg')}}" alt="">
+                                <img class="img-fluid" src="{{asset('frontend/img/karang.jpeg')}}" alt="">
                                 <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
                                     style="margin: 1px;">
                                     <h5 class="m-0">Karangrejo</h5>
@@ -256,7 +269,7 @@
                         </div>
                         <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
                             <a class="position-relative d-block overflow-hidden" href="">
-                                <img class="img-fluid" src="{{asset('frontend/img/cat-3.jpg')}}" alt="">
+                                <img class="img-fluid" src="{{asset('frontend/img/krajan.jpeg')}}" alt="">
                                 <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
                                     style="margin: 1px;">
                                     <h5 class="m-0">Krajan</h5>
@@ -408,7 +421,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="{{asset('frontend/lib/wow/wow.min.js')}}"></script>
     <script src="{{asset('frontend/lib/easing/easing.min.js')}}"></script>
-    <script src="{{asset('frontendlib/waypoints/waypoints.min.js')}}"></script>
+    <script src="{{asset('frontend/lib/waypoints/waypoints.min.js')}}"></script>
     <script src="{{asset('frontend/lib/owlcarousel/owl.carousel.min.js')}}"></script>
 
     <!-- Template Javascript -->
