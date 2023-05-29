@@ -22,7 +22,7 @@ use Illuminate\Support\Facades\Auth;
 */
 
 Route::get('/', function () {
-    // return view('welcome');
+    return view('welcome');
     // return view('auth.login');
 });
 
@@ -60,7 +60,7 @@ Route::middleware('auth', 'ceklevel:superadmin')->group(function () {
 });
 
 Route::middleware('auth', 'ceklevel:superadmin,admin')->group(function () {
-    Route::get('/view', [AcaraController::class, 'viewAcara'])->name('view_acara');
+    Route::get('/event/view', [AcaraController::class, 'viewAcara'])->name('view_acara');
     Route::get('/event/add/', [AcaraController::class, 'addAcara'])->name('acara.add');
     Route::post('/event/store', [AcaraController::class, 'storeAcara'])->name('acaras.store');
     Route::get('/event/edit/{id}', [AcaraController::class, 'AcaraEdit'])->name('acaras.edit');
