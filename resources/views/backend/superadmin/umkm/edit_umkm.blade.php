@@ -5,7 +5,7 @@
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Dashboard | Tambah Data UMKM</h1>
+        <h1 class="h3 mb-0 text-gray-800">Dashboard | Ubah Data UMKM</h1>
     </div>
 
     <!-- Content Row -->
@@ -17,7 +17,7 @@
             <div class="card shadow mb-4">
                 <!-- Card Header - Edit -->
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                    <h6 class="m-0 font-weight-bold text-dark">Tambah Data UMKM</h6>
+                    <h6 class="m-0 font-weight-bold text-dark">Ubah Data UMKM</h6>
                 </div>
 
                 <!-- Card Content - Edit -->
