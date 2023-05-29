@@ -62,7 +62,7 @@
     </nav>
     <!-- Navbar End -->
 
-
+    <!-- welcome message start -->
     <div class="owl-carousel-item position-relative">
         <img class="img-fluid" src="{{asset('frontend/img/kantor desa.jpg')}}" alt="">
         <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
@@ -78,8 +78,7 @@
             </div>
         </div>
     </div>
-    </div>
-    </div>
+    <!-- welcome message end-->
 
 
     <!-- Carousel Start -->
@@ -123,7 +122,8 @@
                                 <p class="fs-5 text-white mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor at sed
                                     stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea sanctus
                                     eirmod elitr.</p>
-                                <a href="#deskripsi_dusun" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read
+                                <a href="#deskripsi_dusun"
+                                    class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read
                                     More</a>
                                 <a href="#" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</a>
                             </div>
@@ -146,7 +146,8 @@
                                 <p class="fs-5 text-white mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor at sed
                                     stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea sanctus
                                     eirmod elitr.</p>
-                                <a href="#deskripsi_dusun" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read
+                                <a href="#deskripsi_dusun"
+                                    class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read
                                     More</a>
                                 <a href="#" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</a>
                             </div>
@@ -169,7 +170,8 @@
                                 <p class="fs-5 text-white mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor at sed
                                     stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea sanctus
                                     eirmod elitr.</p>
-                                <a href="#deskripsi_dusun" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read
+                                <a href="#deskripsi_dusun"
+                                    class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read
                                     More</a>
                                 <a href="#" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</a>
                             </div>
