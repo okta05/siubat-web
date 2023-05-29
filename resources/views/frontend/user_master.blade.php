@@ -170,22 +170,21 @@
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <h6 class="section-title bg-white text-start text-primary pe-3">ahbvjkanvjkdjh</h6>
-                    <h1 class="mb-4">Desa Kabat</h1>
-                    <p class="mb-4">Kabat adalah sebuah kecamatan di Kabupaten Banyuwangi, Provinsi Jawa Timur,
-                        Indonesia. Kecamatan Kabat memiliki 14 desa, diantaranya Desa Bareng, Desa Bunder, Desa
-                        Gombolirang, Desa Benelan Lor, Desa Labanesem, Desa Pakistaji, Desa Pondoknongko, Desa Dadapan,
-                        Desa Kedayunan, Desa Kabat, Desa Macan Putih, Desa Tambong, Desa Pendarungan, dan Desa Kalirejo.
-                        Kecamatan Kabat memiliki luas wilayah 94,17 km2 yang dibagi ke dalam 14 desa. Wilayah kecamatan
-                        ini dilewati oleh sungai Tambong yang memiliki panjang 24,35 km.
+                    <h6 class="section-title bg-white text-start text-primary pe-3">Pengenalan</h6>
+                    <h1 class="mb-4">Tiap Dusun di Kabat</h1>
+                    <p class="mb-4">Kondisi alam di Desa Kabat tergolong baik dikarenakan disini alamnya masih asri, 
+                        memiliki tanah yang subur, serta persediaan air yang melimpah oleh karena itu, sebagian besar 
+                        penduduk bermata pencaharian sebagai petani. Sehingga para petani dapat bercocok tanam 3  sampai 
+                        4 kali dalam setahun. Namun, ada beberapa lahan pertanian yang rusak karena penggunaan 
+                        bahan – bahan kimia dan perawatan yang kurang baik, sehingga mengakibatkan tanahnya kurang subur, 
+                        keras, dan kering karena kadar pH yang cukup rendah. Potensi di Desa Kabat mayoritasnya merupakan petani. 
+                        Di desa ini ada beberapa warga yang juga menekuni usaha-usaha, perkebunan, peternakan, perikanan, perindustrian.
                         .</p>
 
                 </div>
             </div>
         </div>
     </div>
-
-
 
     <!-- Categories Start -->
     <div class="container-xxl py-5 category">
@@ -199,7 +198,7 @@
                     <div class="row g-3">
                         <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
                             <a class="position-relative d-block overflow-hidden" href="">
-                                <img class="img-fluid" src="{{asset('frontend/img/cat-1.jpg')}}" alt="">
+                                <img class="img-fluid" src="{{asset('frontend/img/bodean.jpeg')}}" alt="">
                                 <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
                                     style="margin: 1px;">
                                     <h5 class="m-0">Bodean</h5>
@@ -228,7 +227,7 @@
                 </div>
                 <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
                     <a class="position-relative d-block h-100 overflow-hidden" href="">
-                        <img class="img-fluid position-absolute w-100 h-100" src="{{asset('frontend/img/cat-4.jpg')}}" alt=""
+                        <img class="img-fluid position-absolute w-100 h-100" src="{{asset('frontend/img/mantren.jpeg')}}" alt=""
                             style="object-fit: cover;">
                         <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
                             style="margin:  1px;">
