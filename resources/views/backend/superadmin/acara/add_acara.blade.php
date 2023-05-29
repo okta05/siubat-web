@@ -63,6 +63,18 @@
                             @enderror
                         </div>
 
+                        <div class="form-group">
+                            <label for="acara1">Gambar Acara 1</label>
+                            <img class="img-preview1_1 img-fluid mb-3 col-sm-5" style="width: 200px; height: auto;">
+                            <input type="file" name="acara1"
+                                class="form-control @error('acara1') is-invalid @enderror" id="acara1"
+                                accept="image/*" onchange="previewImage1_1()" placeholder="Acara 1">
+                            @error('acara1')
+                            <div class="invalid-feedback">
+                                {{ $message }}
+                            </div>
+                            @enderror
+                        </div>
 
                         <button type="submit" class="btn btn-success">Tambah Data</button>
                         <button type="reset" class="btn btn-secondary">Kosongkan</button>

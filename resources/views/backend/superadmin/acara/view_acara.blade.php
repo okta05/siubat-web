@@ -12,7 +12,7 @@
     <div class="row">
         <!-- Earnings (Monthly) Card Example -->
         @foreach($allDataAcara as $key => $acara)
-        <div class="col-xl-3 col-md-6 mb-4">
+        <div class="col-xl-6 col-md-6 mb-4">
             <div class="card d-inline-block w-100 p-2" style="
             height: 100%!important;
             background-color: #fff;
@@ -21,11 +21,11 @@
             border-radius: 0.35rem;
             ">
                 @if($acara->foto)
-                <img src="{{asset('storage/'. $acara->foto)}}" alt="" class="card-img-top"
+                <img src="{{asset('storage/'. $acara->foto)}}" alt="" id="cover_acara" class="card-img-top"
                     style="height: auto; display: block;">
 
                 @else
-                <img src="{{asset('backend/img/no-image.jpg')}}" alt="" class="card-img-top">
+                <img src="{{asset('backend/img/no-image.jpg')}}" alt="" id="cover_acara" class="card-img-top">
                 @endif
                 <hr>
                 <div class="card-body">
@@ -48,6 +48,36 @@
                             </li>
                         </ul>
                     </div>
+
+                    <div>
+                        <p><b>Gambar Event</b></p>
+                        @if($acara->foto_acara1)
+                        <img src="{{asset('storage/'. $acara->foto_acara1)}}" alt="" class="card-img-top" id="foto_acara">
+                        @else
+                        <img src="{{asset('backend/img/no-image.jpg')}}" alt="" class="card-img-top" id="foto_acara">
+                        @endif
+                        
+                        @if($acara->foto_acara1)
+                        <img src="{{asset('storage/'. $acara->foto_acara1)}}" alt="" class="card-img-top" id="foto_acara">
+                        @else
+                        <img src="{{asset('backend/img/no-image.jpg')}}" alt="" class="card-img-top" id="foto_acara">
+                        @endif
+
+                        @if($acara->foto_acara1)
+                        <img src="{{asset('storage/'. $acara->foto_acara1)}}" alt="" class="card-img-top" id="foto_acara">
+                        @else
+                        <img src="{{asset('backend/img/no-image.jpg')}}" alt="" class="card-img-top" id="foto_acara">
+                        @endif
+
+                        @if($acara->foto_acara1)
+                        <img src="{{asset('storage/'. $acara->foto_acara1)}}" alt="" class="card-img-top" id="foto_acara">
+                        @else
+                        <img src="{{asset('backend/img/no-image.jpg')}}" alt="" class="card-img-top" id="foto_acara">
+                        @endif
+                    </div>
+
+                    <br>
+
                     <a href="{{route('acaras.edit', $acara->id)}}" class="btn btn-warning" title="Ubah"><i
                             class="fas fa-fw fa-edit"></i></a>
                     <a href="{{route('acaras.delete', $acara->id)}}" class="btn btn-danger" id="delete" title="Hapus"><i

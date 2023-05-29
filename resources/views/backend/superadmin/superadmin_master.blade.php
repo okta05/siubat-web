@@ -14,7 +14,9 @@
     <!-- Custom fonts for this template-->
 
     <link href="{{asset('backend/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
 
     <!-- Custom styles for this template-->
     <link href="{{asset('backend/css/sb-admin-2.min.css')}}" rel="stylesheet">
@@ -64,11 +66,12 @@
                     <div class="modal-body">Apakah anda yakin ingin keluar?</div>
                     <div class="modal-footer">
                         <button class="btn btn-secondary" type="button" data-dismiss="modal">Batal</button>
-                        <a class="btn btn-danger" href="{{route('admin.logout')}}"> Keluar <i class="fas fa-sign-out-alt"></i>
+                        <a class="btn btn-danger" href="{{route('admin.logout')}}"> Keluar <i
+                                class="fas fa-sign-out-alt"></i>
                         </a>
                     </div>
                 </div>
-            </div> 
+            </div>
         </div>
 
         <!-- Bootstrap core JavaScript-->
@@ -91,176 +94,193 @@
 </body>
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script type="text/javascript">
-    $(function() {
-        $(document).on('click', '#delete', function(e) {
-            e.preventDefault();
-            var link = $(this).attr("href");
+$(function() {
+    $(document).on('click', '#delete', function(e) {
+        e.preventDefault();
+        var link = $(this).attr("href");
 
-            const swalWithBootstrapButtons = Swal.mixin({
-                customClass: {
-                    confirmButton: 'btn btn-success',
-                    cancelButton: 'btn btn-danger'
-                },
-                buttonsStyling: false
-            })
-
-            swalWithBootstrapButtons.fire({
-                title: 'Konfirmasi untuk menghapus?',
-                text: "Data tidak akan dikembalikan setelah dihapus!",
-                icon: 'warning',
-                showCancelButton: true,
-                confirmButtonText: 'Ya, hapus data!',
-                cancelButtonText: 'Tidak, batalkan!',
-                reverseButtons: false
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    window.location.href = link
-                    swalWithBootstrapButtons.fire(
-                        'Terhapus!',
-                        'Data berhasil dihapus.',
-                        'success'
-                    )
-                } else if (
-                    /* Read more about handling dismissals below */
-                    result.dismiss === Swal.DismissReason.cancel
-                ) {
-                    swalWithBootstrapButtons.fire(
-                        'Dibatalkan',
-                        'Data kembali disimpan',
-                        'error'
-                    )
-                }
-            })
+        const swalWithBootstrapButtons = Swal.mixin({
+            customClass: {
+                confirmButton: 'btn btn-success',
+                cancelButton: 'btn btn-danger'
+            },
+            buttonsStyling: false
         })
+
         swalWithBootstrapButtons.fire({
-                title: 'Konfirmasi untuk menghapus?',
-                text: "Data tidak akan dikembalikan setelah dihapus!",
-                icon: 'warning',
-                showCancelButton: true,
-                confirmButtonText: 'Hapus',
-                cancelButtonText: 'Batalkan',
-                reverseButtons: false
-            })
-            .then((result) => {
-                if (result.isConfirmed) {
-                    window.location.href = link
-                    swalWithBootstrapButtons.fire(
-                        'Terhapus!',
-                        'Data berhasil dihapus.',
-                        'success'
-                    )
-                } else if (result.dismiss === Swal.DismissReason.cancel) {
-                    swalWithBootstrapButtons.fire(
-                        'Dibatalkan',
-                        'Data tetap disimpan!',
-                        'success'
-                    )
-                }
-            })
+            title: 'Konfirmasi untuk menghapus?',
+            text: "Data tidak akan dikembalikan setelah dihapus!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonText: 'Ya, hapus data!',
+            cancelButtonText: 'Tidak, batalkan!',
+            reverseButtons: false
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = link
+                swalWithBootstrapButtons.fire(
+                    'Terhapus!',
+                    'Data berhasil dihapus.',
+                    'success'
+                )
+            } else if (
+                /* Read more about handling dismissals below */
+                result.dismiss === Swal.DismissReason.cancel
+            ) {
+                swalWithBootstrapButtons.fire(
+                    'Dibatalkan',
+                    'Data kembali disimpan',
+                    'error'
+                )
+            }
+        })
     })
+    swalWithBootstrapButtons.fire({
+            title: 'Konfirmasi untuk menghapus?',
+            text: "Data tidak akan dikembalikan setelah dihapus!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonText: 'Hapus',
+            cancelButtonText: 'Batalkan',
+            reverseButtons: false
+        })
+        .then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = link
+                swalWithBootstrapButtons.fire(
+                    'Terhapus!',
+                    'Data berhasil dihapus.',
+                    'success'
+                )
+            } else if (result.dismiss === Swal.DismissReason.cancel) {
+                swalWithBootstrapButtons.fire(
+                    'Dibatalkan',
+                    'Data tetap disimpan!',
+                    'success'
+                )
+            }
+        })
+})
 </script>
 <script>
-        const togglePassword = document.querySelector('#togglePassword');
-        const password = document.querySelector('#password');
-        
-        togglePassword.addEventListener('click', function (e) {
-            // toggle the type attribute
-            const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
-            password.setAttribute('type', type);
-            // toggle the eye slash icon
-            this.classList.toggle('fa-eye-slash');
-        });
+const togglePassword = document.querySelector('#togglePassword');
+const password = document.querySelector('#password');
 
-        function previewImage() {
-            const foto = document.querySelector('#foto');
-            const imgPreview = document.querySelector('.img-preview');
+togglePassword.addEventListener('click', function(e) {
+    // toggle the type attribute
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+    // toggle the eye slash icon
+    this.classList.toggle('fa-eye-slash');
+});
 
-            imgPreview.style.display = 'block';
+function previewImage() {
+    const foto = document.querySelector('#foto');
+    const imgPreview = document.querySelector('.img-preview');
 
-            const oFReader = new FileReader();
-            oFReader.readAsDataURL(foto.files[0]);
+    imgPreview.style.display = 'block';
 
-            oFReader.onload = function(oFREvent) {
-                imgPreview.src = oFREvent.target.result;
-            }
-        }
+    const oFReader = new FileReader();
+    oFReader.readAsDataURL(foto.files[0]);
 
-        function resetImage(){
-            alert("Seluruh field kembali keadaan awal!");
-        }
-        function alertMSG(){
-            alert("Fitur belum selesai!");
-        }
-    </script>
-    <script>
-       function previewImage1() {
-            const produk1 = document.querySelector('#produk1');
-            const imgPreview = document.querySelector('.img-preview1');
+    oFReader.onload = function(oFREvent) {
+        imgPreview.src = oFREvent.target.result;
+    }
+}
 
-            imgPreview.style.display = 'block';
+function resetImage() {
+    alert("Seluruh field kembali keadaan awal!");
+}
 
-            const oFReader = new FileReader();
-            oFReader.readAsDataURL(produk1.files[0]);
+function alertMSG() {
+    alert("Fitur belum selesai!");
+}
+</script>
+<script>
+function previewImage1() {
+    const produk1 = document.querySelector('#produk1');
+    const imgPreview = document.querySelector('.img-preview1');
 
-            oFReader.onload = function(oFREvent) {
-                imgPreview.src = oFREvent.target.result;
-            }
-        }
+    imgPreview.style.display = 'block';
 
-    </script>
-    <script>
-       function previewImage2() {
-            const produk2 = document.querySelector('#produk2');
-            const imgPreview = document.querySelector('.img-preview2');
+    const oFReader = new FileReader();
+    oFReader.readAsDataURL(produk1.files[0]);
 
-            imgPreview.style.display = 'block';
+    oFReader.onload = function(oFREvent) {
+        imgPreview.src = oFREvent.target.result;
+    }
+}
+</script>
+<script>
+function previewImage2() {
+    const produk2 = document.querySelector('#produk2');
+    const imgPreview = document.querySelector('.img-preview2');
 
-            const oFReader = new FileReader();
-            oFReader.readAsDataURL(produk2.files[0]);
+    imgPreview.style.display = 'block';
 
-            oFReader.onload = function(oFREvent) {
-                imgPreview.src = oFREvent.target.result;
-            }
-        }
+    const oFReader = new FileReader();
+    oFReader.readAsDataURL(produk2.files[0]);
 
-    </script>
-    <script>
-       function previewImage3() {
-            const produk3 = document.querySelector('#produk3');
-            const imgPreview = document.querySelector('.img-preview3');
+    oFReader.onload = function(oFREvent) {
+        imgPreview.src = oFREvent.target.result;
+    }
+}
+</script>
+<script>
+function previewImage3() {
+    const produk3 = document.querySelector('#produk3');
+    const imgPreview = document.querySelector('.img-preview3');
 
-            imgPreview.style.display = 'block';
+    imgPreview.style.display = 'block';
 
-            const oFReader = new FileReader();
-            oFReader.readAsDataURL(produk3.files[0]);
+    const oFReader = new FileReader();
+    oFReader.readAsDataURL(produk3.files[0]);
 
-            oFReader.onload = function(oFREvent) {
-                imgPreview.src = oFREvent.target.result;
-            }
-        }
+    oFReader.onload = function(oFREvent) {
+        imgPreview.src = oFREvent.target.result;
+    }
+}
+</script>
+<script>
+function previewImage4() {
+    const produk4 = document.querySelector('#produk4');
+    const imgPreview = document.querySelector('.img-preview4');
 
-    </script>
-    <script>
-       function previewImage4() {
-            const produk4 = document.querySelector('#produk4');
-            const imgPreview = document.querySelector('.img-preview4');
+    imgPreview.style.display = 'block';
 
-            imgPreview.style.display = 'block';
+    const oFReader = new FileReader();
+    oFReader.readAsDataURL(produk4.files[0]);
 
-            const oFReader = new FileReader();
-            oFReader.readAsDataURL(produk4.files[0]);
+    oFReader.onload = function(oFREvent) {
+        imgPreview.src = oFREvent.target.result;
+    }
+}
+</script>
 
-            oFReader.onload = function(oFREvent) {
-                imgPreview.src = oFREvent.target.result;
-            }
-        }
+<script>
+function previewImage1_1() {
+    const acara1 = document.querySelector('#acara1');
+    const imgPreview = document.querySelector('.img-preview1_1');
 
-    </script>
-    <script>
-        var msg = '{{Session::get('alert')}}';
-        var exist = '{{Session::has('alert')}}';
-        if(exist){
-            alert(msg);
-        }
-    </script>
+    imgPreview.style.display = 'block';
+
+    const oFReader = new FileReader();
+    oFReader.readAsDataURL(acara1.files[0]);
+
+    oFReader.onload = function(oFREvent) {
+        imgPreview.src = oFREvent.target.result;
+    }
+}
+</script>
+
+<script>
+var msg = '{{Session::get('
+alert ')}}';
+var exist = '{{Session::has('
+alert ')}}';
+if (exist) {
+    alert(msg);
+}
+</script>
+
 </html>
