@@ -306,11 +306,11 @@
                     <div class="d-flex align-items-center mb-3">
                         <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary"
                             style="width: 50px; height: 50px">
-                            <i class="fa fa-phone-alt text-white"></i>
+                            <img src="https://i.postimg.cc/VkRBLJcy/www.png" style="width : 25px"> 
                         </div>
                         <div class="ms-3">
-                            <h5 class="text-primary">Nomor Telepon</h5>
-                            <p class="mb-0">+012 345 67890</p>
+                            <h5 class="text-primary">Website</h5>
+                            <p class="mb-0">kabat.desa.id</p>
                         </div>
                     </div>
                     <div class="d-flex align-items-center">
@@ -320,7 +320,7 @@
                         </div>
                         <div class="ms-3">
                             <h5 class="text-primary">Email</h5>
-                            <p class="mb-0">info@example.com</p>
+                            <p class="mb-0">desakabat@gmail.com</p>
                         </div>
                     </div>
                 </div>
