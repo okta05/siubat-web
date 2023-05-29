@@ -136,21 +136,7 @@
         </div>
     </div>
     
-    <!-- Carousel End -->
-    <br>
-    <header>
-        <center>
-            <div data-loop="true" data-start="0" class="brz-bg-video absolute top-0 left-0">
-                <iframe src="https://www.youtube.com/embed/rX8mia65UXg?autoplay=1&amp;controls=0&amp;start=0&amp;end=0&amp;modestbranding=1&amp;wmode=transparent&amp;enablejsapi=1&amp;loop=1&amp;rel=0&amp;mute=1" data-src="https://www.youtube.com/embed/rX8mia65UXg?autoplay=1&amp;controls=0&amp;start=0&amp;end=0&amp;modestbranding=1&amp;wmode=transparent&amp;enablejsapi=1&amp;loop=1&amp;rel=0&amp;mute=1" 
-                    class="brz-iframe intrinsic-ignore brz-bg-video__cover absolute top-0 left-0 border-none !max-w-none bg-no-repeat bg-cover" 
-                    loading="lazy" style="width:560px; height:315px;"
-                    title="Sistem Informasi UMKM Desa Kabat | SIUBAT"></iframe>
-            </div>
-        </center>
-    </header>
-
-    <br>
-
+ 
     <!-- About Start -->
     <div class="container-xxl py-5">
         <div class="container">
@@ -178,6 +164,31 @@
     </div>
     <!-- About End -->
 
+       <!-- Carousel End -->
+       <div class="container-xxl py-8">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                    <iframe width="500px" height="300px" src="https://www.youtube.com/embed/rX8mia65UXg?autoplay=1&amp;controls=0&amp;start=0&amp;end=0&amp;modestbranding=1&amp;wmode=transparent&amp;enablejsapi=1&amp;loop=1&amp;rel=0&amp;mute=1" data-src="https://www.youtube.com/embed/rX8mia65UXg?autoplay=1&amp;controls=0&amp;start=0&amp;end=0&amp;modestbranding=1&amp;wmode=transparent&amp;enablejsapi=1&amp;loop=1&amp;rel=0&amp;mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <h6 class="section-title bg-white text-start text-primary pe-3">Pengenalan</h6>
+                    <h1 class="mb-4">Tiap Dusun di Kabat</h1>
+                    <p class="mb-4">Kondisi alam di Desa Kabat tergolong baik dikarenakan disini alamnya masih asri, 
+                        memiliki tanah yang subur, serta persediaan air yang melimpah oleh karena itu, sebagian besar 
+                        penduduk bermata pencaharian sebagai petani. Sehingga para petani dapat bercocok tanam 3  sampai 
+                        4 kali dalam setahun. Namun, ada beberapa lahan pertanian yang rusak karena penggunaan 
+                        bahan – bahan kimia dan perawatan yang kurang baik, sehingga mengakibatkan tanahnya kurang subur, 
+                        keras, dan kering karena kadar pH yang cukup rendah. Potensi di Desa Kabat mayoritasnya merupakan petani. 
+                        Di desa ini ada beberapa warga yang juga menekuni usaha-usaha, perkebunan, peternakan, perikanan, perindustrian.
+                        .</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Categories Start -->
     <div class="container-xxl py-5 category">
@@ -191,7 +202,7 @@
                     <div class="row g-3">
                         <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
                             <a class="position-relative d-block overflow-hidden" href="">
-                                <img class="img-fluid" src="{{asset('frontend/img/cat-1.jpg')}}" alt="">
+                                <img class="img-fluid" src="{{asset('frontend/img/bodean.jpeg')}}" alt="">
                                 <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
                                     style="margin: 1px;">
                                     <h5 class="m-0">Bodean</h5>
@@ -200,7 +211,7 @@
                         </div>
                         <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
                             <a class="position-relative d-block overflow-hidden" href="">
-                                <img class="img-fluid" src="{{asset('frontend/img/cat-2.jpg')}}" alt="">
+                                <img class="img-fluid" src="{{asset('frontend/img/karang.jpeg')}}" alt="">
                                 <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
                                     style="margin: 1px;">
                                     <h5 class="m-0">Karangrejo</h5>
@@ -209,7 +220,7 @@
                         </div>
                         <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
                             <a class="position-relative d-block overflow-hidden" href="">
-                                <img class="img-fluid" src="{{asset('frontend/img/cat-3.jpg')}}" alt="">
+                                <img class="img-fluid" src="{{asset('frontend/img/krajan.jpeg')}}" alt="">
                                 <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
                                     style="margin: 1px;">
                                     <h5 class="m-0">Krajan</h5>
@@ -220,7 +231,7 @@
                 </div>
                 <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
                     <a class="position-relative d-block h-100 overflow-hidden" href="">
-                        <img class="img-fluid position-absolute w-100 h-100" src="{{asset('frontend/img/cat-4.jpg')}}" alt=""
+                        <img class="img-fluid position-absolute w-100 h-100" src="{{asset('frontend/img/mantren.jpeg')}}" alt=""
                             style="object-fit: cover;">
                         <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
                             style="margin:  1px;">
