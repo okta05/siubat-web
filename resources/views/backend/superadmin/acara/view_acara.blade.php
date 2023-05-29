@@ -21,11 +21,11 @@
             border-radius: 0.35rem;
             ">
                 @if($acara->foto)
-                <img src="{{asset('storage/'. $acara->foto)}}" alt="" id="cover_acara" class="card-img-top"
+                <img src="{{asset('storage/'. $acara->foto)}}" alt="" id="cover_acara1" class="card-img-top"
                     style="height: auto; display: block;">
 
                 @else
-                <img src="{{asset('backend/img/no-image.jpg')}}" alt="" id="cover_acara" class="card-img-top">
+                <img src="{{asset('backend/img/no-image.jpg')}}" alt="" id="cover_acara1" class="card-img-top">
                 @endif
                 <hr>
                 <div class="card-body">
@@ -50,29 +50,30 @@
                     </div>
 
                     <div>
+                        <br>
                         <p><b>Gambar Event</b></p>
                         @if($acara->foto_acara1)
-                        <img src="{{asset('storage/'. $acara->foto_acara1)}}" alt="" class="card-img-top" id="foto_acara">
+                        <img src="{{asset('storage/'. $acara->foto_acara1)}}" alt="" class="card-img-top" id="foto_acara1">
                         @else
-                        <img src="{{asset('backend/img/no-image.jpg')}}" alt="" class="card-img-top" id="foto_acara">
+                        <img src="{{asset('backend/img/no-image.jpg')}}" alt="" class="card-img-top" id="foto_acara1">
                         @endif
                         
-                        @if($acara->foto_acara1)
-                        <img src="{{asset('storage/'. $acara->foto_acara1)}}" alt="" class="card-img-top" id="foto_acara">
+                        @if($acara->foto_acara2)
+                        <img src="{{asset('storage/'. $acara->foto_acara2)}}" alt="" class="card-img-top" id="foto_acara1">
                         @else
-                        <img src="{{asset('backend/img/no-image.jpg')}}" alt="" class="card-img-top" id="foto_acara">
+                        <img src="{{asset('backend/img/no-image.jpg')}}" alt="" class="card-img-top" id="foto_acara1">
                         @endif
 
-                        @if($acara->foto_acara1)
-                        <img src="{{asset('storage/'. $acara->foto_acara1)}}" alt="" class="card-img-top" id="foto_acara">
+                        @if($acara->foto_acara3)
+                        <img src="{{asset('storage/'. $acara->foto_acara3)}}" alt="" class="card-img-top" id="foto_acara1">
                         @else
-                        <img src="{{asset('backend/img/no-image.jpg')}}" alt="" class="card-img-top" id="foto_acara">
+                        <img src="{{asset('backend/img/no-image.jpg')}}" alt="" class="card-img-top" id="foto_acara1">
                         @endif
 
-                        @if($acara->foto_acara1)
-                        <img src="{{asset('storage/'. $acara->foto_acara1)}}" alt="" class="card-img-top" id="foto_acara">
+                        @if($acara->foto_acara4)
+                        <img src="{{asset('storage/'. $acara->foto_acara4)}}" alt="" class="card-img-top" id="foto_acara1">
                         @else
-                        <img src="{{asset('backend/img/no-image.jpg')}}" alt="" class="card-img-top" id="foto_acara">
+                        <img src="{{asset('backend/img/no-image.jpg')}}" alt="" class="card-img-top" id="foto_acara1">
                         @endif
                     </div>
 

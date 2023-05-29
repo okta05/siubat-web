@@ -107,6 +107,7 @@
                     border: 1px solid #e3e6f0;
                     border-radius: 0.35rem;
                     border-radius: 0.35rem;
+                    margin-top: 15px;
                     ">
                             @if($umkm->foto)
                             <img src="{{asset('storage/'. $umkm->foto)}}" alt="" class="card-img-top"

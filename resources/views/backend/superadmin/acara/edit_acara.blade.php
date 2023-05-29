@@ -42,12 +42,12 @@
                         </div>
                         <div class="form-group">
                             <label for="durasi">Durasi</label>
-                            <input type="number" name="durasi" class="form-control" id="durasi"
+                            <input type="text" name="durasi" class="form-control" id="durasi"
                                 value="{{$editData->durasi}}" required placeholder="Durasi">
                         </div>
                         <div class="form-group">
                             <label for="deskripsi">Deskripsi</label>
-                            <input type="textbox" name="deskripsi" class="form-control" id="deskripsi"
+                            <input type="text" name="deskripsi" class="form-control" id="deskripsi"
                                 value="{{$editData->deskripsi}}" required placeholder="deskripsi">
                         </div>
                         <div class="form-group">
@@ -75,9 +75,8 @@
                         <div class="form-group">
                             <label for="acara1">Gambar Acara 1</label>
                             <img class="img-preview1_1 img-fluid mb-3 col-sm-5" style="width: 200px; height: auto;">
-                            <input type="file" name="acara1"
-                                class="form-control @error('acara1') is-invalid @enderror" id="acara1"
-                                accept="image/*" onchange="previewImage1_1()" placeholder="Gambar Acara 2">
+                            <input type="file" name="acara1" class="form-control @error('acara1') is-invalid @enderror"
+                                id="acara1" accept="image/*" onchange="previewImage1_1()" placeholder="Gambar Acara 1">
                             @error('acara1')
                             <div class="invalid-feedback">
                                 {{ $message }}
@@ -95,6 +94,71 @@
                             @endif
                         </div>
 
+                        <div class="form-group">
+                            <label for="acara2">Gambar Acara 2</label>
+                            <img class="img-preview2_2 img-fluid mb-3 col-sm-5" style="width: 200px; height: auto;">
+                            <input type="file" name="acara2" class="form-control @error('acara2') is-invalid @enderror"
+                                id="acara2" accept="image/*" onchange="previewImage2_2()" placeholder="acara 2">
+                            @error('acara2')
+                            <div class="invalid-feedback">
+                                {{ $message }}
+                            </div>
+                            @enderror
+                            <input type="hidden" name="oldImage2" value="{{ $editData->foto_acara2 }}">
+                            @if($editData->foto_acara2)
+                            <br>
+                            Foto saat ini:
+                            <img src="{{asset('storage/'. $editData->foto_acara2)}}"
+                                class="img-preview2_2 img-fluid mb-3 col-sm-5 d-block"
+                                style="width: 200px; height: auto;">
+                            @else
+                            <img class="img-preview2_2 img-fluid mb-3 col-sm-5">
+                            @endif
+                        </div>
+
+                        <div class="form-group">
+                            <label for="acara3">Gambar Acara 3</label>
+                            <img class="img-preview3_3 img-fluid mb-3 col-sm-5" style="width: 200px; height: auto;">
+                            <input type="file" name="acara3" class="form-control @error('acara3') is-invalid @enderror"
+                                id="acara3" accept="image/*" onchange="previewImage3_3()" placeholder="Gambar Acara 3">
+                            @error('acara3')
+                            <div class="invalid-feedback">
+                                {{ $message }}
+                            </div>
+                            @enderror
+                            <input type="hidden" name="oldImage3" value="{{ $editData->foto_acara3 }}">
+                            @if($editData->foto_acara3)
+                            <br>
+                            Foto saat ini:
+                            <img src="{{asset('storage/'. $editData->foto_acara3)}}"
+                                class="img-preview3_3 img-fluid mb-3 col-sm-5 d-block"
+                                style="width: 200px; height: auto;">
+                            @else
+                            <img class="img-preview3_3 img-fluid mb-3 col-sm-5">
+                            @endif
+                        </div>
+
+                        <div class="form-group">
+                            <label for="acara4">Gambar Acara 4</label>
+                            <img class="img-preview4_4 img-fluid mb-3 col-sm-5" style="width: 200px; height: auto;">
+                            <input type="file" name="acara4" class="form-control @error('acara4') is-invalid @enderror"
+                                id="acara4" accept="image/*" onchange="previewImage4_4()" placeholder="Gambar Acara 4">
+                            @error('acara4')
+                            <div class="invalid-feedback">
+                                {{ $message }}
+                            </div>
+                            @enderror
+                            <input type="hidden" name="oldImage4" value="{{ $editData->foto_acara4 }}">
+                            @if($editData->foto_acara4)
+                            <br>
+                            Foto saat ini:
+                            <img src="{{asset('storage/'. $editData->foto_acara4)}}"
+                                class="img-preview4_4 img-fluid mb-3 col-sm-5 d-block"
+                                style="width: 200px; height: auto;">
+                            @else
+                            <img class="img-preview4_4 img-fluid mb-3 col-sm-5">
+                            @endif
+                        </div>
 
                         <div class="form-group" style="margin-top: 100px;">
                             <button type="submit" class="btn btn-success">Ubah Data</button>

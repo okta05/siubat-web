@@ -69,7 +69,6 @@
     </div>
     <!-- Spinner End -->
 
-
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
@@ -96,12 +95,13 @@
             <!-- Earnings (Monthly) Card Example -->
             @foreach($allDataAcara as $key => $acara)
             <div class="col-xl-6 col-md-6 mb-4">
-                <div class="card d-inline-block w-100 p-2" style="
+                <div class="card1 d-inline-block w-100 p-2" style="
             height: 100%!important;
             background-color: #fff;
             background-clip: border-box;
             border: 1px solid #e3e6f0;
             border-radius: 0.35rem;
+            margin-top: 15px;
             ">
                     @if($acara->foto)
                     <img src="{{asset('storage/'. $acara->foto)}}" alt="" id="cover_acara" class="card-img-top"
@@ -133,7 +133,8 @@
                         </div>
 
                         <div>
-                            <p><b>Gambar Event</b></p>
+                            <br>
+                            <p id="p_acara"><b>Gambar Event</b></p>
                             @if($acara->foto_acara1)
                             <img src="{{asset('storage/'. $acara->foto_acara1)}}" alt="" class="card-img-top"
                                 id="foto_acara">
@@ -142,24 +143,24 @@
                                 id="foto_acara">
                             @endif
 
-                            @if($acara->foto_acara1)
-                            <img src="{{asset('storage/'. $acara->foto_acara1)}}" alt="" class="card-img-top"
+                            @if($acara->foto_acara2)
+                            <img src="{{asset('storage/'. $acara->foto_acara2)}}" alt="" class="card-img-top"
                                 id="foto_acara">
                             @else
                             <img src="{{asset('backend/img/no-image.jpg')}}" alt="" class="card-img-top"
                                 id="foto_acara">
                             @endif
 
-                            @if($acara->foto_acara1)
-                            <img src="{{asset('storage/'. $acara->foto_acara1)}}" alt="" class="card-img-top"
+                            @if($acara->foto_acara3)
+                            <img src="{{asset('storage/'. $acara->foto_acara3)}}" alt="" class="card-img-top"
                                 id="foto_acara">
                             @else
                             <img src="{{asset('backend/img/no-image.jpg')}}" alt="" class="card-img-top"
                                 id="foto_acara">
                             @endif
 
-                            @if($acara->foto_acara1)
-                            <img src="{{asset('storage/'. $acara->foto_acara1)}}" alt="" class="card-img-top"
+                            @if($acara->foto_acara4)
+                            <img src="{{asset('storage/'. $acara->foto_acara4)}}" alt="" class="card-img-top"
                                 id="foto_acara">
                             @else
                             <img src="{{asset('backend/img/no-image.jpg')}}" alt="" class="card-img-top"

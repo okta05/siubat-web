@@ -274,6 +274,55 @@ function previewImage1_1() {
 </script>
 
 <script>
+function previewImage2_2() {
+    const acara2 = document.querySelector('#acara2');
+    const imgPreview = document.querySelector('.img-preview2_2');
+
+    imgPreview.style.display = 'block';
+
+    const oFReader = new FileReader();
+    oFReader.readAsDataURL(acara2.files[0]);
+
+    oFReader.onload = function(oFREvent) {
+        imgPreview.src = oFREvent.target.result;
+    }
+}
+</script>
+
+
+<script>
+function previewImage3_3() {
+    const acara3 = document.querySelector('#acara3');
+    const imgPreview = document.querySelector('.img-preview3_3');
+
+    imgPreview.style.display = 'block';
+
+    const oFReader = new FileReader();
+    oFReader.readAsDataURL(acara3.files[0]);
+
+    oFReader.onload = function(oFREvent) {
+        imgPreview.src = oFREvent.target.result;
+    }
+}
+</script>
+
+<script>
+function previewImage4_4() {
+    const acara4 = document.querySelector('#acara4');
+    const imgPreview = document.querySelector('.img-preview4_4');
+
+    imgPreview.style.display = 'block';
+
+    const oFReader = new FileReader();
+    oFReader.readAsDataURL(acara4.files[0]);
+
+    oFReader.onload = function(oFREvent) {
+        imgPreview.src = oFREvent.target.result;
+    }
+}
+</script>
+
+<script>
 var msg = '{{Session::get('
 alert ')}}';
 var exist = '{{Session::has('
