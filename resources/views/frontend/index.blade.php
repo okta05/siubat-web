@@ -85,7 +85,7 @@
 
 
         <!-- Carousel Start -->
-        <div class="container-fluid p-0 mb-5">
+        <!-- <div class="container-fluid p-0 mb-5">
             <div class="owl-carousel header-carousel position-relative">
                 <div class="owl-carousel-item position-relative">
                     <img class="img-fluid" src="{{asset('frontend/img/brownis.jpg')}}" alt="">
@@ -94,14 +94,8 @@
                         <div class="container">
                             <div class="row justify-content-start">
                                 <div class="col-sm-10 col-lg-8">
-                                    <h5 class="text-primary text-uppercase mb-3 animated slideInDown">Slide 1
-                                    </h5>
-                                    <h1 class="display-3 text-white animated slideInDown">INI SLIDE 1
+                                    <h1 class="display-3 text-white animated slideInDown">Dusun Bodean
                                     </h1>
-                                    <p class="fs-5 text-white mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor at
-                                        sed
-                                        stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea sanctus
-                                        eirmod elitr.</p>
                                     <a href="#deskripsi_dusun"
                                         class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read
                                         More</a>
@@ -189,7 +183,7 @@
 
 
             </div>
-        </div>
+        </div> -->
 
 
         <!-- About Start -->
