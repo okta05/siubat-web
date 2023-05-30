@@ -85,7 +85,7 @@
 
 
         <!-- Carousel Start -->
-        <div class="container-fluid p-0 mb-5">
+        <!-- <div class="container-fluid p-0 mb-5">
             <div class="owl-carousel header-carousel position-relative">
                 <div class="owl-carousel-item position-relative">
                     <img class="img-fluid" src="{{asset('frontend/img/brownis.jpg')}}" alt="">
@@ -94,14 +94,8 @@
                         <div class="container">
                             <div class="row justify-content-start">
                                 <div class="col-sm-10 col-lg-8">
-                                    <h5 class="text-primary text-uppercase mb-3 animated slideInDown">Slide 1
-                                    </h5>
-                                    <h1 class="display-3 text-white animated slideInDown">INI SLIDE 1
+                                    <h1 class="display-3 text-white animated slideInDown">Dusun Bodean
                                     </h1>
-                                    <p class="fs-5 text-white mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor at
-                                        sed
-                                        stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea sanctus
-                                        eirmod elitr.</p>
                                     <a href="#deskripsi_dusun"
                                         class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read
                                         More</a>
@@ -189,7 +183,7 @@
 
 
             </div>
-        </div>
+        </div> -->
 
 
         <!-- About Start -->
@@ -228,26 +222,27 @@
                 <div class="row g-5">
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
                         <div class="position-relative h-100">
-                            <iframe width="500px" height="300px"
+                            <!-- <iframe width="500px" height="300px"
                                 src="https://www.youtube.com/embed/rX8mia65UXg?autoplay=1&amp;controls=0&amp;start=0&amp;end=0&amp;modestbranding=1&amp;wmode=transparent&amp;enablejsapi=1&amp;loop=1&amp;rel=0&amp;mute=1"
                                 data-src="https://www.youtube.com/embed/rX8mia65UXg?autoplay=1&amp;controls=0&amp;start=0&amp;end=0&amp;modestbranding=1&amp;wmode=transparent&amp;enablejsapi=1&amp;loop=1&amp;rel=0&amp;mute=1"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe>
+                                allowfullscreen></iframe> -->
+                                <iframe width="500px" height="300px height="379" 
+                                src="https://www.youtube.com/embed/xWJHv6jajzc" title="Kknt desa kabat" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
                     </div>
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <h6 class="section-title bg-white text-start text-primary pe-3">ahbvjkanvjkdjh</h6>
-                        <h1 class="mb-4">Desa Kabat</h1>
-                        <p class="mb-4">Kabat adalah sebuah kecamatan di Kabupaten Banyuwangi, Provinsi Jawa Timur,
-                            Indonesia. Kecamatan Kabat memiliki 14 desa, diantaranya Desa Bareng, Desa Bunder, Desa
-                            Gombolirang, Desa Benelan Lor, Desa Labanesem, Desa Pakistaji, Desa Pondoknongko, Desa
-                            Dadapan,
-                            Desa Kedayunan, Desa Kabat, Desa Macan Putih, Desa Tambong, Desa Pendarungan, dan Desa
-                            Kalirejo.
-                            Kecamatan Kabat memiliki luas wilayah 94,17 km2 yang dibagi ke dalam 14 desa. Wilayah
-                            kecamatan
-                            ini dilewati oleh sungai Tambong yang memiliki panjang 24,35 km.
+                        <h6 class="section-title bg-white text-start text-primary pe-3">Pengenalan</h6>
+                        <h1 class="mb-4">Setiap Dusun di Desa Kabat</h1>
+                        <p class="mb-4">
+                        Dalam persentase kependudukan terdapat data penghasilan penduduk yang condong ke arah 
+                        pengusaha kecil, menengah, dan besar dikarenakan itu kami membuat suatu inovasi yang 
+                        berbentuk sistem informasi berbasis website untuk memperkenalkan UMKM yang terdapat pada 
+                        desa kabat yang dapat di akses oleh penduduk yang memiliki usaha.
+	                    Mata pencaharian    penduduk desa Kabat bermayoritas sebagai seorang petani. Namu, selain sebagai petani ada 
+                        juga yang memiliki pekerjaan sebagai pegawai negeri sipil, peternak, montir, perawat swasta, TNI, Polri, 
+                        pengusaha (kecil, menengah, dan besar), dosen swasta, pedagang keliling, tukang batu, pembantu rumah tangga, dan perangkat desa.
                             .</p>
 
                     </div>
@@ -269,7 +264,7 @@
                         <div class="row g-3">
                             <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
                                 <a class="position-relative d-block overflow-hidden" href="">
-                                    <img class="img-fluid" src="{{asset('frontend/img/cat-1.jpg')}}" alt="">
+                                    <img class="img-fluid" src="{{asset('frontend/img/bodean.jpeg')}}" alt="">
                                     <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
                                         style="margin: 1px;">
                                         <h5 class="m-0">Bodean</h5>
@@ -299,7 +294,7 @@
                     <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
                         <a class="position-relative d-block h-100 overflow-hidden" href="">
                             <img class="img-fluid position-absolute w-100 h-100"
-                                src="{{asset('frontend/img/cat-4.jpg')}}" alt="" style="object-fit: cover;">
+                                src="{{asset('frontend/img/mantren.jpeg')}}" alt="" style="object-fit: cover;">
                             <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
                                 style="margin:  1px;">
                                 <h5 class="m-0">Mantren</h5>
@@ -312,18 +307,12 @@
         <!-- Categories Start -->
 
         <!-- Service Start -->
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 id="deskripsi_dusun" class="section-title bg-white text-center text-primary px-3">Desa</h6>
-                    <h1 class="mb-5">Deskripsi Dusun</h1>
-                </div>
                 <div class="row g-4">
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="service-item text-center pt-3">
                             <div class="p-4">
                                 <h5 class="mb-3">Bodean</h5>
-                                <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                                <p>UMKM yang dominan di dusun ini yaitu dalam bidang kerajinan</p>
                             </div>
                         </div>
                     </div>
@@ -331,7 +320,7 @@
                         <div class="service-item text-center pt-3">
                             <div class="p-4">
                                 <h5 class="mb-3">Karangrejo</h5>
-                                <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                                <p>UMKM yang dominan di dusun ini yaitu produksi tahu</p>
                             </div>
                         </div>
                     </div>
@@ -339,7 +328,7 @@
                         <div class="service-item text-center pt-3">
                             <div class="p-4">
                                 <h5 class="mb-3">Krajan</h5>
-                                <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                                <p>UMKM yang dominan di dusun ini yaitu pembuatan roti basah dan kering</p>
                             </div>
                         </div>
                     </div>
@@ -347,7 +336,7 @@
                         <div class="service-item text-center pt-3">
                             <div class="p-4">
                                 <h5 class="mb-3">Mantren</h5>
-                                <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                                <p>UMKM yang dominan di dusun ini yaitu dalam pembuatan tempe sagu</p>
                             </div>
                         </div>
                     </div>
@@ -381,11 +370,11 @@
                         <div class="d-flex align-items-center mb-3">
                             <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary"
                                 style="width: 50px; height: 50px">
-                                <i class="fa fa-phone-alt text-white"></i>
+                                <img src="https://i.postimg.cc/0jKqVF78/www.png" style="width : 25px">
                             </div>
                             <div class="ms-3">
-                                <h5 class="text-primary">Nomor Telepon</h5>
-                                <p class="mb-0">+012 345 67890</p>
+                                <h5 class="text-primary">Website</h5>
+                                <p class="mb-0">kabat.desa.id</p>
                             </div>
                         </div>
                         <div class="d-flex align-items-center">
@@ -395,7 +384,7 @@
                             </div>
                             <div class="ms-3">
                                 <h5 class="text-primary">Email</h5>
-                                <p class="mb-0">info@example.com</p>
+                                <p class="mb-0">desakabat@gmail.com</p>
                             </div>
                         </div>
                     </div>
