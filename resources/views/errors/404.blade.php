@@ -19,6 +19,7 @@
                 <div class="card h-100 py-2">
                     <center>
                         <h1 class="mt-5"><i class="far fa-file-times"></i>404 - Halaman tidak ditemukan!</h1>
+                        <!-- <a href="{{route('dashboard')}}" class="btn btn-success mt-5">Kembali</a> -->
                     </center>
                 </div>
             </div>

@@ -67,7 +67,7 @@
             <!-- /.container-fluid -->
 
                 @else
-                <img src="{{asset('backend/img/no-image.jpg')}}" alt="" class="card-img-top">
+                <img src="{{asset('backend/img/no-image.jpg')}}" alt="" id="cover_acara1" class="card-img-top">
                 @endif
                 <hr>
                 <div class="card-body">
@@ -90,6 +90,37 @@
                             </li>
                         </ul>
                     </div>
+
+                    <div>
+                        <br>
+                        <p><b>Gambar Event</b></p>
+                        @if($acara->foto_acara1)
+                        <img src="{{asset('storage/'. $acara->foto_acara1)}}" alt="" class="card-img-top" id="foto_acara1">
+                        @else
+                        <img src="{{asset('backend/img/no-image.jpg')}}" alt="" class="card-img-top" id="foto_acara1">
+                        @endif
+                        
+                        @if($acara->foto_acara2)
+                        <img src="{{asset('storage/'. $acara->foto_acara2)}}" alt="" class="card-img-top" id="foto_acara1">
+                        @else
+                        <img src="{{asset('backend/img/no-image.jpg')}}" alt="" class="card-img-top" id="foto_acara1">
+                        @endif
+
+                        @if($acara->foto_acara3)
+                        <img src="{{asset('storage/'. $acara->foto_acara3)}}" alt="" class="card-img-top" id="foto_acara1">
+                        @else
+                        <img src="{{asset('backend/img/no-image.jpg')}}" alt="" class="card-img-top" id="foto_acara1">
+                        @endif
+
+                        @if($acara->foto_acara4)
+                        <img src="{{asset('storage/'. $acara->foto_acara4)}}" alt="" class="card-img-top" id="foto_acara1">
+                        @else
+                        <img src="{{asset('backend/img/no-image.jpg')}}" alt="" class="card-img-top" id="foto_acara1">
+                        @endif
+                    </div>
+
+                    <br>
+
                     <a href="{{route('acaras.edit', $acara->id)}}" class="btn btn-warning" title="Ubah"><i
                             class="fas fa-fw fa-edit"></i></a>
                     <a href="{{route('acaras.delete', $acara->id)}}" class="btn btn-danger" id="delete" title="Hapus"><i

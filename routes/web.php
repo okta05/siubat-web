@@ -6,6 +6,8 @@ use App\Http\Controllers\Backend\superadmin\UserController;
 use App\Http\Controllers\Backend\SuperAdmin\AcaraController;
 use App\Http\Controllers\Backend\SuperAdmin\UMKMController;
 use App\Http\Controllers\Backend\SuperAdmin\BerandaController;
+use App\Http\Controllers\frontend\EventController;
+use App\Http\Controllers\frontend\UsahaController;
 use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Auth;
 
@@ -23,7 +25,7 @@ use Illuminate\Support\Facades\Auth;
 
 Route::get('/', function () {
     // return view('welcome');
-    return view('frontend.user_master');
+    return view('frontend.index');
 });
 
 Route::middleware('auth','disable_back')->group(function () {
@@ -76,3 +78,9 @@ Route::middleware('auth', 'ceklevel:superadmin,admin')->group(function () {
     Route::post('/UMKM/update/{id}', [UMKMController::class, 'UMKMUpdate'])->name('umkms.update');
     Route::get('/UMKM/delete/{id}', [UMKMController::class, 'UMKMDelete'])->name('umkms.delete');
     });
+
+
+
+    Route::get('/user/view/event', [EventController::class, 'EventView_M'])->name('event.view.masyarakat');
+    Route::get('/user/view/umkm', [UsahaController::class, 'UmkmView_M'])->name('umkm.view.masyarakat');
+    

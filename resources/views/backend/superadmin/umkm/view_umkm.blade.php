@@ -59,18 +59,18 @@
                                         <p><b>Gambar Produk</b></p>
                                         @if($umkm->produk1)
                                         <img src="{{asset('storage/'. $umkm->produk1)}}" alt="" class="card-img-top"
-                                            id="foto_produk">
+                                            id="foto_produk1">
                                         @else
                                         <img src="{{asset('backend/img/no-image.jpg')}}" alt="" class="card-img-top"
-                                            id="foto_produk">
+                                            id="foto_produk1">
                                         @endif
 
                                         @if($umkm->produk2)
                                         <img src="{{asset('storage/'. $umkm->produk2)}}" alt="" class="card-img-top"
-                                            id="foto_produk">
+                                            id="foto_produk1">
                                         @else
                                         <img src="{{asset('backend/img/no-image.jpg')}}" alt="" class="card-img-top"
-                                            id="foto_produk">
+                                            id="foto_produk1">
                                         @endif
                                     </div>
 
@@ -78,18 +78,18 @@
                                         <br>
                                         @if($umkm->produk3)
                                         <img src="{{asset('storage/'. $umkm->produk3)}}" alt="" class="card-img-top"
-                                            id="foto_produk">
+                                            id="foto_produk1">
                                         @else
                                         <img src="{{asset('backend/img/no-image.jpg')}}" alt="" class="card-img-top"
-                                            id="foto_produk">
+                                            id="foto_produk1">
                                         @endif
 
                                         @if($umkm->produk4)
                                         <img src="{{asset('storage/'. $umkm->produk4)}}" alt="" class="card-img-top"
-                                            id="foto_produk">
+                                            id="foto_produk1">
                                         @else
                                         <img src="{{asset('backend/img/no-image.jpg')}}" alt="" class="card-img-top"
-                                            id="foto_produk">
+                                            id="foto_produk1">
                                         @endif
                                     </div><br>
                                 </ul>
