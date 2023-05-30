@@ -228,21 +228,27 @@
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 allowfullscreen></iframe> -->
-                                <iframe width="500px" height="300px height="379" 
-                                src="https://www.youtube.com/embed/xWJHv6jajzc" title="Kknt desa kabat" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <iframe width="500px" height="300px height=" 379"
+                                src="https://youtube.com/playlist?list=PLiViweZ7v-qug28Y0y-CL5HmD5wM-4OMP"
+                                title="Kknt desa kabat" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
                         </div>
                     </div>
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                         <h6 class="section-title bg-white text-start text-primary pe-3">Pengenalan</h6>
                         <h1 class="mb-4">Setiap Dusun di Desa Kabat</h1>
                         <p class="mb-4">
-                        Dalam persentase kependudukan terdapat data penghasilan penduduk yang condong ke arah 
-                        pengusaha kecil, menengah, dan besar dikarenakan itu kami membuat suatu inovasi yang 
-                        berbentuk sistem informasi berbasis website untuk memperkenalkan UMKM yang terdapat pada 
-                        desa kabat yang dapat di akses oleh penduduk yang memiliki usaha.
-	                    Mata pencaharian    penduduk desa Kabat bermayoritas sebagai seorang petani. Namu, selain sebagai petani ada 
-                        juga yang memiliki pekerjaan sebagai pegawai negeri sipil, peternak, montir, perawat swasta, TNI, Polri, 
-                        pengusaha (kecil, menengah, dan besar), dosen swasta, pedagang keliling, tukang batu, pembantu rumah tangga, dan perangkat desa.
+                            Dalam persentase kependudukan terdapat data penghasilan penduduk yang condong ke arah
+                            pengusaha kecil, menengah, dan besar dikarenakan itu kami membuat suatu inovasi yang
+                            berbentuk sistem informasi berbasis website untuk memperkenalkan UMKM yang terdapat pada
+                            desa kabat yang dapat di akses oleh penduduk yang memiliki usaha.
+                            Mata pencaharian penduduk desa Kabat bermayoritas sebagai seorang petani. Namu, selain
+                            sebagai petani ada
+                            juga yang memiliki pekerjaan sebagai pegawai negeri sipil, peternak, montir, perawat swasta,
+                            TNI, Polri,
+                            pengusaha (kecil, menengah, dan besar), dosen swasta, pedagang keliling, tukang batu,
+                            pembantu rumah tangga, dan perangkat desa.
                             .</p>
 
                     </div>
@@ -307,97 +313,97 @@
         <!-- Categories Start -->
 
         <!-- Service Start -->
-                <div class="row g-4">
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="service-item text-center pt-3">
-                            <div class="p-4">
-                                <h5 class="mb-3">Bodean</h5>
-                                <p>UMKM yang dominan di dusun ini yaitu dalam bidang kerajinan</p>
-                            </div>
-                        </div>
+        <div class="row g-4">
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item text-center pt-3">
+                    <div class="p-4">
+                        <h5 class="mb-3">Bodean</h5>
+                        <p>UMKM yang dominan di dusun ini yaitu dalam bidang kerajinan</p>
                     </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="service-item text-center pt-3">
-                            <div class="p-4">
-                                <h5 class="mb-3">Karangrejo</h5>
-                                <p>UMKM yang dominan di dusun ini yaitu produksi tahu</p>
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-item text-center pt-3">
+                    <div class="p-4">
+                        <h5 class="mb-3">Karangrejo</h5>
+                        <p>UMKM yang dominan di dusun ini yaitu produksi tahu</p>
                     </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="service-item text-center pt-3">
-                            <div class="p-4">
-                                <h5 class="mb-3">Krajan</h5>
-                                <p>UMKM yang dominan di dusun ini yaitu pembuatan roti basah dan kering</p>
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-item text-center pt-3">
+                    <div class="p-4">
+                        <h5 class="mb-3">Krajan</h5>
+                        <p>UMKM yang dominan di dusun ini yaitu pembuatan roti basah dan kering</p>
                     </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="service-item text-center pt-3">
-                            <div class="p-4">
-                                <h5 class="mb-3">Mantren</h5>
-                                <p>UMKM yang dominan di dusun ini yaitu dalam pembuatan tempe sagu</p>
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="service-item text-center pt-3">
+                    <div class="p-4">
+                        <h5 class="mb-3">Mantren</h5>
+                        <p>UMKM yang dominan di dusun ini yaitu dalam pembuatan tempe sagu</p>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Service End -->
+    </div>
+    </div>
+    <!-- Service End -->
 
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="section-title bg-white text-center text-primary px-3">Kontak</h6>
-                    <h1 class="mb-5">Informasi Kontak</h1>
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Kontak</h6>
+                <h1 class="mb-5">Informasi Kontak</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="mb-4">
+                        Jika Anda membutuhkan bantuan atau informasi lebih lanjut silahkan menghubungi :
+                    </p>
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary"
+                            style="width: 50px; height: 50px">
+                            <i class="fa fa-map-marker-alt text-white"></i>
+                        </div>
+                        <div class="ms-3">
+                            <h5 class="text-primary">Kantor</h5>
+                            <p class="mb-0"> Jl. Kabat, Mantren, Kabat, Kec. Kabat, Kabupaten Banyuwangi, Jawa Timur
+                                68461</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary"
+                            style="width: 50px; height: 50px">
+                            <img src="https://i.postimg.cc/0jKqVF78/www.png" style="width : 25px">
+                        </div>
+                        <div class="ms-3">
+                            <h5 class="text-primary">Website</h5>
+                            <p class="mb-0">kabat.desa.id</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary"
+                            style="width: 50px; height: 50px">
+                            <i class="fa fa-envelope-open text-white"></i>
+                        </div>
+                        <div class="ms-3">
+                            <h5 class="text-primary">Email</h5>
+                            <p class="mb-0">desakabat@gmail.com</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="row g-4">
-                    <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <p class="mb-4">
-                            Jika Anda membutuhkan bantuan atau informasi lebih lanjut silahkan menghubungi :
-                        </p>
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary"
-                                style="width: 50px; height: 50px">
-                                <i class="fa fa-map-marker-alt text-white"></i>
-                            </div>
-                            <div class="ms-3">
-                                <h5 class="text-primary">Kantor</h5>
-                                <p class="mb-0"> Jl. Kabat, Mantren, Kabat, Kec. Kabat, Kabupaten Banyuwangi, Jawa Timur
-                                    68461</p>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary"
-                                style="width: 50px; height: 50px">
-                                <img src="https://i.postimg.cc/0jKqVF78/www.png" style="width : 25px">
-                            </div>
-                            <div class="ms-3">
-                                <h5 class="text-primary">Website</h5>
-                                <p class="mb-0">kabat.desa.id</p>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-center">
-                            <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary"
-                                style="width: 50px; height: 50px">
-                                <i class="fa fa-envelope-open text-white"></i>
-                            </div>
-                            <div class="ms-3">
-                                <h5 class="text-primary">Email</h5>
-                                <p class="mb-0">desakabat@gmail.com</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <iframe class="position-relative rounded w-500 h-100"
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15793.008806772172!2d114.32658147423524!3d-8.27767880341727!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd15091b912dd65%3A0x445c2e9f4c9d3578!2sKantor%20Desa%20Kabat!5e0!3m2!1sid!2sid!4v1681440136169!5m2!1sid!2sid"
-                            width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <iframe class="position-relative rounded w-500 h-100"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15793.008806772172!2d114.32658147423524!3d-8.27767880341727!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd15091b912dd65%3A0x445c2e9f4c9d3578!2sKantor%20Desa%20Kabat!5e0!3m2!1sid!2sid!4v1681440136169!5m2!1sid!2sid"
+                        width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-                    </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
     <!-- Footer Start -->
