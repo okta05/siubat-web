@@ -39,7 +39,7 @@
 
                         <div class="form-group">
                             <label for="harga">Harga</label>
-                            <input type="number" name="harga" class="form-control" id="harga" required
+                            <input type="text" name="harga" class="form-control" id="harga" required
                                 placeholder="Harga">
                         </div>
 
