@@ -221,20 +221,20 @@
             <div class="container">
                 <div class="row g-5">
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
-                        <div class="position-relative h-100">
-                            <!-- <iframe width="500px" height="300px"
-                                src="https://www.youtube.com/embed/rX8mia65UXg?autoplay=1&amp;controls=0&amp;start=0&amp;end=0&amp;modestbranding=1&amp;wmode=transparent&amp;enablejsapi=1&amp;loop=1&amp;rel=0&amp;mute=1"
-                                data-src="https://www.youtube.com/embed/rX8mia65UXg?autoplay=1&amp;controls=0&amp;start=0&amp;end=0&amp;modestbranding=1&amp;wmode=transparent&amp;enablejsapi=1&amp;loop=1&amp;rel=0&amp;mute=1"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe> -->
-                            <iframe width="610px" height="320px"
+                        <div class="position-relative h-100" data-type="youtube" data-key="xWJHv6jajzc" data-loop="true"
+                            data-start="0" class="brz-bg-video absolute top-0 left-0 w-full h-full">
+
+                            <iframe class="img-fluid position-absolute w-100 h-100"
                                 src="https://www.youtube.com/embed/xWJHv6jajzc?autoplay=1&amp;controls=0&amp;start=0&amp;end=0&amp;modestbranding=1&amp;wmode=transparent&amp;enablejsapi=1&amp;loop=1&amp;rel=0&amp;mute=1&amp;playlist=xWJHv6jajzc"
+                                data-src="https://www.youtube.com/embed/xWJHv6jajzc?autoplay=1&amp;controls=0&amp;start=0&amp;end=0&amp;modestbranding=1&amp;wmode=transparent&amp;enablejsapi=1&amp;loop=1&amp;rel=0&amp;mute=1&amp;playlist=xWJHv6jajzc"
                                 title="Kknt desa kabat" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
                             </iframe>
+                            <div class="img-fluid position-absolute w-100 h-100"></div>
+
                         </div>
                     </div>
+
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                         <h6 class="section-title bg-white text-start text-primary pe-3">Pengenalan</h6>
                         <h1 class="mb-4">Setiap Dusun di Desa Kabat</h1>
@@ -441,6 +441,15 @@
     <!-- js page event start -->
     <!-- Template Javascript -->
     <script src="{{asset('frontend/js/main.js')}}"></script>
+</body>
+
+</html>
+<script src="{{asset('frontend/lib/waypoints/waypoints.min.js')}}"></script>
+<script src="{{asset('frontend/lib/owlcarousel/owl.carousel.min.js')}}"></script>
+
+<!-- js page event start -->
+<!-- Template Javascript -->
+<script src="{{asset('frontend/js/main.js')}}"></script>
 </body>
 
 </html>
