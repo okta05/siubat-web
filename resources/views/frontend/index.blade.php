@@ -233,17 +233,16 @@
                         </div>
                     </div>
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <h6 class="section-title bg-white text-start text-primary pe-3">ahbvjkanvjkdjh</h6>
-                        <h1 class="mb-4">Desa Kabat</h1>
-                        <p class="mb-4">Kabat adalah sebuah kecamatan di Kabupaten Banyuwangi, Provinsi Jawa Timur,
-                            Indonesia. Kecamatan Kabat memiliki 14 desa, diantaranya Desa Bareng, Desa Bunder, Desa
-                            Gombolirang, Desa Benelan Lor, Desa Labanesem, Desa Pakistaji, Desa Pondoknongko, Desa
-                            Dadapan,
-                            Desa Kedayunan, Desa Kabat, Desa Macan Putih, Desa Tambong, Desa Pendarungan, dan Desa
-                            Kalirejo.
-                            Kecamatan Kabat memiliki luas wilayah 94,17 km2 yang dibagi ke dalam 14 desa. Wilayah
-                            kecamatan
-                            ini dilewati oleh sungai Tambong yang memiliki panjang 24,35 km.
+                        <h6 class="section-title bg-white text-start text-primary pe-3">Pengenalan</h6>
+                        <h1 class="mb-4">Setiap Dusun di Desa Kabat</h1>
+                        <p class="mb-4">
+                        Dalam persentase kependudukan terdapat data penghasilan penduduk yang condong ke arah 
+                        pengusaha kecil, menengah, dan besar dikarenakan itu kami membuat suatu inovasi yang 
+                        berbentuk sistem informasi berbasis website untuk memperkenalkan UMKM yang terdapat pada 
+                        desa kabat yang dapat di akses oleh penduduk yang memiliki usaha.
+	                    Mata pencaharian    penduduk desa Kabat bermayoritas sebagai seorang petani. Namu, selain sebagai petani ada 
+                        juga yang memiliki pekerjaan sebagai pegawai negeri sipil, peternak, montir, perawat swasta, TNI, Polri, 
+                        pengusaha (kecil, menengah, dan besar), dosen swasta, pedagang keliling, tukang batu, pembantu rumah tangga, dan perangkat desa.
                             .</p>
 
                     </div>
