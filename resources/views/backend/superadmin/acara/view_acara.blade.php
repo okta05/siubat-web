@@ -9,6 +9,14 @@
     </div>
 
     <!-- Content Row -->
+    <div>
+        <a href="{{route('acara.add')}}" class="btn btn-success mb-3">
+            <i class="fas fa-plus"></i> Tambah UMKM
+        </a>
+
+        <a href="{{route('dashboard')}}" class="btn btn-primary mb-3">Kembali</a>
+    </div>
+
     <div class="row">
         <!-- Earnings (Monthly) Card Example -->
         @foreach($allDataAcara as $key => $acara)
@@ -53,25 +61,29 @@
                         <br>
                         <p><b>Gambar Event</b></p>
                         @if($acara->foto_acara1)
-                        <img src="{{asset('storage/'. $acara->foto_acara1)}}" alt="" class="card-img-top" id="foto_acara1">
+                        <img src="{{asset('storage/'. $acara->foto_acara1)}}" alt="" class="card-img-top"
+                            id="foto_acara1">
                         @else
                         <img src="{{asset('backend/img/no-image.jpg')}}" alt="" class="card-img-top" id="foto_acara1">
                         @endif
-                        
+
                         @if($acara->foto_acara2)
-                        <img src="{{asset('storage/'. $acara->foto_acara2)}}" alt="" class="card-img-top" id="foto_acara1">
+                        <img src="{{asset('storage/'. $acara->foto_acara2)}}" alt="" class="card-img-top"
+                            id="foto_acara1">
                         @else
                         <img src="{{asset('backend/img/no-image.jpg')}}" alt="" class="card-img-top" id="foto_acara1">
                         @endif
 
                         @if($acara->foto_acara3)
-                        <img src="{{asset('storage/'. $acara->foto_acara3)}}" alt="" class="card-img-top" id="foto_acara1">
+                        <img src="{{asset('storage/'. $acara->foto_acara3)}}" alt="" class="card-img-top"
+                            id="foto_acara1">
                         @else
                         <img src="{{asset('backend/img/no-image.jpg')}}" alt="" class="card-img-top" id="foto_acara1">
                         @endif
 
                         @if($acara->foto_acara4)
-                        <img src="{{asset('storage/'. $acara->foto_acara4)}}" alt="" class="card-img-top" id="foto_acara1">
+                        <img src="{{asset('storage/'. $acara->foto_acara4)}}" alt="" class="card-img-top"
+                            id="foto_acara1">
                         @else
                         <img src="{{asset('backend/img/no-image.jpg')}}" alt="" class="card-img-top" id="foto_acara1">
                         @endif
@@ -89,8 +101,6 @@
         @endforeach
     </div>
     <!-- /.container-fluid -->
-
-    <a href="{{route('acara.add')}}" class="btn btn-success">Tambah Event</a>
 </div>
 <!-- End of Main Content -->
 @endsection

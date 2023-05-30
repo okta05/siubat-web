@@ -112,7 +112,6 @@
                         </div>
 
                         <button type="submit" class="btn btn-success">Tambah Data</button>
-                        <button type="reset" class="btn btn-secondary">Kosongkan</button>
                         <a href="{{route('view_acara')}}" class="btn btn-danger">Batalkan</a>
                     </form>
                 </div>

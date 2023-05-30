@@ -10,7 +10,8 @@
     <!-- Content Row -->
     <div class="card shadow mb-4">
         <div class="card-body">
-            <div><a href="{{route('umkm.add')}}" class="btn btn-success mb-3">
+            <div>
+                <a href="{{route('umkm.add')}}" class="btn btn-success mb-3">
                     <i class="fas fa-plus"></i> Tambah UMKM
                 </a>
 
