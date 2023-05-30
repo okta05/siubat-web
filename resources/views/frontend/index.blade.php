@@ -66,7 +66,7 @@
     <div class="container-fluid">
         <!-- welcome message start -->
         <div class="owl-carousel-item position-relative">
-            <img class="img-fluid" src="{{asset('frontend/img/kantor desa.jpg')}}" alt="">
+        <img class="img-fluid" src="{{asset('frontend/img/kantor desa.jpg')}}" alt="">
             <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
                 style="background: rgba(24, 29, 56, .7);">
                 <div class="container">
@@ -228,11 +228,12 @@
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 allowfullscreen></iframe> -->
-                            <iframe width="610px" height="320px"
+                            <iframe class="img-fluid position-absolute w-100 h-100"
                                 src="https://www.youtube.com/embed/xWJHv6jajzc?autoplay=1&amp;controls=0&amp;start=0&amp;end=0&amp;modestbranding=1&amp;wmode=transparent&amp;enablejsapi=1&amp;loop=1&amp;rel=0&amp;mute=1&amp;playlist=xWJHv6jajzc"
                                 title="Kknt desa kabat" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
                             </iframe>
+                            <div class="img-fluid position-absolute w-100 h-100"></div>
                         </div>
                     </div>
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
