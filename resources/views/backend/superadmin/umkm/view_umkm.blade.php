@@ -10,13 +10,14 @@
     <!-- Content Row -->
     <div class="card shadow mb-4">
         <div class="card-body">
-            <a href="{{route('umkm.add')}}" class="btn btn-success mb-3">
-                <i class="fas fa-plus"></i> Tambah UMKM
-            </a>
-            <p>
-                Jumlah UMKM saat ini: <b>{{ $umkmCount }}</b>
-            </p>
-            <hr>
+            <div>
+                <a href="{{route('umkm.add')}}" class="btn btn-success mb-3">
+                    <i class="fas fa-plus"></i> Tambah UMKM
+                </a>
+
+                <a href="{{route('dashboard')}}" class="btn btn-primary mb-3">Kembali</a>
+            </div>
+
             <div class="row">
                 <!-- Earnings (Monthly) Card Example -->
                 @foreach($allDataUMKM as $key => $umkm)
