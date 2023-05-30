@@ -4,15 +4,15 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-<<<<<<< .merge_file_M28HrJ
+
     "content-hash": "96d75aaabe05399d9dd17ff8c561cde5",
-=======
-<<<<<<< HEAD
+
     "content-hash": "96d75aaabe05399d9dd17ff8c561cde5",
-=======
+
+    "content-hash": "96d75aaabe05399d9dd17ff8c561cde5",
+
     "content-hash": "3ff9370732bcaef165de384371336cda",
->>>>>>> origin/oktaviano
->>>>>>> .merge_file_AWSxtD
+
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -1161,10 +1161,6 @@
             "time": "2020-06-13T08:05:20+00:00"
         },
         {
-<<<<<<< .merge_file_M28HrJ
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_AWSxtD
             "name": "laravel/breeze",
             "version": "v1.21.0",
             "source": {
@@ -1195,13 +1191,7 @@
                     "dev-master": "1.x-dev"
                 },
                 "laravel": {
-<<<<<<< .merge_file_M28HrJ
                     "providers": ["Laravel\\Breeze\\BreezeServiceProvider"]
-=======
-                    "providers": [
-                        "Laravel\\Breeze\\BreezeServiceProvider"
-                    ]
->>>>>>> .merge_file_AWSxtD
                 }
             },
             "autoload": {
@@ -1210,13 +1200,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-<<<<<<< .merge_file_M28HrJ
             "license": ["MIT"],
-=======
-            "license": [
-                "MIT"
-            ],
->>>>>>> .merge_file_AWSxtD
             "authors": [
                 {
                     "name": "Taylor Otwell",
@@ -1224,14 +1208,7 @@
                 }
             ],
             "description": "Minimal Laravel authentication scaffolding with Blade and Tailwind.",
-<<<<<<< .merge_file_M28HrJ
             "keywords": ["auth", "laravel"],
-=======
-            "keywords": [
-                "auth",
-                "laravel"
-            ],
->>>>>>> .merge_file_AWSxtD
             "support": {
                 "issues": "https://github.com/laravel/breeze/issues",
                 "source": "https://github.com/laravel/breeze"
@@ -1239,11 +1216,6 @@
             "time": "2023-05-04T15:02:53+00:00"
         },
         {
-<<<<<<< .merge_file_M28HrJ
-=======
-=======
->>>>>>> origin/oktaviano
->>>>>>> .merge_file_AWSxtD
             "name": "laravel/fortify",
             "version": "v1.17.1",
             "source": {
@@ -1497,116 +1469,96 @@
         },
         {
             "name": "laravel/jetstream",
-<<<<<<< HEAD
-            "version": "v3.1.2",
-=======
-<<<<<<< HEAD
-            "version": "v3.2.0",
-=======
-<<<<<<< HEAD
-            "version": "v3.1.2",
 
-
-=======
-
-            "version": "v3.1.2",
-
->>>>>>> a96c99b65addb98ee5f75d59c3444e3239dab414
-            "version": "v3.1.1",
->>>>>>> origin/oktaviano
->>>>>>> origin/keziamw
+            "version": "v3.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/jetstream.git",
-                "reference": "aee77609b40067c83fd613e134f0982239566ce0"
+                "reference": "6dea0f2d45c45a0b818089dce5e5e71bd271a512"
             },
             "dist": {
                 "type": "zip",
-<<<<<<< HEAD
-                "url": "https://api.github.com/repos/laravel/jetstream/zipball/4bedb125c742c3f8d43226d1ab0a9a27b8383cde",
-                "reference": "4bedb125c742c3f8d43226d1ab0a9a27b8383cde",
-=======
-<<<<<<< HEAD
-                "url": "https://api.github.com/repos/laravel/jetstream/zipball/aee77609b40067c83fd613e134f0982239566ce0",
-                "reference": "aee77609b40067c83fd613e134f0982239566ce0",
-=======
-<<<<<<< HEAD
-                "url": "https://api.github.com/repos/laravel/jetstream/zipball/4bedb125c742c3f8d43226d1ab0a9a27b8383cde",
-                "reference": "4bedb125c742c3f8d43226d1ab0a9a27b8383cde",
-=======
+                "url": "https://api.github.com/repos/laravel/jetstream/zipball/6dea0f2d45c45a0b818089dce5e5e71bd271a512",
+                "reference": "6dea0f2d45c45a0b818089dce5e5e71bd271a512",
 
-                "url": "https://api.github.com/repos/laravel/jetstream/zipball/4bedb125c742c3f8d43226d1ab0a9a27b8383cde",
-                "reference": "4bedb125c742c3f8d43226d1ab0a9a27b8383cde",
+                "version": "v3.1.2",
 
->>>>>>> a96c99b65addb98ee5f75d59c3444e3239dab414
->>>>>>> origin/oktaviano
->>>>>>> origin/keziamw
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "illuminate/console": "^10.0",
-                "illuminate/support": "^10.0",
-                "jenssegers/agent": "^2.6",
-                "laravel/fortify": "^1.15",
-                "php": "^8.1.0"
-            },
-            "require-dev": {
-                "inertiajs/inertia-laravel": "^0.6.5",
-                "laravel/sanctum": "^3.0",
-                "livewire/livewire": "^2.12",
-                "mockery/mockery": "^1.0",
-                "orchestra/testbench": "^8.0",
-                "phpstan/phpstan": "^1.10",
-                "phpunit/phpunit": "^9.3"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.x-dev"
+                "version": "v3.2.0",
+
+                "version": "v3.1.2",
+
+                "version": "v3.1.1",
+
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/laravel/jetstream.git",
+                    "reference": "aee77609b40067c83fd613e134f0982239566ce0"
                 },
-                "laravel": {
-                    "providers": [
-                        "Laravel\\Jetstream\\JetstreamServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Laravel\\Jetstream\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": ["MIT"],
-            "authors": [
-                {
-                    "name": "Taylor Otwell",
-                    "email": "taylor@laravel.com"
-                }
-            ],
-            "description": "Tailwind scaffolding for the Laravel framework.",
-            "keywords": ["auth", "laravel", "tailwind"],
-            "support": {
-                "issues": "https://github.com/laravel/jetstream/issues",
-                "source": "https://github.com/laravel/jetstream"
-            },
-<<<<<<< HEAD
-            "time": "2023-04-21T15:56:37+00:00"
-=======
-<<<<<<< HEAD
-            "time": "2023-05-10T00:10:17+00:00"
-=======
-<<<<<<< HEAD
-            "time": "2023-04-21T15:56:37+00:00"
-        
-=======
+                "dist": {
+                    "type": "zip",
 
-            "time": "2023-04-21T15:56:37+00:00"
->>>>>>> a96c99b65addb98ee5f75d59c3444e3239dab414
->>>>>>> origin/oktaviano
->>>>>>> origin/keziamw
-        },
-        {
+                    "url": "https://api.github.com/repos/laravel/jetstream/zipball/4bedb125c742c3f8d43226d1ab0a9a27b8383cde",
+                    "reference": "4bedb125c742c3f8d43226d1ab0a9a27b8383cde",
+
+                    "url": "https://api.github.com/repos/laravel/jetstream/zipball/aee77609b40067c83fd613e134f0982239566ce0",
+                    "reference": "aee77609b40067c83fd613e134f0982239566ce0",
+
+                    "url": "https://api.github.com/repos/laravel/jetstream/zipball/4bedb125c742c3f8d43226d1ab0a9a27b8383cde",
+                    "reference": "4bedb125c742c3f8d43226d1ab0a9a27b8383cde",
+
+                    "shasum": ""
+                },
+                "require": {
+                    "ext-json": "*",
+                    "illuminate/console": "^10.0",
+                    "illuminate/support": "^10.0",
+                    "jenssegers/agent": "^2.6",
+                    "laravel/fortify": "^1.15",
+                    "php": "^8.1.0"
+                },
+                "require-dev": {
+                    "inertiajs/inertia-laravel": "^0.6.5",
+                    "laravel/sanctum": "^3.0",
+                    "livewire/livewire": "^2.12",
+                    "mockery/mockery": "^1.0",
+                    "orchestra/testbench": "^8.0",
+                    "phpstan/phpstan": "^1.10",
+                    "phpunit/phpunit": "^9.3"
+                },
+                "type": "library",
+                "extra": {
+                    "branch-alias": {
+                        "dev-master": "3.x-dev"
+                    },
+                    "laravel": {
+                        "providers": [
+                            "Laravel\\Jetstream\\JetstreamServiceProvider"
+                        ]
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Laravel\\Jetstream\\": "src/"
+                    }
+                },
+                "notification-url": "https://packagist.org/downloads/",
+                "license": ["MIT"],
+                "authors": [
+                    {
+                        "name": "Taylor Otwell",
+                        "email": "taylor@laravel.com"
+                    }
+                ],
+                "description": "Tailwind scaffolding for the Laravel framework.",
+                "keywords": ["auth", "laravel", "tailwind"],
+                "support": {
+                    "issues": "https://github.com/laravel/jetstream/issues",
+                    "source": "https://github.com/laravel/jetstream"
+                },
+
+                "time": "2023-05-17T13:45:56+00:00"
+            },
+
             "name": "laravel/sanctum",
             "version": "v3.2.5",
             "source": {
