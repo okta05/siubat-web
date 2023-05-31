@@ -193,8 +193,8 @@
                     Kantor Desa Kabat, Banyuwangi 2023
                     <div class="col-md-6 text-center text-md-end">
                         <div class="footer-menu">
-                            <a href="">Home</a>
-                            <a href="">Event</a>
+                            <a href="/">Home</a>
+                            <a href="{{route('event.view.masyarakat')}}">Event</a>
                             <a href="">UMKM</a>
                         </div>
                     </div>

@@ -48,4 +48,15 @@ class ProfileController extends Controller
 
        return redirect()->route('profile.view'); 
     }
+
+    public function ProfilDelete($id){
+        $deleteData= User::find($id);
+        $pathProfile = $deleteData->foto;
+        
+        if ($pathProfile != null || $pathProfile != '') {
+            Storage::delete($pathProfile);
+        }
+
+        return redirect()->route('profile.view');
+    }
 }

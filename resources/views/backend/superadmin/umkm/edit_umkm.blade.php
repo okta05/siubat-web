@@ -5,7 +5,7 @@
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Dashboard | Tambah Data UMKM</h1>
+        <h1 class="h3 mb-0 text-gray-800">Dashboard | Edit Data UMKM</h1>
     </div>
 
     <!-- Content Row -->
@@ -164,7 +164,6 @@
                         </div>
 
                         <button type="submit" class="btn btn-success">Simpan Data</button>
-                        <button type="reset" class="btn btn-secondary">Kosongkan</button>
                         <a href="{{route('view_umkm')}}" class="btn btn-danger">Batalkan</a>
                     </form>
                 </div>
