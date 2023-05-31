@@ -6,14 +6,16 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use App\Models\User;
+use App\Models\Beranda;
 use Auth;
 
 class UserController extends Controller
 {
     //
     public function viewUser(){
+        $userCount = User::count();        
         $data['allDataUser']=User::all();
-        return view('backend.superadmin.user.view_user', $data);
+        return view('backend.superadmin.user.view_user', $data, compact('userCount'));
     }
 
     public function addUser(){

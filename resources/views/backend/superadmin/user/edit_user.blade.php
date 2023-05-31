@@ -5,7 +5,7 @@
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Dashboard | Edit User</h1>
+        <h1 class="h3 mb-0 text-gray-800">Dashboard | Edit Data User</h1>
     </div>
 
     <!-- Content Row -->
@@ -92,7 +92,6 @@
                             @endif
                         </div>
                         <button type="submit" class="btn btn-success">Simpan Perubahan</button>
-                        <button type="reset" class="btn btn-secondary">Kosongkan</button>
                         <a href="{{route('view_user')}}" class="btn btn-danger">Batalkan</a>
                         @endif
                     </form>

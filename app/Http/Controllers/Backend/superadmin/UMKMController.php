@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Backend\SuperAdmin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use App\Models\Beranda;
 use App\Models\Umkm;
 use Auth;
 
@@ -12,8 +13,10 @@ class UMKMController extends Controller
 {
     //
     public function viewUMKM(){
+        $umkmCount = Umkm::count();
+        
         $data['allDataUMKM']=Umkm::all();
-        return view('backend.superadmin.umkm.view_umkm', $data);
+        return view('backend.superadmin.umkm.view_umkm', $data, compact('umkmCount'));
     }
 
     public function addUMKM(){

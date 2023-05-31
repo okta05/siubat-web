@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -35,7 +34,7 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="p-5">
-                            Hayoo, mau ngapain?
+                            Register tidak tersedia.
                             <p>
                                 <br>
                                 <a href="{{route('login')}}" class="btn btn-success">Kembali</a>
@@ -61,5 +60,3 @@
 </body>
 
 </html>
-=======
->>>>>>> origin/oktaviano

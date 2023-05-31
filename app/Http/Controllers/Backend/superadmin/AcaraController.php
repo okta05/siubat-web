@@ -12,8 +12,10 @@ class AcaraController extends Controller
 {
     //
     public function viewAcara(){
+        $eventCount = Acara::count();
+
         $data['allDataAcara']=Acara::all();
-        return view('backend.superadmin.acara.view_acara', $data);
+        return view('backend.superadmin.acara.view_acara', $data, compact('eventCount'));
     }
 
     public function addAcara(){

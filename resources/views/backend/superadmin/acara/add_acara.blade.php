@@ -43,7 +43,7 @@
                         <div class="form-group">
                             <label for="durasi">Durasi</label>
                             <input type="text" name="durasi" class="form-control" id="durasi" required
-                                placeholder="Durasi">
+                                placeholder="Durasi (contoh: 6 Jam, 2 Hari)">
                         </div>
                         <div class="form-group">
                             <label for="deskripsi">Deskripsi</label>
@@ -112,7 +112,6 @@
                         </div>
 
                         <button type="submit" class="btn btn-success">Tambah Data</button>
-                        <button type="reset" class="btn btn-secondary">Kosongkan</button>
                         <a href="{{route('view_acara')}}" class="btn btn-danger">Batalkan</a>
                     </form>
                 </div>

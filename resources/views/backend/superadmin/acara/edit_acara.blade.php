@@ -42,8 +42,8 @@
                         </div>
                         <div class="form-group">
                             <label for="durasi">Durasi</label>
-                            <input type="text" name="durasi" class="form-control" id="durasi"
-                                value="{{$editData->durasi}}" required placeholder="Durasi">
+                            <input type="text" name="durasi" class="form-control" id="durasi" value="{{$editData->durasi}}" required
+                                placeholder="Durasi (contoh: 6 Jam, 2 Hari)">
                         </div>
                         <div class="form-group">
                             <label for="deskripsi">Deskripsi</label>
@@ -161,7 +161,7 @@
                         </div>
 
                         <div class="form-group" style="margin-top: 100px;">
-                            <button type="submit" class="btn btn-success">Ubah Data</button>
+                            <button type="submit" class="btn btn-success">Simpan Data</button>
                             <a href="{{route('view_acara')}}" class="btn btn-danger">Batalkan</a>
                         </div>
                     </form>
