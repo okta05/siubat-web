@@ -5,7 +5,7 @@
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Dashboard | Edit User</h1>
+        <h1 class="h3 mb-0 text-gray-800">Dashboard | Edit Data User</h1>
     </div>
 
     <!-- Content Row -->
@@ -50,9 +50,9 @@
                                 id="email" placeholder="Email">
                         </div>
                         <div class="form-group">
-                            <label for="textNo_Wa">No WA</label>
+                            <label for="textNo_Wa">Nomor Telepon / WhatsApp</label>
                             <input type="text" name="textNo_Wa" value="{{$editData->no_wa}}" class="form-control"
-                                id="textNo_Wa" placeholder="Nomor Telepon/WhatsApp">
+                                id="textNo_Wa" placeholder="Nomor Telepon / WhatsApp">
                         </div>
                         <div class="form-group">
                             <label for="selectUser">Role <span class="text-danger">*</span></label>
@@ -92,7 +92,6 @@
                             @endif
                         </div>
                         <button type="submit" class="btn btn-success">Simpan Perubahan</button>
-                        <button type="reset" class="btn btn-secondary">Kosongkan</button>
                         <a href="{{route('view_user')}}" class="btn btn-danger">Batalkan</a>
                         @endif
                     </form>

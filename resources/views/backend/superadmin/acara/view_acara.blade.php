@@ -5,13 +5,13 @@
 <div class="container-fluid">
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+        <h1 class="h3 mb-0 text-gray-800">Dashboard | Acara</h1>
     </div>
 
     <!-- Content Row -->
     <div>
         <a href="{{route('acara.add')}}" class="btn btn-success mb-3">
-            <i class="fas fa-plus"></i> Tambah UMKM
+            <i class="fas fa-plus"></i> Tambah Acara
         </a>
 
         <a href="{{route('dashboard')}}" class="btn btn-primary mb-3">Kembali</a>

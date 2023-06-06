@@ -161,7 +161,7 @@
                         </div>
 
                         <div class="form-group" style="margin-top: 100px;">
-                            <button type="submit" class="btn btn-success">Ubah Data</button>
+                            <button type="submit" class="btn btn-success">Simpan Data</button>
                             <a href="{{route('view_acara')}}" class="btn btn-danger">Batalkan</a>
                         </div>
                     </form>
