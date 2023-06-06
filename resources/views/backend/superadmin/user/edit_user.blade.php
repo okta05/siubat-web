@@ -50,9 +50,9 @@
                                 id="email" placeholder="Email">
                         </div>
                         <div class="form-group">
-                            <label for="textNo_Wa">No WA</label>
+                            <label for="textNo_Wa">Nomor Telepon / WhatsApp</label>
                             <input type="text" name="textNo_Wa" value="{{$editData->no_wa}}" class="form-control"
-                                id="textNo_Wa" placeholder="Nomor Telepon/WhatsApp">
+                                id="textNo_Wa" placeholder="Nomor Telepon / WhatsApp">
                         </div>
                         <div class="form-group">
                             <label for="selectUser">Role <span class="text-danger">*</span></label>
