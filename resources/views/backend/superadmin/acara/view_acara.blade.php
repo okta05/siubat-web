@@ -59,7 +59,7 @@
 
                     <div>
                         <br>
-                        <p><b>Gambar Event</b></p>
+                        <p><b>Gambar Acara</b></p>
                         @if($acara->foto_acara1)
                         <img src="{{asset('storage/'. $acara->foto_acara1)}}" alt="" class="card-img-top"
                             id="foto_acara1">
