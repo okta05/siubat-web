@@ -10,7 +10,8 @@
     <!-- Content Row -->
     <div class="card shadow mb-4">
         <div class="card-body">
-            <div><a href="{{route('umkm.add')}}" class="btn btn-success mb-3">
+            <div>
+                <a href="{{route('umkm.add')}}" class="btn btn-success mb-3">
                     <i class="fas fa-plus"></i> Tambah UMKM
                 </a>
 
@@ -94,8 +95,9 @@
                                     </div><br>
                                 </ul>
                             </div>
-                            <br> <a href="{{route('umkm.edit', $umkm->id)}}" class="btn btn-warning" title="Ubah"><i
-                                    class="fas fa-fw fa-edit"></i></a>
+                            <hr>
+                            Opsi:
+                            <a href="{{route('umkm.edit', $umkm->id)}}" class="btn btn-warning" title="Ubah"><i class="fas fa-fw fa-edit"></i></a>
                             <a href="{{route('umkms.delete', $umkm->id)}}" class="btn btn-danger" id="delete"
                                 title="Hapus"><i class="fas fa-fw fa-trash"></i></a>
                         </div>

@@ -71,7 +71,7 @@
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+        <a href="/" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
             <h2> <img src="https://i.postimg.cc/PrCywBZh/logo-bwi.png" style="width : 45px"> Siubat</h2>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -193,8 +193,8 @@
                     Kantor Desa Kabat, Banyuwangi 2023
                     <div class="col-md-6 text-center text-md-end">
                         <div class="footer-menu">
-                            <a href="">Home</a>
-                            <a href="">Event</a>
+                            <a href="/">Home</a>
+                            <a href="{{route('event.view.masyarakat')}}">Event</a>
                             <a href="">UMKM</a>
                         </div>
                     </div>

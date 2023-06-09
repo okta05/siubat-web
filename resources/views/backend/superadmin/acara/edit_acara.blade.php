@@ -5,7 +5,7 @@
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Dashboard | Ubah Data Event</h1>
+        <h1 class="h3 mb-0 text-gray-800">Dashboard | Ubah Data Acarat</h1>
     </div>
 
     <!-- Content Row -->
@@ -17,7 +17,7 @@
             <div class="card shadow mb-4">
                 <!-- Card Header - Edit -->
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                    <h6 class="m-0 font-weight-bold text-dark">Edit Event</h6>
+                    <h6 class="m-0 font-weight-bold text-dark">Ubah Data Acara</h6>
                 </div>
 
                 <!-- Card Content - Edit -->
@@ -42,8 +42,8 @@
                         </div>
                         <div class="form-group">
                             <label for="durasi">Durasi</label>
-                            <input type="text" name="durasi" class="form-control" id="durasi"
-                                value="{{$editData->durasi}}" required placeholder="Durasi">
+                            <input type="text" name="durasi" class="form-control" id="durasi" value="{{$editData->durasi}}" required
+                                placeholder="Durasi (contoh: 6 Jam, 2 Hari)">
                         </div>
                         <div class="form-group">
                             <label for="deskripsi">Deskripsi</label>
@@ -161,7 +161,7 @@
                         </div>
 
                         <div class="form-group" style="margin-top: 100px;">
-                            <button type="submit" class="btn btn-success">Ubah Data</button>
+                            <button type="submit" class="btn btn-success">Simpan Data</button>
                             <a href="{{route('view_acara')}}" class="btn btn-danger">Batalkan</a>
                         </div>
                     </form>
