@@ -33,7 +33,6 @@ class ProfileController extends Controller
        if ($request->file('foto')) {
         if($request->oldImage){
         Storage::delete($request->oldImage);
-        Storage::put('backend/img/no-image.jpg');
             }
         $foto = $request->file('foto')->store('profile');
     } else {
@@ -52,12 +51,10 @@ class ProfileController extends Controller
 
     public function ProfilDelete($id){
         $deleteData= User::find($id);
-        $pathFoto = $deleteData->foto;
-        // $deleteData->delete();
-
+        $pathProfile = $deleteData->foto;
         
-        if ($pathFoto != null || $pathFoto != '') {
-            Storage::delete($pathFoto);
+        if ($pathProfile != null || $pathProfile != '') {
+            Storage::delete($pathProfile);
         }
 
         return redirect()->route('profile.view');

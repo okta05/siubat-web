@@ -39,7 +39,7 @@
 
                         <div class="form-group">
                             <label for="harga">Harga</label>
-                            <input type="number" name="harga" class="form-control" id="harga" required
+                            <input type="text" name="harga" class="form-control" id="harga" required
                                 placeholder="Harga">
                         </div>
 
@@ -120,7 +120,6 @@
                         </div>
 
                         <button type="submit" class="btn btn-success">Tambah Data</button>
-                        <button type="reset" class="btn btn-secondary">Kosongkan</button>
                         <a href="{{route('view_umkm')}}" class="btn btn-danger">Batalkan</a>
                     </form>
                 </div>

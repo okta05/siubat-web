@@ -5,7 +5,6 @@ namespace App\Http\Controllers\Backend\superadmin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Auth;
-use App\Models\Beranda;
 use App\Models\Acara;
 use App\Models\Umkm;
 use App\Models\User;

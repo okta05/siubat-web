@@ -5,7 +5,7 @@
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Dashboard | Tambah Data Event</h1>
+        <h1 class="h3 mb-0 text-gray-800">Dashboard | Tambah Data Acara</h1>
     </div>
 
     <!-- Content Row -->
@@ -43,7 +43,7 @@
                         <div class="form-group">
                             <label for="durasi">Durasi</label>
                             <input type="text" name="durasi" class="form-control" id="durasi" required
-                                placeholder="Durasi">
+                                placeholder="Durasi (contoh: 6 Jam, 2 Hari)">
                         </div>
                         <div class="form-group">
                             <label for="deskripsi">Deskripsi</label>
@@ -63,9 +63,55 @@
                             @enderror
                         </div>
 
+                        <div class="form-group">
+                            <label for="acara1">Gambar Acara 1</label>
+                            <img class="img-preview1_1 img-fluid mb-3 col-sm-5" style="width: 200px; height: auto;">
+                            <input type="file" name="acara1" class="form-control @error('acara1') is-invalid @enderror"
+                                id="acara1" accept="image/*" onchange="previewImage1_1()" placeholder="Acara 1">
+                            @error('acara1')
+                            <div class="invalid-feedback">
+                                {{ $message }}
+                            </div>
+                            @enderror
+                        </div>
+
+                        <div class="form-group">
+                            <label for="acara2">Gambar Acara 2</label>
+                            <img class="img-preview2_2 img-fluid mb-3 col-sm-5" style="width: 200px; height: auto;">
+                            <input type="file" name="acara2" class="form-control @error('acara2') is-invalid @enderror"
+                                id="acara2" accept="image/*" onchange="previewImage2_2()" placeholder="Acara 2">
+                            @error('acara2')
+                            <div class="invalid-feedback">
+                                {{ $message }}
+                            </div>
+                            @enderror
+                        </div>
+
+                        <div class="form-group">
+                            <label for="acara3">Gambar Acara 3</label>
+                            <img class="img-preview3_3 img-fluid mb-3 col-sm-5" style="width: 200px; height: auto;">
+                            <input type="file" name="acara3" class="form-control @error('acara3') is-invalid @enderror"
+                                id="acara3" accept="image/*" onchange="previewImage3_3()" placeholder="Acara 3">
+                            @error('acara3')
+                            <div class="invalid-feedback">
+                                {{ $message }}
+                            </div>
+                            @enderror
+                        </div>
+
+                        <div class="form-group">
+                            <label for="acara4">Gambar Acara 4</label>
+                            <img class="img-preview4_4 img-fluid mb-3 col-sm-5" style="width: 200px; height: auto;">
+                            <input type="file" name="acara4" class="form-control @error('acara4') is-invalid @enderror"
+                                id="acara4" accept="image/*" onchange="previewImage4_4()" placeholder="Acara 4">
+                            @error('acara4')
+                            <div class="invalid-feedback">
+                                {{ $message }}
+                            </div>
+                            @enderror
+                        </div>
 
                         <button type="submit" class="btn btn-success">Tambah Data</button>
-                        <button type="reset" class="btn btn-secondary">Kosongkan</button>
                         <a href="{{route('view_acara')}}" class="btn btn-danger">Batalkan</a>
                     </form>
                 </div>

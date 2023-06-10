@@ -43,9 +43,13 @@
                         <span>Alamat
                             <p class="text-dark">{{$user->alamat}}</p>
                         </span>
-                        <a href="{{route('profile.delete', $user->id)}}" class="btn btn-danger" id="delete"
-                                title="Hapus"><i class="fas fa-fw fa-trash"></i></a>
+                        @if($user->id == 1)
+                        <a href="{{route('dashboard')}}" class="btn btn-primary">Kembali</a>
+                        @elseif($user->id != 1)
                         <a href="{{route('profile.edit')}}" class="btn btn-secondary">Ubah Profil</a>
+                        <a href="{{route('profile.delete', $user->id)}}" class="btn btn-danger" id="delete" title="Hapus">Hapus Foto Profil</a>
+                        <a href="{{route('dashboard')}}" class="btn btn-primary">Kembali</a>
+                        @endif
                     </div>
                 </div>
             </div>

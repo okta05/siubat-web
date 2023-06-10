@@ -37,7 +37,7 @@
                         </div>
                         <div class="form-group">
                             <label for="harga">Harga</label>
-                            <input type="number" name="harga" value="{{$editData->harga}}" class="form-control"
+                            <input type="text" name="harga" value="{{$editData->harga}}" class="form-control"
                                 id="harga" required placeholder="Harga">
                         </div>
                         <div class="form-group">
@@ -164,7 +164,6 @@
                         </div>
 
                         <button type="submit" class="btn btn-success">Simpan Data</button>
-                        <button type="reset" class="btn btn-secondary">Kosongkan</button>
                         <a href="{{route('view_umkm')}}" class="btn btn-danger">Batalkan</a>
                     </form>
                 </div>

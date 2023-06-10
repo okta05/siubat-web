@@ -5,7 +5,7 @@
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Dashboard | Edit User</h1>
+        <h1 class="h3 mb-0 text-gray-800">Dashboard | Ubah Data User</h1>
     </div>
 
     <!-- Content Row -->
@@ -17,7 +17,7 @@
             <div class="card shadow mb-4">
                 <!-- Card Header - Edit -->
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                    <h6 class="m-0 font-weight-bold text-dark">Edit User</h6>
+                    <h6 class="m-0 font-weight-bold text-dark">Ubah Data User</h6>
                 </div>
 
                 <!-- Card Content - Edit -->
@@ -50,9 +50,9 @@
                                 id="email" placeholder="Email">
                         </div>
                         <div class="form-group">
-                            <label for="textNo_Wa">No WA</label>
+                            <label for="textNo_Wa">Nomor Telepon / WhatsApp</label>
                             <input type="text" name="textNo_Wa" value="{{$editData->no_wa}}" class="form-control"
-                                id="textNo_Wa" placeholder="Nomor Telepon/WhatsApp">
+                                id="textNo_Wa" placeholder="Nomor Telepon / WhatsApp">
                         </div>
                         <div class="form-group">
                             <label for="selectUser">Role <span class="text-danger">*</span></label>
@@ -64,10 +64,10 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="password">Password <span class="text-danger" style="font-weight: bolder;">*Wajib
+                            <label for="password">Kata Sandi<span class="text-danger" style="font-weight: bolder;">*Wajib
                                     diisi</span></label>
                             <input type="password" name="password" required class="form-control" id="password"
-                                placeholder="Password" style="display: inline; width: 99.565%;">
+                                placeholder="Kata Sandi" style="display: inline; width: 99.565%;">
                             <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
                         </div>
 
@@ -92,7 +92,6 @@
                             @endif
                         </div>
                         <button type="submit" class="btn btn-success">Simpan Perubahan</button>
-                        <button type="reset" class="btn btn-secondary">Kosongkan</button>
                         <a href="{{route('view_user')}}" class="btn btn-danger">Batalkan</a>
                         @endif
                     </form>
