@@ -32,7 +32,7 @@
                     @foreach($allDataUser as $key => $user)
                     <tr>
                         <td>{{$key+1}}</td>
-                        <td>{{$user->name}}</td>
+                        <td>{{$user->nama}}</td>
                         <td>{{$user->alamat}}</td>
                         <td>{{$user->email}}</td>
                         <td>{{$user->no_wa}}</td>
@@ -51,6 +51,10 @@
                             <a href="{{route('users.edit', $user->id)}}" class="btn btn-warning" title="Ubah">
                                 <i class="fas fa-fw fa-edit"></i>
                             </a>
+
+                            <br>
+                            <br>
+
                             <a href="{{route('users.delete', $user->id)}}" class="btn btn-danger" id="delete">
                                 <i class="fas fa-fw fa-trash"></i>
                             </a>
@@ -66,6 +70,10 @@
                             <a href="{{route('users.edit', $user->id)}}" class="btn btn-warning" title="Ubah">
                                 <i class="fas fa-fw fa-edit"></i>
                             </a>
+
+                            <br>
+                            <br>
+
                             <a href="#" class="btn btn-secondary disabled" id="delete"
                                 title="Tidak dapat menghapus user ini." style="cursor: not-allowed;">
                                 <i class="fas fa-fw fa-trash"></i>

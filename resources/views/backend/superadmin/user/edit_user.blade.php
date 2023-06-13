@@ -5,7 +5,7 @@
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Dashboard | Edit Data User</h1>
+        <h1 class="h3 mb-0 text-gray-800">Dashboard | Ubah Data User</h1>
     </div>
 
     <!-- Content Row -->
@@ -17,7 +17,7 @@
             <div class="card shadow mb-4">
                 <!-- Card Header - Edit -->
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                    <h6 class="m-0 font-weight-bold text-dark">Edit User</h6>
+                    <h6 class="m-0 font-weight-bold text-dark">Ubah Data User</h6>
                 </div>
 
                 <!-- Card Content - Edit -->
@@ -36,7 +36,7 @@
                         @elseif($editData->id > 1)
                         <div class="form-group">
                             <label for="textNama">Nama</label>
-                            <input type="text" name="textNama" value="{{$editData->name}}" class="form-control"
+                            <input type="text" name="textNama" value="{{$editData->nama}}" class="form-control"
                                 id="textNama" placeholder="Nama lengkap">
                         </div>
                         <div class="form-group">
@@ -64,10 +64,10 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="password">Password <span class="text-danger" style="font-weight: bolder;">*Wajib
+                            <label for="password">Kata Sandi<span class="text-danger" style="font-weight: bolder;">*Wajib
                                     diisi</span></label>
                             <input type="password" name="password" required class="form-control" id="password"
-                                placeholder="Password" style="display: inline; width: 99.565%;">
+                                placeholder="Kata Sandi" style="display: inline; width: 99.565%;">
                             <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
                         </div>
 

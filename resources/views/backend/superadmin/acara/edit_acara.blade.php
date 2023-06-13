@@ -5,7 +5,11 @@
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
+<<<<<<< HEAD
         <h1 class="h3 mb-0 text-gray-800">Dashboard | Ubah Data Acara</h1>
+=======
+        <h1 class="h3 mb-0 text-gray-800">Dashboard | Ubah Data Acarat</h1>
+>>>>>>> origin/oktaviano
     </div>
 
     <!-- Content Row -->
@@ -17,7 +21,7 @@
             <div class="card shadow mb-4">
                 <!-- Card Header - Edit -->
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                    <h6 class="m-0 font-weight-bold text-dark">Edit Event</h6>
+                    <h6 class="m-0 font-weight-bold text-dark">Ubah Data Acara</h6>
                 </div>
 
                 <!-- Card Content - Edit -->

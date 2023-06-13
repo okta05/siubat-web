@@ -27,12 +27,12 @@
                         <img src="{{asset('backend/img/no-image.jpg')}}" alt="" class="img-profile rounded-circle mt-2" width="200">
                         @endif
                         
-                        <h6 class="m-0 font-weight-bold text-dark mt-4">Hai, {{$user->name}}!</h6>
+                        <h6 class="m-0 font-weight-bold text-dark mt-4">Hai, {{$user->nama}}!</h6>
                     </center>
                     <hr>
                     <div class="card-body">
                         <span>Nama 
-                            <p class="text-dark">{{$user->name}} </p>
+                            <p class="text-dark">{{$user->nama}} </p>
                         </span>
                         <span>Email
                             <p class="text-dark">{{$user->email}}</p>
