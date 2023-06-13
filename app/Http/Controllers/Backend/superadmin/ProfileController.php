@@ -39,7 +39,7 @@ class ProfileController extends Controller
         $foto = $request->oldImage;
     }
 
-       $data->name=$request->textNama;
+       $data->nama=$request->textNama;
        $data->alamat=$request->textAlamat;
        $data->email=$request->email;
        $data->no_wa=$request->textNo_Wa;
