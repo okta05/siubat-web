@@ -39,7 +39,7 @@ class UserController extends Controller
 
         // dd($request);
         $data=new User();
-        $data->name=$request->textNama;
+        $data->nama=$request->textNama;
         $data->alamat=$request->textAlamat;
         $data->email=$request->email;
         $data->no_wa=$request->textNo_Wa;
@@ -76,7 +76,7 @@ class UserController extends Controller
 
         // dd($request);
         $data=User::find($id);
-        $data->name=$request->textNama;
+        $data->nama=$request->textNama;
         $data->alamat=$request->textAlamat;
         $data->email=$request->email;
         $data->no_wa=$request->textNo_Wa;

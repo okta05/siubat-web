@@ -30,26 +30,37 @@
                             <input type="text" name="textNama" value="{{$editData->nm_pemilik}}" class="form-control"
                                 id="textNama" required placeholder="Nama Pemilik UMKM">
                         </div>
+
                         <div class="form-group">
                             <label for="textNamaProduk">Nama Produk</label>
                             <input type="text" name="textNamaProduk" value="{{$editData->nm_produk}}"
                                 class="form-control" id="textNamaProduk" required placeholder="Nama Produk">
                         </div>
+
                         <div class="form-group">
                             <label for="harga">Harga</label>
                             <input type="text" name="harga" value="{{$editData->harga}}" class="form-control"
                                 id="harga" required placeholder="Harga">
                         </div>
+                        
+                        <div class="form-group">
+                            <label for="textNo_Pemilik">Nomor Pemilik</label>
+                            <input type="text" name="textNo_Pemilik" value="{{$editData->no_pemilik}}" class="form-control"
+                                id="textNo_Pemilik" required placeholder="08xxxxxxxxxx">
+                        </div>
+
                         <div class="form-group">
                             <label for="deskripsi">Deskripsi</label>
                             <input type="text" name="deskripsi" value="{{$editData->deskripsi}}" class="form-control"
                                 id="deskripsi" required placeholder="Deskripsi">
                         </div>
+
                         <div class="form-group">
                             <label for="deskripsi">Alamat</label>
                             <input type="text" name="alamat" value="{{$editData->alamat}}" class="form-control"
                                 id="alamat" required placeholder="Alamat">
                         </div>
+
                         <div class="form-group">
                             <label for="foto">Gambar</label>
                             <img class="img-preview img-fluid mb-3 col-sm-5" style="width: 200px; height: auto;">

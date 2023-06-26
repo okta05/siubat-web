@@ -36,7 +36,7 @@
                         @elseif($editData->id > 1)
                         <div class="form-group">
                             <label for="textNama">Nama</label>
-                            <input type="text" name="textNama" value="{{$editData->name}}" class="form-control"
+                            <input type="text" name="textNama" value="{{$editData->nama}}" class="form-control"
                                 id="textNama" placeholder="Nama lengkap">
                         </div>
                         <div class="form-group">
@@ -64,10 +64,10 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="password">Password <span class="text-danger" style="font-weight: bolder;">*Wajib
+                            <label for="password">Kata Sandi<span class="text-danger" style="font-weight: bolder;">*Wajib
                                     diisi</span></label>
                             <input type="password" name="password" required class="form-control" id="password"
-                                placeholder="Password" style="display: inline; width: 99.565%;">
+                                placeholder="Kata Sandi" style="display: inline; width: 99.565%;">
                             <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
                         </div>
 
