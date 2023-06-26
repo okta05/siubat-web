@@ -41,19 +41,22 @@
                             <div class="row no-gutters align-items-center">
                                 <ul class="list-group">
                                     <li class="list-unstyled">
-                                        <h2 class="card-title">Nama : {{$umkm->nm_produk}}</h5>
+                                        <h3 class="card-title">Nama : {{$umkm->nm_produk}}</h3>
                                     </li>
                                     <li class="list-unstyled">
-                                        <p class="">Pemilik: {{$umkm->nm_pemilik}}</p>
+                                        <p class="">Pemilik : {{$umkm->nm_pemilik}}</p>
                                     </li>
                                     <li class="list-unstyled">
-                                        <p class="">Harga: Rp. {{$umkm->harga}}</p>
+                                        <p class="">Harga : Rp. {{$umkm->harga}}</p>
+                                    </li>
+                                    <li class="list-unstyled">
+                                        <p class="">Nomer Telepon : {{$umkm->no_pemilik}}</p>
                                     </li>
                                     <li class="list-unstyled">
                                         <p class="">Alamat: {{$umkm->alamat}}</p>
                                     </li>
                                     <li class="list-unstyled">
-                                        <p class="">Deskripsi Produk: {{$umkm->deskripsi}}</p>
+                                        <p class="">Deskripsi Produk : {{$umkm->deskripsi}}</p>
                                     </li>
 
                                     <div>

@@ -36,13 +36,6 @@ class UMKMController extends Controller
             'produk4' => 'mimes:jpg,jpeg,png|image|file|max:2048',
         ]);
 
-        // $file_name = $request->foto->getClientOriginalName();
-        // $foto = $request->foto->storeAs('uploads', $file_name);
-
-    //     if($request->file('foto')) {
-    //     $foto = $request->file('foto')->store('uploads');
-    // } 
-
         if ($request->file('foto')) {
             $foto = $request->file('foto')->store('produk/cover_produk');
         } else {
@@ -78,6 +71,7 @@ class UMKMController extends Controller
         $data->nm_pemilik=$request->textNama;
         $data->nm_produk=$request->textNamaProduk;
         $data->harga=$request->harga;
+        $data->no_pemilik=$request->textNo_Pemilik;
         $data->deskripsi=$request->deskripsi;
         $data->alamat=$request->alamat;
         $data->foto=$foto;
@@ -159,6 +153,7 @@ class UMKMController extends Controller
         $data->nm_pemilik=$request->textNama;
         $data->nm_produk=$request->textNamaProduk;
         $data->harga=$request->harga;
+        $data->no_pemilik=$request->textNo_Pemilik;
         $data->deskripsi=$request->deskripsi;
         $data->alamat=$request->alamat;
         $data->foto=$foto;
