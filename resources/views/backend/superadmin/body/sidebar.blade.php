@@ -5,12 +5,9 @@
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{route('dashboard')}}">
         <div class="sidebar-brand-icon">
             <!-- <i class="fas fa-laugh-wink"></i> -->
-<<<<<<< HEAD
 
             <img src="https://banyuwangikab.go.id/presentation/b-asset/img/logo_bwi_small.png" style="width : 70px">
-=======
             <img src="https://i.ibb.co/nMbY25j/logo-bwi.png" alt="logo-bwi" style="width : 45px">
->>>>>>> origin/kezia
         </div>
         <div class="sidebar-brand-text mx-3">SIUBAT</div>
     </a>
