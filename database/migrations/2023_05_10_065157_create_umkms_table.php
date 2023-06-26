@@ -16,7 +16,8 @@ return new class extends Migration
             $table->string('nm_pemilik')->nullable();
             $table->string('nm_produk')->nullable();
             $table->string('harga')->nullable();
-            $table->string('deskripsi')->nullable();
+            $table->string('no_pemilik')->nullable();
+            $table->text('deskripsi')->nullable();
             $table->string('alamat')->nullable();
             $table->string('foto')->nullable();
             $table->string('produk1')->nullable();

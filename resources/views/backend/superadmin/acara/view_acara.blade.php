@@ -40,7 +40,7 @@
                     <div class="row no-gutters align-items-center">
                         <ul class="list-group">
                             <li class="list-unstyled">
-                                <h2 class="card-title">{{$acara->nm_acara}}</h5>
+                                <h2 class="card-title"><b>{{$acara->nm_acara}}</b></h2>
                             </li>
                             <li class="list-unstyled">
                                 <p class="">Tanggal Mulai: {{$acara->tgl_mulai}}</p>
