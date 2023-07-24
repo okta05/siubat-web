@@ -129,6 +129,9 @@
                                             <p class="">Harga: Rp. {{$umkm->harga}}</p>
                                         </li>
                                         <li class="list-unstyled">
+                                            <p class="">Nomor Telepon / WhatsApp: {{$umkm->no_pemilik}}</p>
+                                        </li>
+                                        <li class="list-unstyled">
                                             <p class="">Alamat: {{$umkm->alamat}}</p>
                                         </li>
                                         <li class="list-unstyled">
