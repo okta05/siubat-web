@@ -44,6 +44,12 @@
                         </div>
 
                         <div class="form-group">
+                            <label for="textNo_Pemilik">Nomor Pemilik</label>
+                            <input type="text" name="textNo_Pemilik" class="form-control" id="textNo_Pemilik" required
+                                placeholder="08xxxxxxxxxx">
+                        </div>
+
+                        <div class="form-group">
                             <label for="deskripsi">Deskripsi</label>
                             <input type="text" name="deskripsi" class="form-control" id="deskripsi" required
                                 placeholder="Deskripsi">

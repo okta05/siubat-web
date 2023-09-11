@@ -294,8 +294,8 @@
                 <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <iframe class="position-relative rounded w-500 h-100"
                         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15793.008806772172!2d114.32658147423524!3d-8.27767880341727!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd15091b912dd65%3A0x445c2e9f4c9d3578!2sKantor%20Desa%20Kabat!5e0!3m2!1sid!2sid!4v1681440136169!5m2!1sid!2sid"
-                        width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        frameborder="" style="min-width:550px; border:0;" allowfullscreen="" aria-hidden="false"
+                        tabindex="0"></iframe>
 
                 </div>
             </div>

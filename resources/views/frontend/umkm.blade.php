@@ -120,13 +120,16 @@
                                 <div class="row no-gutters align-items-center">
                                     <ul class="list-group">
                                         <li class="list-unstyled">
-                                            <h2 class="card-title">Nama : {{$umkm->nm_produk}}</h5>
+                                            <h3 class="card-title"><b>{{$umkm->nm_produk}}</b></h3>
                                         </li>
                                         <li class="list-unstyled">
                                             <p class="">Pemilik: {{$umkm->nm_pemilik}}</p>
                                         </li>
                                         <li class="list-unstyled">
                                             <p class="">Harga: Rp. {{$umkm->harga}}</p>
+                                        </li>
+                                        <li class="list-unstyled">
+                                            <p class="">Nomor Telepon / WhatsApp: {{$umkm->no_pemilik}}</p>
                                         </li>
                                         <li class="list-unstyled">
                                             <p class="">Alamat: {{$umkm->alamat}}</p>

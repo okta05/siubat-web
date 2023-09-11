@@ -36,7 +36,7 @@
                         @elseif($editData->id > 1)
                         <div class="form-group">
                             <label for="textNama">Nama</label>
-                            <input type="text" name="textNama" value="{{$editData->name}}" class="form-control"
+                            <input type="text" name="textNama" value="{{$editData->nama}}" class="form-control"
                                 id="textNama" placeholder="Nama lengkap">
                         </div>
                         <div class="form-group">

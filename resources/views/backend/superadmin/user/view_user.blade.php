@@ -32,7 +32,7 @@
                     @foreach($allDataUser as $key => $user)
                     <tr>
                         <td>{{$key+1}}</td>
-                        <td>{{$user->name}}</td>
+                        <td>{{$user->nama}}</td>
                         <td>{{$user->alamat}}</td>
                         <td>{{$user->email}}</td>
                         <td>{{$user->no_wa}}</td>
